@@ -1,0 +1,125 @@
+{
+  "engine": "build\\probe_v2.exe",
+  "budget_ms": 1140,
+  "positions": [
+    {
+      "round_id": "6ae867f9e905020013cc8875",
+      "ply": 2,
+      "color": 2,
+      "recorded_move": [
+        7,
+        3
+      ],
+      "move": 100,
+      "row": 8,
+      "col": 4,
+      "score": -16651,
+      "depth": 8,
+      "nodes": 643585,
+      "ms": 1140.01,
+      "intact": true
+    },
+    {
+      "round_id": "6ae867f9e905020013cc8875",
+      "ply": 4,
+      "color": 2,
+      "recorded_move": [
+        8,
+        3
+      ],
+      "move": 55,
+      "row": 4,
+      "col": 7,
+      "score": -210443,
+      "depth": 8,
+      "nodes": 748801,
+      "ms": 1140.1,
+      "intact": true
+    },
+    {
+      "round_id": "6ae867f9e905020013cc8875",
+      "ply": 6,
+      "color": 2,
+      "recorded_move": [
+        5,
+        4
+      ],
+      "move": 64,
+      "row": 5,
+      "col": 4,
+      "score": -119501,
+      "depth": 8,
+      "nodes": 759809,
+      "ms": 1140.17,
+      "intact": true
+    },
+    {
+      "round_id": "6ae867f9e905020013cc8875",
+      "ply": 8,
+      "color": 2,
+      "recorded_move": [
+        9,
+        3
+      ],
+      "move": 111,
+      "row": 9,
+      "col": 3,
+      "score": -99999988,
+      "depth": 6,
+      "nodes": 786049,
+      "ms": 1140.37,
+      "intact": true
+    },
+    {
+      "round_id": "6ae867f9e905020013cc8875",
+      "ply": 10,
+      "color": 2,
+      "recorded_move": [
+        3,
+        5
+      ],
+      "move": 74,
+      "row": 6,
+      "col": 2,
+      "score": -99999990,
+      "depth": 5,
+      "nodes": 372431,
+      "ms": 689.874,
+      "intact": true
+    },
+    {
+      "round_id": "6ae867f9e905020013cc8875",
+      "ply": 22,
+      "color": 2,
+      "recorded_move": [
+        10,
+        3
+      ],
+      "move": 123,
+      "row": 10,
+      "col": 3,
+      "score": -99999992,
+      "depth": 3,
+      "nodes": 310,
+      "ms": 0.5922,
+      "intact": true
+    },
+    {
+      "round_id": "6ae867f9e905020013cc8875",
+      "ply": 24,
+      "color": 2,
+      "recorded_move": [
+        8,
+        5
+      ],
+      "move": 101,
+      "row": 8,
+      "col": 5,
+      "score": -99999994,
+      "depth": 2,
+      "nodes": 224,
+      "ms": 0.4255,
+      "intact": true
+    }
+  ]
+}

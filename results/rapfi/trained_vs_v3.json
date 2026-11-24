@@ -1,0 +1,753 @@
+{
+  "schema_version": 1,
+  "platform": "Windows-11-10.0.26200-SP0",
+  "board_size": 12,
+  "initial_stones": [
+    [
+      5,
+      5,
+      2
+    ],
+    [
+      6,
+      6,
+      2
+    ],
+    [
+      5,
+      6,
+      1
+    ],
+    [
+      6,
+      5,
+      1
+    ]
+  ],
+  "commands": {
+    "A": [
+      "D:\\程序设计范式作业\\gomoku\\rapfi_port\\rapfi_trained.exe"
+    ],
+    "B": [
+      "D:\\程序设计范式作业\\gomoku\\build\\gomoku_v3_gcc.exe"
+    ]
+  },
+  "executables": {
+    "A": {
+      "path": "D:\\程序设计范式作业\\gomoku\\rapfi_port\\rapfi_trained.exe",
+      "bytes": 3226434,
+      "sha256": "587b75ec87244b8b0d3081c6160323d7965cd2335c7949661df6b5a06cfe66b7"
+    },
+    "B": {
+      "path": "D:\\程序设计范式作业\\gomoku\\build\\gomoku_v3_gcc.exe",
+      "bytes": 3629315,
+      "sha256": "f19535e5f1168dbeb2ab1c1e1aeeb0274e881790b300edef181a0e31353638d7"
+    }
+  },
+  "settings": {
+    "games": 2,
+    "move_timeout": 2.0,
+    "total_timeout": 90.0,
+    "single_logical_processor": true
+  },
+  "games": [
+    {
+      "game": 1,
+      "colors": {
+        "black": "A",
+        "white": "B"
+      },
+      "winner": "A",
+      "winner_color": 1,
+      "reason": "five",
+      "forfeit": null,
+      "moves": [
+        {
+          "ply": 1,
+          "color": 1,
+          "engine": "A",
+          "row": 4,
+          "col": 4,
+          "seconds": 1.0332639999999174,
+          "total_seconds": 1.1082770000000437
+        },
+        {
+          "ply": 2,
+          "color": 2,
+          "engine": "B",
+          "row": 4,
+          "col": 8,
+          "seconds": 1.1422976999999719,
+          "total_seconds": 1.1541345000000547
+        },
+        {
+          "ply": 3,
+          "color": 1,
+          "engine": "A",
+          "row": 4,
+          "col": 3,
+          "seconds": 0.09208209999997052,
+          "total_seconds": 1.2003591000000142
+        },
+        {
+          "ply": 4,
+          "color": 2,
+          "engine": "B",
+          "row": 5,
+          "col": 7,
+          "seconds": 1.142175400000042,
+          "total_seconds": 2.2963099000000966
+        },
+        {
+          "ply": 5,
+          "color": 1,
+          "engine": "A",
+          "row": 7,
+          "col": 5,
+          "seconds": 0.0008827999999994063,
+          "total_seconds": 1.2012419000000136
+        },
+        {
+          "ply": 6,
+          "color": 2,
+          "engine": "B",
+          "row": 5,
+          "col": 4,
+          "seconds": 0.028629700000010416,
+          "total_seconds": 2.324939600000107
+        },
+        {
+          "ply": 7,
+          "color": 1,
+          "engine": "A",
+          "row": 4,
+          "col": 5,
+          "seconds": 0.0008336999999301042,
+          "total_seconds": 1.2020755999999437
+        },
+        {
+          "ply": 8,
+          "color": 2,
+          "engine": "B",
+          "row": 4,
+          "col": 6,
+          "seconds": 9.339999996882398e-05,
+          "total_seconds": 2.325033000000076
+        },
+        {
+          "ply": 9,
+          "color": 1,
+          "engine": "A",
+          "row": 2,
+          "col": 3,
+          "seconds": 0.000785499999892636,
+          "total_seconds": 1.2028610999998364
+        },
+        {
+          "ply": 10,
+          "color": 2,
+          "engine": "B",
+          "row": 6,
+          "col": 7,
+          "seconds": 0.0031774999999925058,
+          "total_seconds": 2.3282105000000684
+        },
+        {
+          "ply": 11,
+          "color": 1,
+          "engine": "A",
+          "row": 5,
+          "col": 3,
+          "seconds": 0.0009552999999868916,
+          "total_seconds": 1.2038163999998233
+        },
+        {
+          "ply": 12,
+          "color": 2,
+          "engine": "B",
+          "row": 3,
+          "col": 9,
+          "seconds": 0.00012440000000424334,
+          "total_seconds": 2.3283349000000726
+        },
+        {
+          "ply": 13,
+          "color": 1,
+          "engine": "A",
+          "row": 2,
+          "col": 10,
+          "seconds": 0.00015050000001792796,
+          "total_seconds": 1.2039668999998412
+        },
+        {
+          "ply": 14,
+          "color": 2,
+          "engine": "B",
+          "row": 3,
+          "col": 3,
+          "seconds": 9.530000011181983e-05,
+          "total_seconds": 2.3284302000001844
+        },
+        {
+          "ply": 15,
+          "color": 1,
+          "engine": "A",
+          "row": 4,
+          "col": 2,
+          "seconds": 0.0006640999999945052,
+          "total_seconds": 1.2046309999998357
+        },
+        {
+          "ply": 16,
+          "color": 2,
+          "engine": "B",
+          "row": 4,
+          "col": 1,
+          "seconds": 1.7399999933331856e-05,
+          "total_seconds": 2.3284476000001177
+        },
+        {
+          "ply": 17,
+          "color": 1,
+          "engine": "A",
+          "row": 6,
+          "col": 4,
+          "seconds": 0.00018410000006952032,
+          "total_seconds": 1.2048150999999052
+        },
+        {
+          "ply": 18,
+          "color": 2,
+          "engine": "B",
+          "row": 3,
+          "col": 1,
+          "seconds": 3.060000017285347e-05,
+          "total_seconds": 2.3284782000002906
+        },
+        {
+          "ply": 19,
+          "color": 1,
+          "engine": "A",
+          "row": 8,
+          "col": 6,
+          "seconds": 7.669999990866927e-05,
+          "total_seconds": 1.2048917999998139
+        }
+      ],
+      "total_seconds": {
+        "A": 1.2048917999998139,
+        "B": 2.3284782000002906
+      },
+      "startup_seconds": {
+        "A": 0.07501300000012634,
+        "B": 0.011836800000082803
+      },
+      "wall_seconds": 3.8412822999998752,
+      "debug": {
+        "A": [],
+        "B": []
+      },
+      "stderr_tail": {
+        "A": [],
+        "B": []
+      }
+    },
+    {
+      "game": 2,
+      "colors": {
+        "black": "B",
+        "white": "A"
+      },
+      "winner": "B",
+      "winner_color": 1,
+      "reason": "five",
+      "forfeit": null,
+      "moves": [
+        {
+          "ply": 1,
+          "color": 1,
+          "engine": "B",
+          "row": 4,
+          "col": 7,
+          "seconds": 0.004133999999794469,
+          "total_seconds": 0.01379119999978684
+        },
+        {
+          "ply": 2,
+          "color": 2,
+          "engine": "A",
+          "row": 7,
+          "col": 4,
+          "seconds": 1.1115841999999247,
+          "total_seconds": 1.187585499999841
+        },
+        {
+          "ply": 3,
+          "color": 1,
+          "engine": "B",
+          "row": 4,
+          "col": 6,
+          "seconds": 3.8300000142044155e-05,
+          "total_seconds": 0.013829499999928885
+        },
+        {
+          "ply": 4,
+          "color": 2,
+          "engine": "A",
+          "row": 3,
+          "col": 8,
+          "seconds": 1.11180760000002,
+          "total_seconds": 2.299393099999861
+        },
+        {
+          "ply": 5,
+          "color": 1,
+          "engine": "B",
+          "row": 5,
+          "col": 7,
+          "seconds": 4.690000014306861e-05,
+          "total_seconds": 0.013876400000071953
+        },
+        {
+          "ply": 6,
+          "color": 2,
+          "engine": "A",
+          "row": 4,
+          "col": 4,
+          "seconds": 0.3071647000001576,
+          "total_seconds": 2.6065578000000187
+        },
+        {
+          "ply": 7,
+          "color": 1,
+          "engine": "B",
+          "row": 7,
+          "col": 7,
+          "seconds": 5.629999986922485e-05,
+          "total_seconds": 0.013932699999941178
+        },
+        {
+          "ply": 8,
+          "color": 2,
+          "engine": "A",
+          "row": 6,
+          "col": 7,
+          "seconds": 0.00022989999979472486,
+          "total_seconds": 2.6067876999998134
+        },
+        {
+          "ply": 9,
+          "color": 1,
+          "engine": "B",
+          "row": 6,
+          "col": 8,
+          "seconds": 7.140000002436864e-05,
+          "total_seconds": 0.014004099999965547
+        },
+        {
+          "ply": 10,
+          "color": 2,
+          "engine": "A",
+          "row": 7,
+          "col": 9,
+          "seconds": 0.0008912999999211024,
+          "total_seconds": 2.6076789999997345
+        },
+        {
+          "ply": 11,
+          "color": 1,
+          "engine": "B",
+          "row": 5,
+          "col": 9,
+          "seconds": 2.8499999871201e-05,
+          "total_seconds": 0.014032599999836748
+        },
+        {
+          "ply": 12,
+          "color": 2,
+          "engine": "A",
+          "row": 4,
+          "col": 10,
+          "seconds": 0.00016510000000380387,
+          "total_seconds": 2.6078440999997383
+        },
+        {
+          "ply": 13,
+          "color": 1,
+          "engine": "B",
+          "row": 5,
+          "col": 8,
+          "seconds": 1.9699999938893598e-05,
+          "total_seconds": 0.014052299999775641
+        },
+        {
+          "ply": 14,
+          "color": 2,
+          "engine": "A",
+          "row": 5,
+          "col": 10,
+          "seconds": 0.00016389999996135884,
+          "total_seconds": 2.6080079999996997
+        },
+        {
+          "ply": 15,
+          "color": 1,
+          "engine": "B",
+          "row": 3,
+          "col": 6,
+          "seconds": 3.889999993589299e-05,
+          "total_seconds": 0.014091199999711534
+        },
+        {
+          "ply": 16,
+          "color": 2,
+          "engine": "A",
+          "row": 2,
+          "col": 5,
+          "seconds": 0.018244999999978972,
+          "total_seconds": 2.6262529999996787
+        },
+        {
+          "ply": 17,
+          "color": 1,
+          "engine": "B",
+          "row": 8,
+          "col": 8,
+          "seconds": 5.400000009103678e-05,
+          "total_seconds": 0.014145199999802571
+        },
+        {
+          "ply": 18,
+          "color": 2,
+          "engine": "A",
+          "row": 7,
+          "col": 8,
+          "seconds": 0.0003276999998433894,
+          "total_seconds": 2.626580699999522
+        },
+        {
+          "ply": 19,
+          "color": 1,
+          "engine": "B",
+          "row": 8,
+          "col": 7,
+          "seconds": 3.229999992981902e-05,
+          "total_seconds": 0.01417749999973239
+        },
+        {
+          "ply": 20,
+          "color": 2,
+          "engine": "A",
+          "row": 3,
+          "col": 3,
+          "seconds": 0.010883499999863488,
+          "total_seconds": 2.6374641999993855
+        },
+        {
+          "ply": 21,
+          "color": 1,
+          "engine": "B",
+          "row": 2,
+          "col": 2,
+          "seconds": 1.8299999965165625e-05,
+          "total_seconds": 0.014195799999697556
+        },
+        {
+          "ply": 22,
+          "color": 2,
+          "engine": "A",
+          "row": 8,
+          "col": 9,
+          "seconds": 0.00028610000003936875,
+          "total_seconds": 2.637750299999425
+        },
+        {
+          "ply": 23,
+          "color": 1,
+          "engine": "B",
+          "row": 5,
+          "col": 4,
+          "seconds": 5.989999999655993e-05,
+          "total_seconds": 0.014255699999694116
+        },
+        {
+          "ply": 24,
+          "color": 2,
+          "engine": "A",
+          "row": 7,
+          "col": 6,
+          "seconds": 0.00017939999997906853,
+          "total_seconds": 2.637929699999404
+        },
+        {
+          "ply": 25,
+          "color": 1,
+          "engine": "B",
+          "row": 2,
+          "col": 7,
+          "seconds": 3.790000005210459e-05,
+          "total_seconds": 0.01429359999974622
+        },
+        {
+          "ply": 26,
+          "color": 2,
+          "engine": "A",
+          "row": 10,
+          "col": 11,
+          "seconds": 0.0001824000000851811,
+          "total_seconds": 2.638112099999489
+        },
+        {
+          "ply": 27,
+          "color": 1,
+          "engine": "B",
+          "row": 9,
+          "col": 10,
+          "seconds": 1.2200000128359534e-05,
+          "total_seconds": 0.01430579999987458
+        },
+        {
+          "ply": 28,
+          "color": 2,
+          "engine": "A",
+          "row": 4,
+          "col": 5,
+          "seconds": 0.00020020000010845251,
+          "total_seconds": 2.6383122999995976
+        },
+        {
+          "ply": 29,
+          "color": 1,
+          "engine": "B",
+          "row": 3,
+          "col": 5,
+          "seconds": 5.599999985861359e-05,
+          "total_seconds": 0.014361799999733194
+        },
+        {
+          "ply": 30,
+          "color": 2,
+          "engine": "A",
+          "row": 2,
+          "col": 4,
+          "seconds": 0.00029850000009901123,
+          "total_seconds": 2.6386107999996966
+        },
+        {
+          "ply": 31,
+          "color": 1,
+          "engine": "B",
+          "row": 7,
+          "col": 10,
+          "seconds": 4.700000022239692e-05,
+          "total_seconds": 0.01440879999995559
+        },
+        {
+          "ply": 32,
+          "color": 2,
+          "engine": "A",
+          "row": 6,
+          "col": 9,
+          "seconds": 0.0001778000000740576,
+          "total_seconds": 2.6387885999997707
+        },
+        {
+          "ply": 33,
+          "color": 1,
+          "engine": "B",
+          "row": 8,
+          "col": 6,
+          "seconds": 4.1400000100111356e-05,
+          "total_seconds": 0.014450200000055702
+        },
+        {
+          "ply": 34,
+          "color": 2,
+          "engine": "A",
+          "row": 9,
+          "col": 5,
+          "seconds": 0.00016449999998258136,
+          "total_seconds": 2.6389530999997532
+        },
+        {
+          "ply": 35,
+          "color": 1,
+          "engine": "B",
+          "row": 8,
+          "col": 5,
+          "seconds": 5.069999997431296e-05,
+          "total_seconds": 0.014500900000030015
+        },
+        {
+          "ply": 36,
+          "color": 2,
+          "engine": "A",
+          "row": 8,
+          "col": 4,
+          "seconds": 0.0003825000001143053,
+          "total_seconds": 2.6393355999998676
+        },
+        {
+          "ply": 37,
+          "color": 1,
+          "engine": "B",
+          "row": 3,
+          "col": 7,
+          "seconds": 6.6100000140068e-05,
+          "total_seconds": 0.014567000000170083
+        },
+        {
+          "ply": 38,
+          "color": 2,
+          "engine": "A",
+          "row": 1,
+          "col": 7,
+          "seconds": 9.160000013253011e-05,
+          "total_seconds": 2.6394272
+        },
+        {
+          "ply": 39,
+          "color": 1,
+          "engine": "B",
+          "row": 2,
+          "col": 6,
+          "seconds": 4.4399999978850246e-05,
+          "total_seconds": 0.014611400000148933
+        },
+        {
+          "ply": 40,
+          "color": 2,
+          "engine": "A",
+          "row": 1,
+          "col": 6,
+          "seconds": 8.819999993647798e-05,
+          "total_seconds": 2.6395153999999366
+        },
+        {
+          "ply": 41,
+          "color": 1,
+          "engine": "B",
+          "row": 4,
+          "col": 8,
+          "seconds": 1.1699999959091656e-05,
+          "total_seconds": 0.014623100000108025
+        },
+        {
+          "ply": 42,
+          "color": 2,
+          "engine": "A",
+          "row": 6,
+          "col": 10,
+          "seconds": 8.37000000046828e-05,
+          "total_seconds": 2.6395990999999412
+        },
+        {
+          "ply": 43,
+          "color": 1,
+          "engine": "B",
+          "row": 1,
+          "col": 5,
+          "seconds": 5.020000003241876e-05,
+          "total_seconds": 0.014673300000140443
+        }
+      ],
+      "total_seconds": {
+        "A": 2.6395990999999412,
+        "B": 0.014673300000140443
+      },
+      "startup_seconds": {
+        "A": 0.07600129999991623,
+        "B": 0.009657199999992372
+      },
+      "wall_seconds": 2.6857506999999714,
+      "debug": {
+        "B": [],
+        "A": []
+      },
+      "stderr_tail": {
+        "B": [],
+        "A": []
+      }
+    }
+  ],
+  "resources": [
+    {
+      "command": [
+        "D:\\程序设计范式作业\\gomoku\\rapfi_port\\rapfi_trained.exe"
+      ],
+      "pid": 24180,
+      "peak_working_set_bytes": 73867264,
+      "peak_commit_bytes": 70266880,
+      "cpu_seconds": 1.109375,
+      "turns": 10,
+      "max_turn_seconds": 1.0332639999999174,
+      "affinity_mask": 1,
+      "startup_including_launch_seconds": 0.08118770000010045
+    },
+    {
+      "command": [
+        "D:\\程序设计范式作业\\gomoku\\build\\gomoku_v3_gcc.exe"
+      ],
+      "pid": 13232,
+      "peak_working_set_bytes": 30019584,
+      "peak_commit_bytes": 26226688,
+      "cpu_seconds": 2.28125,
+      "turns": 9,
+      "max_turn_seconds": 1.1422976999999719,
+      "affinity_mask": 1,
+      "startup_including_launch_seconds": 0.2918928000001415
+    },
+    {
+      "command": [
+        "D:\\程序设计范式作业\\gomoku\\build\\gomoku_v3_gcc.exe"
+      ],
+      "pid": 18268,
+      "peak_working_set_bytes": 33636352,
+      "peak_commit_bytes": 29429760,
+      "cpu_seconds": 0.0,
+      "turns": 22,
+      "max_turn_seconds": 0.004133999999794469,
+      "affinity_mask": 1,
+      "startup_including_launch_seconds": 0.025107800000114366
+    },
+    {
+      "command": [
+        "D:\\程序设计范式作业\\gomoku\\rapfi_port\\rapfi_trained.exe"
+      ],
+      "pid": 3484,
+      "peak_working_set_bytes": 73871360,
+      "peak_commit_bytes": 70246400,
+      "cpu_seconds": 2.5,
+      "turns": 21,
+      "max_turn_seconds": 1.11180760000002,
+      "affinity_mask": 1,
+      "startup_including_launch_seconds": 0.08139699999992445
+    }
+  ],
+  "summary": {
+    "games": 2,
+    "wins": {
+      "A": 1,
+      "B": 1
+    },
+    "draws": 0,
+    "forfeits": {
+      "A": 0,
+      "B": 0
+    },
+    "timing": {
+      "A": {
+        "moves": 31,
+        "average_seconds": 0.11914440645160364,
+        "maximum_seconds": 1.11180760000002,
+        "maximum_game_seconds": 2.6395990999999412
+      },
+      "B": {
+        "moves": 31,
+        "average_seconds": 0.07489217741936632,
+        "maximum_seconds": 1.1422976999999719,
+        "maximum_game_seconds": 2.3284782000002906
+      }
+    }
+  }
+}

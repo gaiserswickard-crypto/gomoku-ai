@@ -1,0 +1,649 @@
+{
+  "schema_version": 1,
+  "board_size": 12,
+  "initial_stones": [
+    [
+      5,
+      5,
+      2
+    ],
+    [
+      6,
+      6,
+      2
+    ],
+    [
+      5,
+      6,
+      1
+    ],
+    [
+      6,
+      5,
+      1
+    ]
+  ],
+  "commands": {
+    "A": [
+      "build\\fastfork.exe"
+    ],
+    "B": [
+      "versions\\v1\\gomoku.exe"
+    ]
+  },
+  "settings": {
+    "games": 2,
+    "move_timeout": 2.0,
+    "total_timeout": 90.0
+  },
+  "games": [
+    {
+      "game": 1,
+      "colors": {
+        "black": "A",
+        "white": "B"
+      },
+      "winner": "A",
+      "winner_color": 1,
+      "reason": "five",
+      "forfeit": null,
+      "moves": [
+        {
+          "ply": 1,
+          "color": 1,
+          "engine": "A",
+          "row": 4,
+          "col": 4,
+          "seconds": 1.1421743999999308,
+          "total_seconds": 1.1575691999996707
+        },
+        {
+          "ply": 2,
+          "color": 2,
+          "engine": "B",
+          "row": 7,
+          "col": 7,
+          "seconds": 1.1421621999998024,
+          "total_seconds": 1.1531876999997621
+        },
+        {
+          "ply": 3,
+          "color": 1,
+          "engine": "A",
+          "row": 4,
+          "col": 3,
+          "seconds": 1.1422653999998147,
+          "total_seconds": 2.2998345999994854
+        },
+        {
+          "ply": 4,
+          "color": 2,
+          "engine": "B",
+          "row": 6,
+          "col": 4,
+          "seconds": 1.1423433999998451,
+          "total_seconds": 2.2955310999996072
+        },
+        {
+          "ply": 5,
+          "color": 1,
+          "engine": "A",
+          "row": 7,
+          "col": 4,
+          "seconds": 0.37953490000018064,
+          "total_seconds": 2.679369499999666
+        },
+        {
+          "ply": 6,
+          "color": 2,
+          "engine": "B",
+          "row": 4,
+          "col": 7,
+          "seconds": 0.49455699999998615,
+          "total_seconds": 2.7900880999995934
+        },
+        {
+          "ply": 7,
+          "color": 1,
+          "engine": "A",
+          "row": 4,
+          "col": 1,
+          "seconds": 0.0011136000002807123,
+          "total_seconds": 2.6804830999999467
+        },
+        {
+          "ply": 8,
+          "color": 2,
+          "engine": "B",
+          "row": 4,
+          "col": 2,
+          "seconds": 0.00017489999936515233,
+          "total_seconds": 2.7902629999989585
+        },
+        {
+          "ply": 9,
+          "color": 1,
+          "engine": "A",
+          "row": 6,
+          "col": 3,
+          "seconds": 0.0004982999998901505,
+          "total_seconds": 2.680981399999837
+        },
+        {
+          "ply": 10,
+          "color": 2,
+          "engine": "B",
+          "row": 5,
+          "col": 2,
+          "seconds": 0.01704189999964001,
+          "total_seconds": 2.8073048999985986
+        },
+        {
+          "ply": 11,
+          "color": 1,
+          "engine": "A",
+          "row": 3,
+          "col": 2,
+          "seconds": 0.0009238000002369517,
+          "total_seconds": 2.681905200000074
+        },
+        {
+          "ply": 12,
+          "color": 2,
+          "engine": "B",
+          "row": 8,
+          "col": 8,
+          "seconds": 0.00015069999972183723,
+          "total_seconds": 2.8074555999983204
+        },
+        {
+          "ply": 13,
+          "color": 1,
+          "engine": "A",
+          "row": 9,
+          "col": 9,
+          "seconds": 1.449999945180025e-05,
+          "total_seconds": 2.6819196999995256
+        },
+        {
+          "ply": 14,
+          "color": 2,
+          "engine": "B",
+          "row": 5,
+          "col": 4,
+          "seconds": 9.969999973691301e-05,
+          "total_seconds": 2.8075552999980573
+        },
+        {
+          "ply": 15,
+          "color": 1,
+          "engine": "A",
+          "row": 8,
+          "col": 3,
+          "seconds": 2.2399999579647556e-05,
+          "total_seconds": 2.6819420999991053
+        },
+        {
+          "ply": 16,
+          "color": 2,
+          "engine": "B",
+          "row": 9,
+          "col": 2,
+          "seconds": 1.2599999536178075e-05,
+          "total_seconds": 2.8075678999975935
+        },
+        {
+          "ply": 17,
+          "color": 1,
+          "engine": "A",
+          "row": 5,
+          "col": 3,
+          "seconds": 2.0400000721565448e-05,
+          "total_seconds": 2.681962499999827
+        },
+        {
+          "ply": 18,
+          "color": 2,
+          "engine": "B",
+          "row": 7,
+          "col": 3,
+          "seconds": 1.2900000001536682e-05,
+          "total_seconds": 2.807580799997595
+        },
+        {
+          "ply": 19,
+          "color": 1,
+          "engine": "A",
+          "row": 2,
+          "col": 3,
+          "seconds": 1.5800000255694613e-05,
+          "total_seconds": 2.6819783000000825
+        },
+        {
+          "ply": 20,
+          "color": 2,
+          "engine": "B",
+          "row": 3,
+          "col": 3,
+          "seconds": 1.6799999684735667e-05,
+          "total_seconds": 2.8075975999972798
+        },
+        {
+          "ply": 21,
+          "color": 1,
+          "engine": "A",
+          "row": 1,
+          "col": 4,
+          "seconds": 1.2299999980314169e-05,
+          "total_seconds": 2.681990600000063
+        },
+        {
+          "ply": 22,
+          "color": 2,
+          "engine": "B",
+          "row": 0,
+          "col": 5,
+          "seconds": 1.249999968422344e-05,
+          "total_seconds": 2.807610099996964
+        },
+        {
+          "ply": 23,
+          "color": 1,
+          "engine": "A",
+          "row": 5,
+          "col": 0,
+          "seconds": 1.2800000149582047e-05,
+          "total_seconds": 2.6820034000002124
+        }
+      ],
+      "total_seconds": {
+        "A": 2.6820034000002124,
+        "B": 2.807610099996964
+      },
+      "startup_seconds": {
+        "A": 0.015394799999739917,
+        "B": 0.01102549999995972
+      },
+      "wall_seconds": 5.77349839999988,
+      "debug": {
+        "A": [],
+        "B": []
+      },
+      "stderr_tail": {
+        "A": [],
+        "B": []
+      }
+    },
+    {
+      "game": 2,
+      "colors": {
+        "black": "B",
+        "white": "A"
+      },
+      "winner": "B",
+      "winner_color": 1,
+      "reason": "five",
+      "forfeit": null,
+      "moves": [
+        {
+          "ply": 1,
+          "color": 1,
+          "engine": "B",
+          "row": 4,
+          "col": 4,
+          "seconds": 1.1422490999993897,
+          "total_seconds": 1.1526489999996556
+        },
+        {
+          "ply": 2,
+          "color": 2,
+          "engine": "A",
+          "row": 4,
+          "col": 6,
+          "seconds": 1.1422449000001507,
+          "total_seconds": 1.1525713000000906
+        },
+        {
+          "ply": 3,
+          "color": 1,
+          "engine": "B",
+          "row": 6,
+          "col": 4,
+          "seconds": 1.1422074000001885,
+          "total_seconds": 2.294856399999844
+        },
+        {
+          "ply": 4,
+          "color": 2,
+          "engine": "A",
+          "row": 7,
+          "col": 4,
+          "seconds": 1.1421105999997962,
+          "total_seconds": 2.294681899999887
+        },
+        {
+          "ply": 5,
+          "color": 1,
+          "engine": "B",
+          "row": 3,
+          "col": 4,
+          "seconds": 1.1422250999994503,
+          "total_seconds": 3.4370814999992945
+        },
+        {
+          "ply": 6,
+          "color": 2,
+          "engine": "A",
+          "row": 5,
+          "col": 4,
+          "seconds": 1.1421330000002854,
+          "total_seconds": 3.436814900000172
+        },
+        {
+          "ply": 7,
+          "color": 1,
+          "engine": "B",
+          "row": 4,
+          "col": 2,
+          "seconds": 1.1421650000002046,
+          "total_seconds": 4.579246499999499
+        },
+        {
+          "ply": 8,
+          "color": 2,
+          "engine": "A",
+          "row": 4,
+          "col": 3,
+          "seconds": 1.1421203999998397,
+          "total_seconds": 4.578935300000012
+        },
+        {
+          "ply": 9,
+          "color": 1,
+          "engine": "B",
+          "row": 5,
+          "col": 3,
+          "seconds": 1.1421281000002637,
+          "total_seconds": 5.721374599999763
+        },
+        {
+          "ply": 10,
+          "color": 2,
+          "engine": "A",
+          "row": 3,
+          "col": 1,
+          "seconds": 1.1421994000002087,
+          "total_seconds": 5.721134700000221
+        },
+        {
+          "ply": 11,
+          "color": 1,
+          "engine": "B",
+          "row": 3,
+          "col": 5,
+          "seconds": 1.1421204999996917,
+          "total_seconds": 6.863495099999454
+        },
+        {
+          "ply": 12,
+          "color": 2,
+          "engine": "A",
+          "row": 2,
+          "col": 6,
+          "seconds": 1.1422231000005922,
+          "total_seconds": 6.863357800000813
+        },
+        {
+          "ply": 13,
+          "color": 1,
+          "engine": "B",
+          "row": 6,
+          "col": 2,
+          "seconds": 1.1422265999999581,
+          "total_seconds": 8.005721699999413
+        },
+        {
+          "ply": 14,
+          "color": 2,
+          "engine": "A",
+          "row": 7,
+          "col": 1,
+          "seconds": 0.00010430000020278385,
+          "total_seconds": 6.863462100001016
+        },
+        {
+          "ply": 15,
+          "color": 1,
+          "engine": "B",
+          "row": 7,
+          "col": 5,
+          "seconds": 1.1421219000003475,
+          "total_seconds": 9.14784359999976
+        },
+        {
+          "ply": 16,
+          "color": 2,
+          "engine": "A",
+          "row": 8,
+          "col": 6,
+          "seconds": 9.090000003197929e-05,
+          "total_seconds": 6.863553000001048
+        },
+        {
+          "ply": 17,
+          "color": 1,
+          "engine": "B",
+          "row": 3,
+          "col": 2,
+          "seconds": 0.38450860000011744,
+          "total_seconds": 9.532352199999877
+        },
+        {
+          "ply": 18,
+          "color": 2,
+          "engine": "A",
+          "row": 7,
+          "col": 2,
+          "seconds": 0.5334193999997296,
+          "total_seconds": 7.396972400000777
+        },
+        {
+          "ply": 19,
+          "color": 1,
+          "engine": "B",
+          "row": 2,
+          "col": 4,
+          "seconds": 0.018503499999496853,
+          "total_seconds": 9.550855699999374
+        },
+        {
+          "ply": 20,
+          "color": 2,
+          "engine": "A",
+          "row": 7,
+          "col": 3,
+          "seconds": 0.0032671999997546664,
+          "total_seconds": 7.400239600000532
+        },
+        {
+          "ply": 21,
+          "color": 1,
+          "engine": "B",
+          "row": 7,
+          "col": 0,
+          "seconds": 0.0001405000002705492,
+          "total_seconds": 9.550996199999645
+        },
+        {
+          "ply": 22,
+          "color": 2,
+          "engine": "A",
+          "row": 3,
+          "col": 6,
+          "seconds": 0.06770979999964766,
+          "total_seconds": 7.46794940000018
+        },
+        {
+          "ply": 23,
+          "color": 1,
+          "engine": "B",
+          "row": 6,
+          "col": 3,
+          "seconds": 5.4999999520077836e-05,
+          "total_seconds": 9.551051199999165
+        },
+        {
+          "ply": 24,
+          "color": 2,
+          "engine": "A",
+          "row": 6,
+          "col": 1,
+          "seconds": 7.730000015726546e-05,
+          "total_seconds": 7.468026700000337
+        },
+        {
+          "ply": 25,
+          "color": 1,
+          "engine": "B",
+          "row": 1,
+          "col": 4,
+          "seconds": 9.849999969446799e-05,
+          "total_seconds": 9.55114969999886
+        },
+        {
+          "ply": 26,
+          "color": 2,
+          "engine": "A",
+          "row": 0,
+          "col": 4,
+          "seconds": 6.899999971210491e-05,
+          "total_seconds": 7.468095700000049
+        },
+        {
+          "ply": 27,
+          "color": 1,
+          "engine": "B",
+          "row": 2,
+          "col": 2,
+          "seconds": 8.380000053875847e-05,
+          "total_seconds": 9.551233499999398
+        },
+        {
+          "ply": 28,
+          "color": 2,
+          "engine": "A",
+          "row": 5,
+          "col": 2,
+          "seconds": 1.359999987471383e-05,
+          "total_seconds": 7.468109299999924
+        },
+        {
+          "ply": 29,
+          "color": 1,
+          "engine": "B",
+          "row": 1,
+          "col": 2,
+          "seconds": 2.8100000236008782e-05,
+          "total_seconds": 9.551261599999634
+        },
+        {
+          "ply": 30,
+          "color": 2,
+          "engine": "A",
+          "row": 0,
+          "col": 2,
+          "seconds": 1.3099999705445953e-05,
+          "total_seconds": 7.468122399999629
+        },
+        {
+          "ply": 31,
+          "color": 1,
+          "engine": "B",
+          "row": 2,
+          "col": 3,
+          "seconds": 1.849999989644857e-05,
+          "total_seconds": 9.55128009999953
+        },
+        {
+          "ply": 32,
+          "color": 2,
+          "engine": "A",
+          "row": 4,
+          "col": 5,
+          "seconds": 1.2900000001536682e-05,
+          "total_seconds": 7.468135299999631
+        },
+        {
+          "ply": 33,
+          "color": 1,
+          "engine": "B",
+          "row": 2,
+          "col": 1,
+          "seconds": 1.2099999366910197e-05,
+          "total_seconds": 9.551292199998898
+        },
+        {
+          "ply": 34,
+          "color": 2,
+          "engine": "A",
+          "row": 2,
+          "col": 0,
+          "seconds": 1.2099999366910197e-05,
+          "total_seconds": 7.468147399998998
+        },
+        {
+          "ply": 35,
+          "color": 1,
+          "engine": "B",
+          "row": 2,
+          "col": 5,
+          "seconds": 1.2600000445672777e-05,
+          "total_seconds": 9.551304799999343
+        }
+      ],
+      "total_seconds": {
+        "A": 7.468147399998998,
+        "B": 9.551304799999343
+      },
+      "startup_seconds": {
+        "A": 0.010326399999939895,
+        "B": 0.010399900000265916
+      },
+      "wall_seconds": 17.048592199999803,
+      "debug": {
+        "B": [],
+        "A": []
+      },
+      "stderr_tail": {
+        "B": [],
+        "A": []
+      }
+    }
+  ],
+  "summary": {
+    "games": 2,
+    "wins": {
+      "A": 1,
+      "B": 1
+    },
+    "draws": 0,
+    "forfeits": {
+      "A": 0,
+      "B": 0
+    },
+    "timing": {
+      "A": {
+        "moves": 29,
+        "average_seconds": 0.3491182620689493,
+        "maximum_seconds": 1.1422653999998147,
+        "maximum_game_seconds": 7.468147399998998
+      },
+      "B": {
+        "moves": 29,
+        "average_seconds": 0.425430672413658,
+        "maximum_seconds": 1.1423433999998451,
+        "maximum_game_seconds": 9.551304799999343
+      }
+    }
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "platform": "Windows x64 / MSVC 19.51 /O2",
+  "start_seconds": 0.015068299999938972,
+  "first_move_seconds": 1.1421388999999635,
+  "first_move": "4 4",
+  "peak_working_set_MiB": 27.79296875,
+  "peak_commit_MiB": 24.75
+}

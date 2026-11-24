@@ -1,0 +1,182 @@
+{
+  "source": "main.cpp",
+  "sha256": "39e7553b3a1fe172b059bcb041b845f4499125d57077488f4ae3a3d5c9c759a1",
+  "source_bytes": 32346,
+  "client_date": "2026-11-03",
+  "timezone": "Asia/Shanghai",
+  "platform": "Windows x64",
+  "compiler": "MSVC, /O2 /EHsc /std:c++17 /W4 /utf-8",
+  "build_log": "results/platform/v2_build_final.txt",
+  "final_executable": {
+    "path": "build/gomoku.exe",
+    "sha256": "ff97476a85b1b4ba6eaa24c3ab8e7104b60836dc2ba5e1bb222de991338aefc9"
+  },
+  "previous_day_same_source_executable": {
+    "path": "build/candidate.exe",
+    "sha256": "73cc3aeea16ab0448e3813902db71fc57f2f349e42545859e06fa169c46e4e7d"
+  },
+  "baseline_source": {
+    "path": "versions/v1/main.cpp",
+    "sha256": "18d49847f2b7f548202d39a651f8032843e054a960150c8fb45000df5d494bec"
+  },
+  "checks": [
+    {
+      "name": "tactics",
+      "passed": true,
+      "groups": 11,
+      "log": "results/platform/v2_regressions_final.txt"
+    },
+    {
+      "name": "independent_rules",
+      "passed": true,
+      "random_nonterminal_boards": 600,
+      "searches": 1200,
+      "terminal_continuations": 1290,
+      "log": "results/platform/v2_regressions_final.txt"
+    },
+    {
+      "name": "fork_defenses",
+      "passed": true,
+      "random_exhaustive_comparisons": 48,
+      "defendable": 30,
+      "without_defense": 18,
+      "log": "results/platform/v2_regressions_final.txt"
+    },
+    {
+      "name": "platform_regression",
+      "passed": true,
+      "cases": [
+        "round 866b ply 18 avoids refuted (2,7) and chooses (6,3)",
+        "own winning counter-four under enemy double-three threats"
+      ],
+      "log": "results/platform/v2_regressions_final.txt"
+    },
+    {
+      "name": "symmetry",
+      "passed": true,
+      "constructed_boards": 64,
+      "cases": [
+        "D4 transforms",
+        "official colored start",
+        "empty board",
+        "asymmetric board",
+        "sparse candidate sets"
+      ],
+      "log": "results/platform/v2_symmetry_final.txt"
+    },
+    {
+      "name": "protocol",
+      "passed": true,
+      "groups": 9,
+      "log": "results/platform/v2_protocol_final.txt"
+    }
+  ],
+  "match_reports": [
+    {
+      "report": "results/platform/symmetric_v2_vs_v1.json",
+      "report_sha256": "0ae32ffbcc4a980babc90263e67fd8ddaca7901a1a39461bea5606c4eee1ac68",
+      "client_date": "2026-11-02",
+      "opponent": "original v1",
+      "current_engine_id": "A",
+      "summary": {
+        "games": 2,
+        "wins": {
+          "A": 1,
+          "B": 0
+        },
+        "draws": 1,
+        "forfeits": {
+          "A": 0,
+          "B": 0
+        },
+        "timing": {
+          "A": {
+            "moves": 79,
+            "average_seconds": 0.9304063822783525,
+            "maximum_seconds": 1.3651555999986158,
+            "maximum_game_seconds": 70.92363299999306
+          },
+          "B": {
+            "moves": 78,
+            "average_seconds": 0.9635889692307245,
+            "maximum_seconds": 1.2631860000001325,
+            "maximum_game_seconds": 72.66933310000059
+          }
+        }
+      },
+      "games": [
+        {
+          "game": 1,
+          "current_color": "black",
+          "outcome": "win",
+          "plies": 17,
+          "reason": "five"
+        },
+        {
+          "game": 2,
+          "current_color": "white",
+          "outcome": "draw",
+          "plies": 140,
+          "reason": "draw"
+        }
+      ]
+    },
+    {
+      "report": "results/platform/symmetric_v2_vs_reference.json",
+      "report_sha256": "5ad107d61dda00380d8997ef93b1a5bb59427dae578b91c21117598eb49a340d",
+      "client_date": "2026-11-03",
+      "opponent": "supplied historical reference",
+      "current_engine_id": "A",
+      "summary": {
+        "games": 2,
+        "wins": {
+          "A": 1,
+          "B": 1
+        },
+        "draws": 0,
+        "forfeits": {
+          "A": 0,
+          "B": 0
+        },
+        "timing": {
+          "A": {
+            "moves": 27,
+            "average_seconds": 0.296118444444464,
+            "maximum_seconds": 1.1422525000000405,
+            "maximum_game_seconds": 5.002179800000249
+          },
+          "B": {
+            "moves": 27,
+            "average_seconds": 0.032585744444430825,
+            "maximum_seconds": 0.07776239999998324,
+            "maximum_game_seconds": 0.5226797000002534
+          }
+        }
+      },
+      "games": [
+        {
+          "game": 1,
+          "current_color": "black",
+          "outcome": "win",
+          "plies": 23,
+          "reason": "five"
+        },
+        {
+          "game": 2,
+          "current_color": "white",
+          "outcome": "loss",
+          "plies": 31,
+          "reason": "five"
+        }
+      ]
+    }
+  ],
+  "limitations": [
+    "Local Windows/MSVC testing only; Linux/G++ and school sandbox have not been revalidated.",
+    "Small fixed-opening match samples are not estimates of class win rate.",
+    "The updated engine lost its white game against the historical reference; improvement is not universal.",
+    "A changed move in an old log does not establish the outcome against an adapting opponent.",
+    "School opponent executables were unavailable for local rematches."
+  ],
+  "submitted_to_school": false
+}

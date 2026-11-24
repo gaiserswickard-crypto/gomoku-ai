@@ -1,0 +1,3 @@
+PASS 600 random nonterminal boards; 1200 searches
+Immediate wins: 563; unique blocks: 104; other legal moves: 533
+Terminal continuation boards checked: 1290

@@ -1,0 +1,1507 @@
+main.cpp: In function 'uint64_t mulhi64(uint64_t, uint64_t)':
+main.cpp:604:23: warning: ISO C++ does not support '__int128' for 'type name' [-Wpedantic]
+  604 |     return ((unsigned __int128)a * (unsigned __int128)b) >> 64;
+      |                       ^~~~~~~~
+main.cpp:604:46: warning: ISO C++ does not support '__int128' for 'type name' [-Wpedantic]
+  604 |     return ((unsigned __int128)a * (unsigned __int128)b) >> 64;
+      |                                              ^~~~~~~~
+main.cpp: At global scope:
+main.cpp:1607:13: warning: 'Pattern2x::patBlack' is too small to hold all values of 'enum Pattern'
+ 1607 |     Pattern patBlack : 4;
+      |             ^~~~~~~~
+main.cpp:1608:13: warning: 'Pattern2x::patWhite' is too small to hold all values of 'enum Pattern'
+ 1608 |     Pattern patWhite : 4;
+      |             ^~~~~~~~
+main.cpp: In member function 'virtual void Evaluation::Evaluator::beforeMove(const Board&, Pos)':
+main.cpp:2266:42: warning: unused parameter 'board' [-Wunused-parameter]
+ 2266 |     virtual void beforeMove(const Board &board, Pos pos) {};
+      |                             ~~~~~~~~~~~~~^~~~~
+main.cpp:2266:53: warning: unused parameter 'pos' [-Wunused-parameter]
+ 2266 |     virtual void beforeMove(const Board &board, Pos pos) {};
+      |                                                 ~~~~^~~
+main.cpp: In member function 'virtual void Evaluation::Evaluator::afterMove(const Board&, Pos)':
+main.cpp:2267:41: warning: unused parameter 'board' [-Wunused-parameter]
+ 2267 |     virtual void afterMove(const Board &board, Pos pos) {};
+      |                            ~~~~~~~~~~~~~^~~~~
+main.cpp:2267:52: warning: unused parameter 'pos' [-Wunused-parameter]
+ 2267 |     virtual void afterMove(const Board &board, Pos pos) {};
+      |                                                ~~~~^~~
+main.cpp: In member function 'virtual void Evaluation::Evaluator::beforeUndo(const Board&, Pos)':
+main.cpp:2268:42: warning: unused parameter 'board' [-Wunused-parameter]
+ 2268 |     virtual void beforeUndo(const Board &board, Pos pos) {};
+      |                             ~~~~~~~~~~~~~^~~~~
+main.cpp:2268:53: warning: unused parameter 'pos' [-Wunused-parameter]
+ 2268 |     virtual void beforeUndo(const Board &board, Pos pos) {};
+      |                                                 ~~~~^~~
+main.cpp: In member function 'virtual void Evaluation::Evaluator::afterUndo(const Board&, Pos)':
+main.cpp:2269:41: warning: unused parameter 'board' [-Wunused-parameter]
+ 2269 |     virtual void afterUndo(const Board &board, Pos pos) {};
+      |                            ~~~~~~~~~~~~~^~~~~
+main.cpp:2269:52: warning: unused parameter 'pos' [-Wunused-parameter]
+ 2269 |     virtual void afterUndo(const Board &board, Pos pos) {};
+      |                                                ~~~~^~~
+main.cpp: In member function 'virtual void Evaluation::Evaluator::afterPass(const Board&)':
+main.cpp:2270:41: warning: unused parameter 'board' [-Wunused-parameter]
+ 2270 |     virtual void afterPass(const Board &board) {};
+      |                            ~~~~~~~~~~~~~^~~~~
+main.cpp: In member function 'virtual void Evaluation::Evaluator::afterUndoPass(const Board&)':
+main.cpp:2271:45: warning: unused parameter 'board' [-Wunused-parameter]
+ 2271 |     virtual void afterUndoPass(const Board &board) {};
+      |                                ~~~~~~~~~~~~~^~~~~
+main.cpp: In constructor 'Evaluation::EvalInfo::EvalInfo(const Board&, Rule)':
+main.cpp:2540:42: warning: comparison of integer expressions of different signedness: 'size_t' {aka 'long long unsigned int'} and 'int' [-Wsign-compare]
+ 2540 |     for (size_t backIndex = 0; backIndex < arraySize(plyBack); backIndex++) {
+      |                                ~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~
+main.cpp: In member function 'bool Board::checkForbiddenPoint(Pos) const':
+main.cpp:3844:28: warning: suggest parentheses around '&&' within '||' [-Wparentheses]
+ 3843 |                     || pattern4(posi, BLACK) == FORBID && pattern(posi, BLACK, dir) == F4
+      |                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 3844 |                            && !checkForbiddenPoint(posi)) {
+      |                            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+main.cpp:3859:28: warning: suggest parentheses around '&&' within '||' [-Wparentheses]
+ 3858 |                     || pattern4(posi, BLACK) == FORBID && pattern(posi, BLACK, dir) == F4
+      |                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 3859 |                            && !checkForbiddenPoint(posi)) {
+      |                            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+main.cpp: At global scope:
+main.cpp:4724:9: warning: ISO C++ prohibits anonymous structs [-Wpedantic]
+ 4724 |         {
+      |         ^
+main.cpp: In member function 'virtual std::unique_ptr<Search::SearchData> Search::AB::ABSearcher::makeSearchData(Search::SearchThread&)':
+main.cpp:6311:62: warning: unused parameter 'th' [-Wunused-parameter]
+ 6311 |     std::unique_ptr<SearchData> makeSearchData(SearchThread &th) override
+      |                                                ~~~~~~~~~~~~~~^~
+main.cpp: In constructor 'Search::AB::StackArray::StackArray(int, Value)':
+main.cpp:6382:56: warning: missing initializer for member 'Search::AB::SearchStack::moveCount' [-Wmissing-field-initializers]
+ 6382 |             push_back(SearchStack {nextTriPvIndex(i), i});
+      |                                                        ^
+main.cpp:6382:56: warning: missing initializer for member 'Search::AB::SearchStack::extraExtension' [-Wmissing-field-initializers]
+main.cpp:6382:56: warning: missing initializer for member 'Search::AB::SearchStack::dbValueDepth' [-Wmissing-field-initializers]
+main.cpp:6382:56: warning: missing initializer for member 'Search::AB::SearchStack::statScore' [-Wmissing-field-initializers]
+main.cpp:6382:56: warning: missing initializer for member 'Search::AB::SearchStack::staticEval' [-Wmissing-field-initializers]
+main.cpp:6382:56: warning: missing initializer for member 'Search::AB::SearchStack::currentMove' [-Wmissing-field-initializers]
+main.cpp:6382:56: warning: missing initializer for member 'Search::AB::SearchStack::skipMove' [-Wmissing-field-initializers]
+main.cpp:6382:56: warning: missing initializer for member 'Search::AB::SearchStack::killers' [-Wmissing-field-initializers]
+main.cpp:6382:56: warning: missing initializer for member 'Search::AB::SearchStack::moveP4' [-Wmissing-field-initializers]
+main.cpp:6382:56: warning: missing initializer for member 'Search::AB::SearchStack::numNullMoves' [-Wmissing-field-initializers]
+main.cpp:6382:56: warning: missing initializer for member 'Search::AB::SearchStack::ttPv' [-Wmissing-field-initializers]
+main.cpp:6382:56: warning: missing initializer for member 'Search::AB::SearchStack::dbChildWritten' [-Wmissing-field-initializers]
+main.cpp: In member function 'void Search::AB::HistoryTracker::updateBestmoveStats(Depth, Pos, Value)':
+main.cpp:6434:75: warning: unused parameter 'bestValue' [-Wunused-parameter]
+ 6434 | void HistoryTracker::updateBestmoveStats(Depth depth, Pos bestMove, Value bestValue)
+      |                                                                     ~~~~~~^~~~~~~~~
+main.cpp: In member function 'virtual void Search::AB::ABSearchData::clearData(Search::SearchThread&)':
+main.cpp:6983:44: warning: unused parameter 'th' [-Wunused-parameter]
+ 6983 | void ABSearchData::clearData(SearchThread &th)
+      |                              ~~~~~~~~~~~~~~^~
+main.cpp: In member function 'void Search::SearchPrinter::printSearchStarts(Search::SearchThread&, const Search::TimeControl&)':
+main.cpp:8517:53: warning: unused parameter 'th' [-Wunused-parameter]
+ 8517 | void SearchPrinter::printSearchStarts(SearchThread &th, const TimeControl &tc)
+      |                                       ~~~~~~~~~~~~~~^~
+main.cpp:8517:76: warning: unused parameter 'tc' [-Wunused-parameter]
+ 8517 | void SearchPrinter::printSearchStarts(SearchThread &th, const TimeControl &tc)
+      |                                                         ~~~~~~~~~~~~~~~~~~~^~
+main.cpp: In member function 'void Search::SearchPrinter::printEnteringMove(Search::SearchThread&, const Search::TimeControl&, int, int, Pos)':
+main.cpp:8519:58: warning: unused parameter 'th' [-Wunused-parameter]
+ 8519 | void SearchPrinter::printEnteringMove(SearchThread      &th,
+      |                                       ~~~~~~~~~~~~~~~~~~~^~
+main.cpp:8520:58: warning: unused parameter 'tc' [-Wunused-parameter]
+ 8520 |                                       const TimeControl &tc,
+      |                                       ~~~~~~~~~~~~~~~~~~~^~
+main.cpp:8521:58: warning: unused parameter 'pvIdx' [-Wunused-parameter]
+ 8521 |                                       int                pvIdx,
+      |                                       ~~~~~~~~~~~~~~~~~~~^~~~~
+main.cpp:8522:58: warning: unused parameter 'rootDepth' [-Wunused-parameter]
+ 8522 |                                       int                rootDepth,
+      |                                       ~~~~~~~~~~~~~~~~~~~^~~~~~~~~
+main.cpp:8523:58: warning: unused parameter 'move' [-Wunused-parameter]
+ 8523 |                                       Pos                move)
+      |                                       ~~~~~~~~~~~~~~~~~~~^~~~
+main.cpp: In member function 'void Search::SearchPrinter::printLeavingMove(Search::SearchThread&, const Search::TimeControl&, int, int, Pos)':
+main.cpp:8525:57: warning: unused parameter 'th' [-Wunused-parameter]
+ 8525 | void SearchPrinter::printLeavingMove(SearchThread      &th,
+      |                                      ~~~~~~~~~~~~~~~~~~~^~
+main.cpp:8526:57: warning: unused parameter 'tc' [-Wunused-parameter]
+ 8526 |                                      const TimeControl &tc,
+      |                                      ~~~~~~~~~~~~~~~~~~~^~
+main.cpp:8527:57: warning: unused parameter 'pvIdx' [-Wunused-parameter]
+ 8527 |                                      int                pvIdx,
+      |                                      ~~~~~~~~~~~~~~~~~~~^~~~~
+main.cpp:8528:57: warning: unused parameter 'rootDepth' [-Wunused-parameter]
+ 8528 |                                      int                rootDepth,
+      |                                      ~~~~~~~~~~~~~~~~~~~^~~~~~~~~
+main.cpp:8529:57: warning: unused parameter 'move' [-Wunused-parameter]
+ 8529 |                                      Pos                move)
+      |                                      ~~~~~~~~~~~~~~~~~~~^~~~
+main.cpp: In member function 'void Search::SearchPrinter::printMoveResult(Search::SearchThread&, const Search::TimeControl&, int, int, int, Pos, Value, bool)':
+main.cpp:8531:56: warning: unused parameter 'th' [-Wunused-parameter]
+ 8531 | void SearchPrinter::printMoveResult(SearchThread      &th,
+      |                                     ~~~~~~~~~~~~~~~~~~~^~
+main.cpp:8532:56: warning: unused parameter 'tc' [-Wunused-parameter]
+ 8532 |                                     const TimeControl &tc,
+      |                                     ~~~~~~~~~~~~~~~~~~~^~
+main.cpp:8533:56: warning: unused parameter 'pvIdx' [-Wunused-parameter]
+ 8533 |                                     int                pvIdx,
+      |                                     ~~~~~~~~~~~~~~~~~~~^~~~~
+main.cpp:8534:56: warning: unused parameter 'numPv' [-Wunused-parameter]
+ 8534 |                                     int                numPv,
+      |                                     ~~~~~~~~~~~~~~~~~~~^~~~~
+main.cpp:8535:56: warning: unused parameter 'rootDepth' [-Wunused-parameter]
+ 8535 |                                     int                rootDepth,
+      |                                     ~~~~~~~~~~~~~~~~~~~^~~~~~~~~
+main.cpp:8536:56: warning: unused parameter 'move' [-Wunused-parameter]
+ 8536 |                                     Pos                move,
+      |                                     ~~~~~~~~~~~~~~~~~~~^~~~
+main.cpp:8537:56: warning: unused parameter 'moveValue' [-Wunused-parameter]
+ 8537 |                                     Value              moveValue,
+      |                                     ~~~~~~~~~~~~~~~~~~~^~~~~~~~~
+main.cpp:8538:56: warning: unused parameter 'isNewBest' [-Wunused-parameter]
+ 8538 |                                     bool               isNewBest)
+      |                                     ~~~~~~~~~~~~~~~~~~~^~~~~~~~~
+main.cpp: In member function 'void Search::SearchPrinter::printOutOfWindowResult(Search::SearchThread&, const Search::TimeControl&, int, int, int, Value, Value)':
+main.cpp:8540:63: warning: unused parameter 'th' [-Wunused-parameter]
+ 8540 | void SearchPrinter::printOutOfWindowResult(SearchThread      &th,
+      |                                            ~~~~~~~~~~~~~~~~~~~^~
+main.cpp:8541:63: warning: unused parameter 'tc' [-Wunused-parameter]
+ 8541 |                                            const TimeControl &tc,
+      |                                            ~~~~~~~~~~~~~~~~~~~^~
+main.cpp:8542:63: warning: unused parameter 'rootDepth' [-Wunused-parameter]
+ 8542 |                                            int                rootDepth,
+      |                                            ~~~~~~~~~~~~~~~~~~~^~~~~~~~~
+main.cpp:8543:63: warning: unused parameter 'pvIdx' [-Wunused-parameter]
+ 8543 |                                            int                pvIdx,
+      |                                            ~~~~~~~~~~~~~~~~~~~^~~~~
+main.cpp:8544:63: warning: unused parameter 'numPv' [-Wunused-parameter]
+ 8544 |                                            int                numPv,
+      |                                            ~~~~~~~~~~~~~~~~~~~^~~~~
+main.cpp:8545:63: warning: unused parameter 'alpha' [-Wunused-parameter]
+ 8545 |                                            Value              alpha,
+      |                                            ~~~~~~~~~~~~~~~~~~~^~~~~
+main.cpp:8546:63: warning: unused parameter 'beta' [-Wunused-parameter]
+ 8546 |                                            Value              beta)
+      |                                            ~~~~~~~~~~~~~~~~~~~^~~~
+main.cpp: In member function 'void Search::SearchPrinter::printPvCompletes(Search::SearchThread&, const Search::TimeControl&, int, int, int)':
+main.cpp:8548:57: warning: unused parameter 'th' [-Wunused-parameter]
+ 8548 | void SearchPrinter::printPvCompletes(SearchThread      &th,
+      |                                      ~~~~~~~~~~~~~~~~~~~^~
+main.cpp:8549:57: warning: unused parameter 'tc' [-Wunused-parameter]
+ 8549 |                                      const TimeControl &tc,
+      |                                      ~~~~~~~~~~~~~~~~~~~^~
+main.cpp:8550:57: warning: unused parameter 'rootDepth' [-Wunused-parameter]
+ 8550 |                                      int                rootDepth,
+      |                                      ~~~~~~~~~~~~~~~~~~~^~~~~~~~~
+main.cpp:8551:57: warning: unused parameter 'pvIdx' [-Wunused-parameter]
+ 8551 |                                      int                pvIdx,
+      |                                      ~~~~~~~~~~~~~~~~~~~^~~~~
+main.cpp:8552:57: warning: unused parameter 'numPv' [-Wunused-parameter]
+ 8552 |                                      int                numPv)
+      |                                      ~~~~~~~~~~~~~~~~~~~^~~~~
+main.cpp: In member function 'void Search::SearchPrinter::printDepthCompletes(Search::SearchThread&, const Search::TimeControl&, int)':
+main.cpp:8554:55: warning: unused parameter 'th' [-Wunused-parameter]
+ 8554 | void SearchPrinter::printDepthCompletes(SearchThread &th, const TimeControl &tc, int rootDepth)
+      |                                         ~~~~~~~~~~~~~~^~
+main.cpp:8554:78: warning: unused parameter 'tc' [-Wunused-parameter]
+ 8554 | void SearchPrinter::printDepthCompletes(SearchThread &th, const TimeControl &tc, int rootDepth)
+      |                                                           ~~~~~~~~~~~~~~~~~~~^~
+main.cpp:8554:86: warning: unused parameter 'rootDepth' [-Wunused-parameter]
+ 8554 | void SearchPrinter::printDepthCompletes(SearchThread &th, const TimeControl &tc, int rootDepth)
+      |                                                                                  ~~~~^~~~~~~~~
+main.cpp: In member function 'void Search::SearchPrinter::printRootMoves(Search::SearchThread&, const Search::TimeControl&, size_t)':
+main.cpp:8556:55: warning: unused parameter 'th' [-Wunused-parameter]
+ 8556 | void SearchPrinter::printRootMoves(SearchThread      &th,
+      |                                    ~~~~~~~~~~~~~~~~~~~^~
+main.cpp:8557:55: warning: unused parameter 'tc' [-Wunused-parameter]
+ 8557 |                                    const TimeControl &tc,
+      |                                    ~~~~~~~~~~~~~~~~~~~^~
+main.cpp:8558:55: warning: unused parameter 'numRootMovesToDisplay' [-Wunused-parameter]
+ 8558 |                                    size_t             numRootMovesToDisplay)
+      |                                    ~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~
+main.cpp: In member function 'void Search::SearchPrinter::printSearchEnds(Search::SearchThread&, const Search::TimeControl&, int, Search::SearchThread&)':
+main.cpp:8560:56: warning: unused parameter 'th' [-Wunused-parameter]
+ 8560 | void SearchPrinter::printSearchEnds(SearchThread      &th,
+      |                                     ~~~~~~~~~~~~~~~~~~~^~
+main.cpp:8561:56: warning: unused parameter 'tc' [-Wunused-parameter]
+ 8561 |                                     const TimeControl &tc,
+      |                                     ~~~~~~~~~~~~~~~~~~~^~
+main.cpp:8562:56: warning: unused parameter 'rootDepth' [-Wunused-parameter]
+ 8562 |                                     int                rootDepth,
+      |                                     ~~~~~~~~~~~~~~~~~~~^~~~~~~~~
+main.cpp:8563:56: warning: unused parameter 'bestThread' [-Wunused-parameter]
+ 8563 |                                     SearchThread      &bestThread)
+      |                                     ~~~~~~~~~~~~~~~~~~~^~~~~~~~~~
+main.cpp: In member function 'void Search::SearchPrinter::printBestmoveWithoutSearch(Search::SearchThread&, Pos, Value, int, std::vector<Pos>*)':
+main.cpp:8565:66: warning: unused parameter 'th' [-Wunused-parameter]
+ 8565 | void SearchPrinter::printBestmoveWithoutSearch(SearchThread     &th,
+      |                                                ~~~~~~~~~~~~~~~~~~^~
+main.cpp:8566:66: warning: unused parameter 'bestMove' [-Wunused-parameter]
+ 8566 |                                                Pos               bestMove,
+      |                                                ~~~~~~~~~~~~~~~~~~^~~~~~~~
+main.cpp:8567:66: warning: unused parameter 'moveValue' [-Wunused-parameter]
+ 8567 |                                                Value             moveValue,
+      |                                                ~~~~~~~~~~~~~~~~~~^~~~~~~~~
+main.cpp:8568:66: warning: unused parameter 'rootDepth' [-Wunused-parameter]
+ 8568 |                                                int               rootDepth,
+      |                                                ~~~~~~~~~~~~~~~~~~^~~~~~~~~
+main.cpp:8569:66: warning: unused parameter 'pv' [-Wunused-parameter]
+ 8569 |                                                std::vector<Pos> *pv)
+      |                                                ~~~~~~~~~~~~~~~~~~^~
+main.cpp: In member function 'bool Search::SearchPrinter::showRealtime(Search::SearchThread&, const Search::TimeControl&, int)':
+main.cpp:8571:48: warning: unused parameter 'th' [-Wunused-parameter]
+ 8571 | bool SearchPrinter::showRealtime(SearchThread &th, const TimeControl &tc, int rootDepth)
+      |                                  ~~~~~~~~~~~~~~^~
+main.cpp:8571:71: warning: unused parameter 'tc' [-Wunused-parameter]
+ 8571 | bool SearchPrinter::showRealtime(SearchThread &th, const TimeControl &tc, int rootDepth)
+      |                                                    ~~~~~~~~~~~~~~~~~~~^~
+main.cpp:8571:79: warning: unused parameter 'rootDepth' [-Wunused-parameter]
+ 8571 | bool SearchPrinter::showRealtime(SearchThread &th, const TimeControl &tc, int rootDepth)
+      |                                                                           ~~~~^~~~~~~~~
+main.cpp: In member function 'bool Search::SearchPrinter::showRealtimeInLoop(Search::SearchThread&, const Search::TimeControl&, int)':
+main.cpp:8573:54: warning: unused parameter 'th' [-Wunused-parameter]
+ 8573 | bool SearchPrinter::showRealtimeInLoop(SearchThread &th, const TimeControl &tc, int rootDepth)
+      |                                        ~~~~~~~~~~~~~~^~
+main.cpp:8573:77: warning: unused parameter 'tc' [-Wunused-parameter]
+ 8573 | bool SearchPrinter::showRealtimeInLoop(SearchThread &th, const TimeControl &tc, int rootDepth)
+      |                                                          ~~~~~~~~~~~~~~~~~~~^~
+main.cpp:8573:85: warning: unused parameter 'rootDepth' [-Wunused-parameter]
+ 8573 | bool SearchPrinter::showRealtimeInLoop(SearchThread &th, const TimeControl &tc, int rootDepth)
+      |                                                                                 ~~~~^~~~~~~~~
+main.cpp: In member function 'bool Search::SearchPrinter::showInfo(Search::SearchThread&)':
+main.cpp:8575:44: warning: unused parameter 'th' [-Wunused-parameter]
+ 8575 | bool SearchPrinter::showInfo(SearchThread &th)
+      |                              ~~~~~~~~~~~~~~^~
+main.cpp: In member function 'void Search::SearchContext::checkExit(uint32_t)':
+main.cpp:8708:26: warning: suggest parentheses around '&&' within '||' [-Wparentheses]
+ 8708 |     if (options.maxNodes && engine->nodesSearched() >= options.maxNodes
+      |         ~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+main.cpp: In lambda function:
+main.cpp:8824:72: warning: unused parameter 'th' [-Wunused-parameter]
+ 8824 |             main()->runTask([onStop = std::move(onStop)](SearchThread &th) { onStop(); });
+      |                                                          ~~~~~~~~~~~~~~^~
+main.cpp: In instantiation of 'void Board::newGame() [with Rule R = FREESTYLE]':
+main.cpp:2042:46:   required from here
+ 2042 |     case FREESTYLE: return newGame<FREESTYLE>();
+      |                            ~~~~~~~~~~~~~~~~~~^~
+main.cpp:3606:16: warning: 'void* memset(void*, int, size_t)' clearing an object of non-trivial type 'struct StateInfo'; use assignment or value-initialization instead [-Wclass-memaccess]
+ 3606 |     std::memset(&st, 0, sizeof(StateInfo));
+      |     ~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~
+main.cpp:1780:8: note: 'struct StateInfo' declared here
+ 1780 | struct StateInfo
+      |        ^~~~~~~~~
+main.cpp: In instantiation of 'void Board::newGame() [with Rule R = STANDARD]':
+main.cpp:2043:44:   required from here
+ 2043 |     case STANDARD: return newGame<STANDARD>();
+      |                           ~~~~~~~~~~~~~~~~~^~
+main.cpp:3606:16: warning: 'void* memset(void*, int, size_t)' clearing an object of non-trivial type 'struct StateInfo'; use assignment or value-initialization instead [-Wclass-memaccess]
+ 3606 |     std::memset(&st, 0, sizeof(StateInfo));
+      |     ~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~
+main.cpp:1780:8: note: 'struct StateInfo' declared here
+ 1780 | struct StateInfo
+      |        ^~~~~~~~~
+main.cpp: In instantiation of 'void Board::newGame() [with Rule R = RENJU]':
+main.cpp:2044:38:   required from here
+ 2044 |     case RENJU: return newGame<RENJU>();
+      |                        ~~~~~~~~~~~~~~^~
+main.cpp:3606:16: warning: 'void* memset(void*, int, size_t)' clearing an object of non-trivial type 'struct StateInfo'; use assignment or value-initialization instead [-Wclass-memaccess]
+ 3606 |     std::memset(&st, 0, sizeof(StateInfo));
+      |     ~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~
+main.cpp:1780:8: note: 'struct StateInfo' declared here
+ 1780 | struct StateInfo
+      |        ^~~~~~~~~
+main.cpp: In instantiation of 'constexpr int arraySize(ElemType (&)[Size]) [with ElemType = Evaluation::EvalInfo::<unnamed struct>; int Size = 2]':
+main.cpp:2540:53:   required from here
+ 2540 |     for (size_t backIndex = 0; backIndex < arraySize(plyBack); backIndex++) {
+      |                                            ~~~~~~~~~^~~~~~~~~
+main.cpp:733:36: warning: unused parameter 'arr' [-Wunused-parameter]
+  733 | constexpr int arraySize(ElemType (&arr)[Size])
+      |                         ~~~~~~~~~~~^~~~~~~~~~
+main.cpp: In instantiation of 'constexpr int arraySize(ElemType (&)[Size]) [with ElemType = int; int Size = 2]':
+main.cpp:2818:56:   required from 'constexpr Pattern {anonymous}::getPattern(PatternMemo<R>&, const Line<R>&) [with Rule R = FREESTYLE; Color Side = BLACK]'
+ 2818 |                 if (slp == F5 && patCnt[F5] < arraySize(f5Idx))
+      |                                               ~~~~~~~~~^~~~~~~
+main.cpp:2898:55:   required from 'void {anonymous}::fillPattern2xLUT(Pattern2x*) [with Rule R = FREESTYLE]'
+ 2898 |             table[idx].patBlack = getPattern<R, BLACK>(memoBlack, lineBlack);
+      |                                   ~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+main.cpp:2713:32:   required from here
+ 2713 |     fillPattern2xLUT<FREESTYLE>(PATTERN2x);
+      |     ~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~
+main.cpp:733:36: warning: unused parameter 'arr' [-Wunused-parameter]
+  733 | constexpr int arraySize(ElemType (&arr)[Size])
+      |                         ~~~~~~~~~~~^~~~~~~~~~
+main.cpp: In instantiation of 'constexpr int arraySize(ElemType (&)[Size]) [with ElemType = long long unsigned int; int Size = 32]':
+main.cpp:3562:41:   required from here
+ 3562 |     std::copy_n(other.bitKey0, arraySize(bitKey0), bitKey0);
+      |                                ~~~~~~~~~^~~~~~~~~
+main.cpp:733:36: warning: unused parameter 'arr' [-Wunused-parameter]
+  733 | constexpr int arraySize(ElemType (&arr)[Size])
+      |                         ~~~~~~~~~~~^~~~~~~~~~
+main.cpp: In instantiation of 'constexpr int arraySize(ElemType (&)[Size]) [with ElemType = long long unsigned int; int Size = 63]':
+main.cpp:3564:41:   required from here
+ 3564 |     std::copy_n(other.bitKey2, arraySize(bitKey2), bitKey2);
+      |                                ~~~~~~~~~^~~~~~~~~
+main.cpp:733:36: warning: unused parameter 'arr' [-Wunused-parameter]
+  733 | constexpr int arraySize(ElemType (&arr)[Size])
+      |                         ~~~~~~~~~~~^~~~~~~~~~
+main.cpp: In instantiation of 'Value quickWinCheck(const Board&, int, Value) [with Rule R = FREESTYLE]':
+main.cpp:6536:52:   required from here
+ 6536 |     case FREESTYLE: return quickWinCheck<FREESTYLE>(board, ply, beta);
+      |                            ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~
+main.cpp:6514:40: warning: suggest parentheses around '&&' within '||' [-Wparentheses]
+ 6513 |                                 || R == Rule::RENJU && defendP4 == FORBID
+      |                                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 6514 |                                        && !board.checkForbiddenPoint(defendMove);
+      |                                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+main.cpp: In instantiation of 'Value quickWinCheck(const Board&, int, Value) [with Rule R = STANDARD]':
+main.cpp:6537:50:   required from here
+ 6537 |     case STANDARD: return quickWinCheck<STANDARD>(board, ply, beta);
+      |                           ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~
+main.cpp:6514:40: warning: suggest parentheses around '&&' within '||' [-Wparentheses]
+ 6513 |                                 || R == Rule::RENJU && defendP4 == FORBID
+      |                                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 6514 |                                        && !board.checkForbiddenPoint(defendMove);
+      |                                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+main.cpp: In instantiation of 'Value quickWinCheck(const Board&, int, Value) [with Rule R = RENJU]':
+main.cpp:6538:44:   required from here
+ 6538 |     case RENJU: return quickWinCheck<RENJU>(board, ply, beta);
+      |                        ~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~
+main.cpp:6514:40: warning: suggest parentheses around '&&' within '||' [-Wparentheses]
+ 6513 |                                 || R == Rule::RENJU && defendP4 == FORBID
+      |                                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 6514 |                                        && !board.checkForbiddenPoint(defendMove);
+      |                                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+main.cpp: In instantiation of 'bool {anonymous}::basicPatternFilter(const Board&, Pos, Color) [with GenType Type = (GenType)19]':
+main.cpp:4565:42:   required from 'ScoredMove* generate(const Board&, ScoredMove*) [with GenType Type = (GenType)19]'
+ 4565 |         else if (basicPatternFilter<Type>(board, pos, self))
+      |                  ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~
+main.cpp:4571:76:   required from here
+ 4571 | template ScoredMove *generate<VCF | RULE_RENJU>(const Board &, ScoredMove *);
+      |                                                                            ^
+main.cpp:4127:24: warning: suggest parentheses around '&&' within '||' [-Wparentheses]
+ 4126 |                 || p4 == FORBID
+      |                    ~~~~~~~~~~~~
+ 4127 |                        && (board.pattern(pos, side, 0) >= B4 || board.pattern(pos, side, 1) >= B4
+      |                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 4128 |                            || board.pattern(pos, side, 2) >= B4
+      |                            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 4129 |                            || board.pattern(pos, side, 3) >= B4))
+      |                            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+main.cpp: In instantiation of 'Value {anonymous}::search(Board&, Search::AB::SearchStack*, Value, Value, Depth, bool) [with Rule Rule = FREESTYLE; NodeType NT = <unnamed>::Root; Depth = float]':
+main.cpp:7289:47:   required from 'Value {anonymous}::search(Rule, Board&, Search::AB::SearchStack*, Value, Value, Depth, bool) [with NodeType NT = <unnamed>::Root; Depth = float]'
+ 7289 |             return search<Rule::FREESTYLE, NT>(board, ss, alpha, beta, depth, cutNode);
+      |                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+main.cpp:7245:37:   required from here
+ 7245 |         Value value = ::search<Root>(rule, board, ss, alpha, beta, adjustedDepth, false);
+      |                       ~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+main.cpp:7728:36: warning: suggest parentheses around '&&' within '||' [-Wparentheses]
+ 7728 |         ss->ttPv = PvNode || ttHit && ttIsPv;
+      |                              ~~~~~~^~~~~~~~~
+main.cpp:8119:36: warning: missing initializer for member 'Database::DBRecord::text' [-Wmissing-field-initializers]
+ 8119 |                 Database::DBRecord newRecord {Database::LABEL_NULL, 0, 0};
+      |                                    ^~~~~~~~~
+main.cpp:8231:46: warning: suggest parentheses around '&&' within '||' [-Wparentheses]
+ 8231 |                   || db.bound == BOUND_LOWER && db.value >= beta
+      |                      ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~
+main.cpp:8232:46: warning: suggest parentheses around '&&' within '||' [-Wparentheses]
+ 8232 |                   || db.bound == BOUND_UPPER && db.value <= alpha)
+      |                      ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~
+main.cpp: In instantiation of 'Value {anonymous}::search(Board&, Search::AB::SearchStack*, Value, Value, Depth, bool) [with Rule Rule = STANDARD; NodeType NT = <unnamed>::Root; Depth = float]':
+main.cpp:7291:46:   required from 'Value {anonymous}::search(Rule, Board&, Search::AB::SearchStack*, Value, Value, Depth, bool) [with NodeType NT = <unnamed>::Root; Depth = float]'
+ 7291 |             return search<Rule::STANDARD, NT>(board, ss, alpha, beta, depth, cutNode);
+      |                    ~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+main.cpp:7245:37:   required from here
+ 7245 |         Value value = ::search<Root>(rule, board, ss, alpha, beta, adjustedDepth, false);
+      |                       ~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+main.cpp:7728:36: warning: suggest parentheses around '&&' within '||' [-Wparentheses]
+ 7728 |         ss->ttPv = PvNode || ttHit && ttIsPv;
+      |                              ~~~~~~^~~~~~~~~
+main.cpp:8119:36: warning: missing initializer for member 'Database::DBRecord::text' [-Wmissing-field-initializers]
+ 8119 |                 Database::DBRecord newRecord {Database::LABEL_NULL, 0, 0};
+      |                                    ^~~~~~~~~
+main.cpp:8231:46: warning: suggest parentheses around '&&' within '||' [-Wparentheses]
+ 8231 |                   || db.bound == BOUND_LOWER && db.value >= beta
+      |                      ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~
+main.cpp:8232:46: warning: suggest parentheses around '&&' within '||' [-Wparentheses]
+ 8232 |                   || db.bound == BOUND_UPPER && db.value <= alpha)
+      |                      ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~
+main.cpp: In instantiation of 'Value {anonymous}::search(Board&, Search::AB::SearchStack*, Value, Value, Depth, bool) [with Rule Rule = RENJU; NodeType NT = <unnamed>::Root; Depth = float]':
+main.cpp:7292:57:   required from 'Value {anonymous}::search(Rule, Board&, Search::AB::SearchStack*, Value, Value, Depth, bool) [with NodeType NT = <unnamed>::Root; Depth = float]'
+ 7292 |         case Rule::RENJU: return search<Rule::RENJU, NT>(board, ss, alpha, beta, depth, cutNode);
+      |                                  ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+main.cpp:7245:37:   required from here
+ 7245 |         Value value = ::search<Root>(rule, board, ss, alpha, beta, adjustedDepth, false);
+      |                       ~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+main.cpp:7728:36: warning: suggest parentheses around '&&' within '||' [-Wparentheses]
+ 7728 |         ss->ttPv = PvNode || ttHit && ttIsPv;
+      |                              ~~~~~~^~~~~~~~~
+main.cpp:8119:36: warning: missing initializer for member 'Database::DBRecord::text' [-Wmissing-field-initializers]
+ 8119 |                 Database::DBRecord newRecord {Database::LABEL_NULL, 0, 0};
+      |                                    ^~~~~~~~~
+main.cpp:8231:46: warning: suggest parentheses around '&&' within '||' [-Wparentheses]
+ 8231 |                   || db.bound == BOUND_LOWER && db.value >= beta
+      |                      ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~
+main.cpp:8232:46: warning: suggest parentheses around '&&' within '||' [-Wparentheses]
+ 8232 |                   || db.bound == BOUND_UPPER && db.value <= alpha)
+      |                      ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~
+main.cpp: In instantiation of 'Pos {anonymous}::findB4InLine(const Board&, Color, Pos, int) [with Rule R = FREESTYLE]':
+main.cpp:4518:40:   required from 'ScoredMove* {anonymous}::findB4F3Defence(const Board&, ScoredMove*) [with Rule R = FREESTYLE]'
+ 4518 |             Pos b4Pos = findB4InLine<R>(board, oppo, B4F3Pos, dir);
+      |                         ~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~
+main.cpp:4546:42:   required from 'ScoredMove* {anonymous}::generateB4F3Defence(const Board&, ScoredMove*) [with Rule R = FREESTYLE]'
+ 4546 |     ScoredMove *last = findB4F3Defence<R>(board, moveList);
+      |                        ~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~
+main.cpp:4639:42:   required from here
+ 4639 |     return generateB4F3Defence<FREESTYLE>(board, moveList);
+      |            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~
+main.cpp:4448:75: warning: suggest parentheses around '&&' within '||' [-Wparentheses]
+ 4448 |                      || R == RENJU && board.pattern4(pos, oppo) == FORBID && checkRenjuF4(pos))) {
+      |                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~
+main.cpp:4461:75: warning: suggest parentheses around '&&' within '||' [-Wparentheses]
+ 4461 |                      || R == RENJU && board.pattern4(pos, oppo) == FORBID && checkRenjuF4(pos)))
+      |                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~
+main.cpp: In instantiation of 'Pos {anonymous}::findB4InLine(const Board&, Color, Pos, int) [with Rule R = STANDARD]':
+main.cpp:4518:40:   required from 'ScoredMove* {anonymous}::findB4F3Defence(const Board&, ScoredMove*) [with Rule R = STANDARD]'
+ 4518 |             Pos b4Pos = findB4InLine<R>(board, oppo, B4F3Pos, dir);
+      |                         ~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~
+main.cpp:4546:42:   required from 'ScoredMove* {anonymous}::generateB4F3Defence(const Board&, ScoredMove*) [with Rule R = STANDARD]'
+ 4546 |     ScoredMove *last = findB4F3Defence<R>(board, moveList);
+      |                        ~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~
+main.cpp:4644:41:   required from here
+ 4644 |     return generateB4F3Defence<STANDARD>(board, moveList);
+      |            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~
+main.cpp:4448:75: warning: suggest parentheses around '&&' within '||' [-Wparentheses]
+ 4448 |                      || R == RENJU && board.pattern4(pos, oppo) == FORBID && checkRenjuF4(pos))) {
+      |                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~
+main.cpp:4461:75: warning: suggest parentheses around '&&' within '||' [-Wparentheses]
+ 4461 |                      || R == RENJU && board.pattern4(pos, oppo) == FORBID && checkRenjuF4(pos)))
+      |                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~
+main.cpp: In instantiation of 'Pos {anonymous}::findB4InLine(const Board&, Color, Pos, int) [with Rule R = RENJU]':
+main.cpp:4518:40:   required from 'ScoredMove* {anonymous}::findB4F3Defence(const Board&, ScoredMove*) [with Rule R = RENJU]'
+ 4518 |             Pos b4Pos = findB4InLine<R>(board, oppo, B4F3Pos, dir);
+      |                         ~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~
+main.cpp:4546:42:   required from 'ScoredMove* {anonymous}::generateB4F3Defence(const Board&, ScoredMove*) [with Rule R = RENJU]'
+ 4546 |     ScoredMove *last = findB4F3Defence<R>(board, moveList);
+      |                        ~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~
+main.cpp:4649:38:   required from here
+ 4649 |     return generateB4F3Defence<RENJU>(board, moveList);
+      |            ~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~
+main.cpp:4448:75: warning: suggest parentheses around '&&' within '||' [-Wparentheses]
+ 4448 |                      || R == RENJU && board.pattern4(pos, oppo) == FORBID && checkRenjuF4(pos))) {
+      |                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~
+main.cpp:4461:75: warning: suggest parentheses around '&&' within '||' [-Wparentheses]
+ 4461 |                      || R == RENJU && board.pattern4(pos, oppo) == FORBID && checkRenjuF4(pos)))
+      |                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~
+main.cpp: In instantiation of 'std::optional<Value> {anonymous}::probeDatabaseAtNode(Board&, Search::AB::SearchStack*, Value&, Value&, Depth, HashKey, DBProbeState&) [with Rule Rule = FREESTYLE; NodeType NT = <unnamed>::Root; Depth = float; HashKey = long long unsigned int]':
+main.cpp:7736:56:   required from 'Value {anonymous}::search(Board&, Search::AB::SearchStack*, Value, Value, Depth, bool) [with Rule Rule = FREESTYLE; NodeType NT = <unnamed>::Root; Depth = float]'
+ 7736 |     if (auto dbCutValue = probeDatabaseAtNode<Rule, NT>(board, ss, alpha, beta, depth, posKey, db))
+      |                           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+main.cpp:7289:47:   required from 'Value {anonymous}::search(Rule, Board&, Search::AB::SearchStack*, Value, Value, Depth, bool) [with NodeType NT = <unnamed>::Root; Depth = float]'
+ 7289 |             return search<Rule::FREESTYLE, NT>(board, ss, alpha, beta, depth, cutNode);
+      |                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+main.cpp:7245:37:   required from here
+ 7245 |         Value value = ::search<Root>(rule, board, ss, alpha, beta, adjustedDepth, false);
+      |                       ~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+main.cpp:7402:21: warning: suggest parentheses around '&&' within '||' [-Wparentheses]
+ 7402 |         if (!PvNode && dbCut || db.labelBound == BOUND_LOWER && db.value >= beta
+      |             ~~~~~~~~^~~~~~~~
+main.cpp:7403:45: warning: suggest parentheses around '&&' within '||' [-Wparentheses]
+ 7403 |             || db.labelBound == BOUND_UPPER && db.value <= alpha
+      |                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~
+main.cpp: In instantiation of 'Value {anonymous}::search(Board&, Search::AB::SearchStack*, Value, Value, Depth, bool) [with Rule Rule = FREESTYLE; NodeType NT = <unnamed>::NonPV; Depth = float]':
+main.cpp:7769:37:   required from 'Value {anonymous}::search(Board&, Search::AB::SearchStack*, Value, Value, Depth, bool) [with Rule Rule = FREESTYLE; NodeType NT = <unnamed>::Root; Depth = float]'
+ 7769 |         value = -search<Rule, NonPV>(board, ss + 1, -beta, -beta + 1, depth - r, !cutNode);
+      |                  ~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+main.cpp:7289:47:   required from 'Value {anonymous}::search(Rule, Board&, Search::AB::SearchStack*, Value, Value, Depth, bool) [with NodeType NT = <unnamed>::Root; Depth = float]'
+ 7289 |             return search<Rule::FREESTYLE, NT>(board, ss, alpha, beta, depth, cutNode);
+      |                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+main.cpp:7245:37:   required from here
+ 7245 |         Value value = ::search<Root>(rule, board, ss, alpha, beta, adjustedDepth, false);
+      |                       ~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+main.cpp:7728:36: warning: suggest parentheses around '&&' within '||' [-Wparentheses]
+ 7728 |         ss->ttPv = PvNode || ttHit && ttIsPv;
+      |                              ~~~~~~^~~~~~~~~
+main.cpp:8119:36: warning: missing initializer for member 'Database::DBRecord::text' [-Wmissing-field-initializers]
+ 8119 |                 Database::DBRecord newRecord {Database::LABEL_NULL, 0, 0};
+      |                                    ^~~~~~~~~
+main.cpp:8231:46: warning: suggest parentheses around '&&' within '||' [-Wparentheses]
+ 8231 |                   || db.bound == BOUND_LOWER && db.value >= beta
+      |                      ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~
+main.cpp:8232:46: warning: suggest parentheses around '&&' within '||' [-Wparentheses]
+ 8232 |                   || db.bound == BOUND_UPPER && db.value <= alpha)
+      |                      ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~
+main.cpp: In instantiation of 'Depth {anonymous}::computeLmrReduction(Board&, Search::AB::SearchStack*, const Search::MovePicker&, Pos, Color, Color, Depth, int, int, Value, Value, Value, bool, bool, float, const MoveTraits&) [with Rule Rule = FREESTYLE; NodeType NT = <unnamed>::Root; Depth = float]':
+main.cpp:8040:52:   required from 'Value {anonymous}::search(Board&, Search::AB::SearchStack*, Value, Value, Depth, bool) [with Rule Rule = FREESTYLE; NodeType NT = <unnamed>::Root; Depth = float]'
+ 8040 |             Depth r = computeLmrReduction<Rule, NT>(board,
+      |                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+ 8041 |                                                     ss,
+      |                                                     ~~~
+ 8042 |                                                     mp,
+      |                                                     ~~~
+ 8043 |                                                     move,
+      |                                                     ~~~~~
+ 8044 |                                                     self,
+      |                                                     ~~~~~
+ 8045 |                                                     oppo,
+      |                                                     ~~~~~
+ 8046 |                                                     depth,
+      |                                                     ~~~~~~
+ 8047 |                                                     moveCount,
+      |                                                     ~~~~~~~~~~
+ 8048 |                                                     improvement,
+      |                                                     ~~~~~~~~~~~~
+ 8049 |                                                     alpha,
+      |                                                     ~~~~~~
+ 8050 |                                                     beta,
+      |                                                     ~~~~~
+ 8051 |                                                     bestValue,
+      |                                                     ~~~~~~~~~~
+ 8052 |                                                     cutNode,
+      |                                                     ~~~~~~~~
+ 8053 |                                                     oppo4,
+      |                                                     ~~~~~~
+ 8054 |                                                     complexity,
+      |                                                     ~~~~~~~~~~~
+ 8055 |                                                     mt);
+      |                                                     ~~~
+main.cpp:7289:47:   required from 'Value {anonymous}::search(Rule, Board&, Search::AB::SearchStack*, Value, Value, Depth, bool) [with NodeType NT = <unnamed>::Root; Depth = float]'
+ 7289 |             return search<Rule::FREESTYLE, NT>(board, ss, alpha, beta, depth, cutNode);
+      |                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+main.cpp:7245:37:   required from here
+ 7245 |         Value value = ::search<Root>(rule, board, ss, alpha, beta, adjustedDepth, false);
+      |                       ~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+main.cpp:7612:61: warning: suggest parentheses around '&&' within '||' [-Wparentheses]
+ 7612 |         && (ss->moveP4[self] >= H_FLEX3 || mt.distSelf <= 4 && ss->moveP4[self] >= J_FLEX2_2X))
+      |                                            ~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+main.cpp: In instantiation of 'Value {anonymous}::search(Board&, Search::AB::SearchStack*, Value, Value, Depth, bool) [with Rule Rule = FREESTYLE; NodeType NT = <unnamed>::PV; Depth = float]':
+main.cpp:8104:38:   required from 'Value {anonymous}::search(Board&, Search::AB::SearchStack*, Value, Value, Depth, bool) [with Rule Rule = FREESTYLE; NodeType NT = <unnamed>::Root; Depth = float]'
+ 8104 |             value = -search<Rule, PV>(board, ss + 1, -beta, -alpha, newDepth, false);
+      |                      ~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+main.cpp:7289:47:   required from 'Value {anonymous}::search(Rule, Board&, Search::AB::SearchStack*, Value, Value, Depth, bool) [with NodeType NT = <unnamed>::Root; Depth = float]'
+ 7289 |             return search<Rule::FREESTYLE, NT>(board, ss, alpha, beta, depth, cutNode);
+      |                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+main.cpp:7245:37:   required from here
+ 7245 |         Value value = ::search<Root>(rule, board, ss, alpha, beta, adjustedDepth, false);
+      |                       ~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+main.cpp:7728:36: warning: suggest parentheses around '&&' within '||' [-Wparentheses]
+ 7728 |         ss->ttPv = PvNode || ttHit && ttIsPv;
+      |                              ~~~~~~^~~~~~~~~
+main.cpp:8119:36: warning: missing initializer for member 'Database::DBRecord::text' [-Wmissing-field-initializers]
+ 8119 |                 Database::DBRecord newRecord {Database::LABEL_NULL, 0, 0};
+      |                                    ^~~~~~~~~
+main.cpp:8231:46: warning: suggest parentheses around '&&' within '||' [-Wparentheses]
+ 8231 |                   || db.bound == BOUND_LOWER && db.value >= beta
+      |                      ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~
+main.cpp:8232:46: warning: suggest parentheses around '&&' within '||' [-Wparentheses]
+ 8232 |                   || db.bound == BOUND_UPPER && db.value <= alpha)
+      |                      ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~
+main.cpp: In instantiation of 'void {anonymous}::writeDatabaseRecord(Board&, Search::AB::SearchStack*, Depth, Value, Bound, const DBProbeState&) [with Rule Rule = FREESTYLE; NodeType NT = <unnamed>::Root; Depth = float]':
+main.cpp:8223:34:   required from 'Value {anonymous}::search(Board&, Search::AB::SearchStack*, Value, Value, Depth, bool) [with Rule Rule = FREESTYLE; NodeType NT = <unnamed>::Root; Depth = float]'
+ 8223 |     writeDatabaseRecord<Rule, NT>(board, ss, depth, bestValue, bound, db);
+      |     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+main.cpp:7289:47:   required from 'Value {anonymous}::search(Rule, Board&, Search::AB::SearchStack*, Value, Value, Depth, bool) [with NodeType NT = <unnamed>::Root; Depth = float]'
+ 7289 |             return search<Rule::FREESTYLE, NT>(board, ss, alpha, beta, depth, cutNode);
+      |                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+main.cpp:7245:37:   required from here
+ 7245 |         Value value = ::search<Root>(rule, board, ss, alpha, beta, adjustedDepth, false);
+      |                       ~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+main.cpp:7443:36: warning: missing initializer for member 'Database::DBRecord::text' [-Wmissing-field-initializers]
+ 7443 |                 Database::DBRecord nullRecord {Database::LABEL_NULL, 0, 0};
+      |                                    ^~~~~~~~~~
+main.cpp:7478:20: warning: suggest parentheses around '&&' within '||' [-Wparentheses]
+ 7477 |             || PvNode && ss->ply <= 1 + isLoss
+      |                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 7478 |                    && options.multiPV > 1
+      |                    ^~~~~~~~~~~~~~~~~~~~~~
+main.cpp:7480:20: warning: suggest parentheses around '&&' within '||' [-Wparentheses]
+ 7479 |             || ss->ply <= writePly - isWin
+      |                ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 7480 |                    && (db.hit || depth >= writeDepth + isWin)
+      |                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+main.cpp:7481:23: warning: suggest parentheses around '&&' within '||' [-Wparentheses]
+ 7481 |             || db.hit && (isWin || isLoss)
+      |                ~~~~~~~^~~~~~~~~~~~~~~~~~~~
+main.cpp:7483:20: warning: suggest parentheses around '&&' within '||' [-Wparentheses]
+ 7483 |                    && ss->ply
+main.cpp: In instantiation of 'std::optional<Value> {anonymous}::probeDatabaseAtNode(Board&, Search::AB::SearchStack*, Value&, Value&, Depth, HashKey, DBProbeState&) [with Rule Rule = STANDARD; NodeType NT = <unnamed>::Root; Depth = float; HashKey = long long unsigned int]':
+main.cpp:7736:56:   required from 'Value {anonymous}::search(Board&, Search::AB::SearchStack*, Value, Value, Depth, bool) [with Rule Rule = STANDARD; NodeType NT = <unnamed>::Root; Depth = float]'
+ 7736 |     if (auto dbCutValue = probeDatabaseAtNode<Rule, NT>(board, ss, alpha, beta, depth, posKey, db))
+      |                           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+main.cpp:7291:46:   required from 'Value {anonymous}::search(Rule, Board&, Search::AB::SearchStack*, Value, Value, Depth, bool) [with NodeType NT = <unnamed>::Root; Depth = float]'
+ 7291 |             return search<Rule::STANDARD, NT>(board, ss, alpha, beta, depth, cutNode);
+      |                    ~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+main.cpp:7245:37:   required from here
+ 7245 |         Value value = ::search<Root>(rule, board, ss, alpha, beta, adjustedDepth, false);
+      |                       ~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+main.cpp:7402:21: warning: suggest parentheses around '&&' within '||' [-Wparentheses]
+ 7402 |         if (!PvNode && dbCut || db.labelBound == BOUND_LOWER && db.value >= beta
+      |             ~~~~~~~~^~~~~~~~
+main.cpp:7403:45: warning: suggest parentheses around '&&' within '||' [-Wparentheses]
+ 7403 |             || db.labelBound == BOUND_UPPER && db.value <= alpha
+      |                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~
+main.cpp: In instantiation of 'Value {anonymous}::search(Board&, Search::AB::SearchStack*, Value, Value, Depth, bool) [with Rule Rule = STANDARD; NodeType NT = <unnamed>::NonPV; Depth = float]':
+main.cpp:7769:37:   required from 'Value {anonymous}::search(Board&, Search::AB::SearchStack*, Value, Value, Depth, bool) [with Rule Rule = STANDARD; NodeType NT = <unnamed>::Root; Depth = float]'
+ 7769 |         value = -search<Rule, NonPV>(board, ss + 1, -beta, -beta + 1, depth - r, !cutNode);
+      |                  ~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+main.cpp:7291:46:   required from 'Value {anonymous}::search(Rule, Board&, Search::AB::SearchStack*, Value, Value, Depth, bool) [with NodeType NT = <unnamed>::Root; Depth = float]'
+ 7291 |             return search<Rule::STANDARD, NT>(board, ss, alpha, beta, depth, cutNode);
+      |                    ~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+main.cpp:7245:37:   required from here
+ 7245 |         Value value = ::search<Root>(rule, board, ss, alpha, beta, adjustedDepth, false);
+      |                       ~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+main.cpp:7728:36: warning: suggest parentheses around '&&' within '||' [-Wparentheses]
+ 7728 |         ss->ttPv = PvNode || ttHit && ttIsPv;
+      |                              ~~~~~~^~~~~~~~~
+main.cpp:8119:36: warning: missing initializer for member 'Database::DBRecord::text' [-Wmissing-field-initializers]
+ 8119 |                 Database::DBRecord newRecord {Database::LABEL_NULL, 0, 0};
+      |                                    ^~~~~~~~~
+main.cpp:8231:46: warning: suggest parentheses around '&&' within '||' [-Wparentheses]
+ 8231 |                   || db.bound == BOUND_LOWER && db.value >= beta
+      |                      ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~
+main.cpp:8232:46: warning: suggest parentheses around '&&' within '||' [-Wparentheses]
+ 8232 |                   || db.bound == BOUND_UPPER && db.value <= alpha)
+      |                      ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~
+main.cpp: In instantiation of 'Depth {anonymous}::computeLmrReduction(Board&, Search::AB::SearchStack*, const Search::MovePicker&, Pos, Color, Color, Depth, int, int, Value, Value, Value, bool, bool, float, const MoveTraits&) [with Rule Rule = STANDARD; NodeType NT = <unnamed>::Root; Depth = float]':
+main.cpp:8040:52:   required from 'Value {anonymous}::search(Board&, Search::AB::SearchStack*, Value, Value, Depth, bool) [with Rule Rule = STANDARD; NodeType NT = <unnamed>::Root; Depth = float]'
+ 8040 |             Depth r = computeLmrReduction<Rule, NT>(board,
+      |                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+ 8041 |                                                     ss,
+      |                                                     ~~~
+ 8042 |                                                     mp,
+      |                                                     ~~~
+ 8043 |                                                     move,
+      |                                                     ~~~~~
+ 8044 |                                                     self,
+      |                                                     ~~~~~
+ 8045 |                                                     oppo,
+      |                                                     ~~~~~
+ 8046 |                                                     depth,
+      |                                                     ~~~~~~
+ 8047 |                                                     moveCount,
+      |                                                     ~~~~~~~~~~
+ 8048 |                                                     improvement,
+      |                                                     ~~~~~~~~~~~~
+ 8049 |                                                     alpha,
+      |                                                     ~~~~~~
+ 8050 |                                                     beta,
+      |                                                     ~~~~~
+ 8051 |                                                     bestValue,
+      |                                                     ~~~~~~~~~~
+ 8052 |                                                     cutNode,
+      |                                                     ~~~~~~~~
+ 8053 |                                                     oppo4,
+      |                                                     ~~~~~~
+ 8054 |                                                     complexity,
+      |                                                     ~~~~~~~~~~~
+ 8055 |                                                     mt);
+      |                                                     ~~~
+main.cpp:7291:46:   required from 'Value {anonymous}::search(Rule, Board&, Search::AB::SearchStack*, Value, Value, Depth, bool) [with NodeType NT = <unnamed>::Root; Depth = float]'
+ 7291 |             return search<Rule::STANDARD, NT>(board, ss, alpha, beta, depth, cutNode);
+      |                    ~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+main.cpp:7245:37:   required from here
+ 7245 |         Value value = ::search<Root>(rule, board, ss, alpha, beta, adjustedDepth, false);
+      |                       ~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+main.cpp:7612:61: warning: suggest parentheses around '&&' within '||' [-Wparentheses]
+ 7612 |         && (ss->moveP4[self] >= H_FLEX3 || mt.distSelf <= 4 && ss->moveP4[self] >= J_FLEX2_2X))
+      |                                            ~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+main.cpp: In instantiation of 'Value {anonymous}::search(Board&, Search::AB::SearchStack*, Value, Value, Depth, bool) [with Rule Rule = STANDARD; NodeType NT = <unnamed>::PV; Depth = float]':
+main.cpp:8104:38:   required from 'Value {anonymous}::search(Board&, Search::AB::SearchStack*, Value, Value, Depth, bool) [with Rule Rule = STANDARD; NodeType NT = <unnamed>::Root; Depth = float]'
+ 8104 |             value = -search<Rule, PV>(board, ss + 1, -beta, -alpha, newDepth, false);
+      |                      ~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+main.cpp:7291:46:   required from 'Value {anonymous}::search(Rule, Board&, Search::AB::SearchStack*, Value, Value, Depth, bool) [with NodeType NT = <unnamed>::Root; Depth = float]'
+ 7291 |             return search<Rule::STANDARD, NT>(board, ss, alpha, beta, depth, cutNode);
+      |                    ~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+main.cpp:7245:37:   required from here
+ 7245 |         Value value = ::search<Root>(rule, board, ss, alpha, beta, adjustedDepth, false);
+      |                       ~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+main.cpp:7728:36: warning: suggest parentheses around '&&' within '||' [-Wparentheses]
+ 7728 |         ss->ttPv = PvNode || ttHit && ttIsPv;
+      |                              ~~~~~~^~~~~~~~~
+main.cpp:8119:36: warning: missing initializer for member 'Database::DBRecord::text' [-Wmissing-field-initializers]
+ 8119 |                 Database::DBRecord newRecord {Database::LABEL_NULL, 0, 0};
+      |                                    ^~~~~~~~~
+main.cpp:8231:46: warning: suggest parentheses around '&&' within '||' [-Wparentheses]
+ 8231 |                   || db.bound == BOUND_LOWER && db.value >= beta
+      |                      ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~
+main.cpp:8232:46: warning: suggest parentheses around '&&' within '||' [-Wparentheses]
+ 8232 |                   || db.bound == BOUND_UPPER && db.value <= alpha)
+      |                      ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~
+main.cpp: In instantiation of 'void {anonymous}::writeDatabaseRecord(Board&, Search::AB::SearchStack*, Depth, Value, Bound, const DBProbeState&) [with Rule Rule = STANDARD; NodeType NT = <unnamed>::Root; Depth = float]':
+main.cpp:8223:34:   required from 'Value {anonymous}::search(Board&, Search::AB::SearchStack*, Value, Value, Depth, bool) [with Rule Rule = STANDARD; NodeType NT = <unnamed>::Root; Depth = float]'
+ 8223 |     writeDatabaseRecord<Rule, NT>(board, ss, depth, bestValue, bound, db);
+      |     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+main.cpp:7291:46:   required from 'Value {anonymous}::search(Rule, Board&, Search::AB::SearchStack*, Value, Value, Depth, bool) [with NodeType NT = <unnamed>::Root; Depth = float]'
+ 7291 |             return search<Rule::STANDARD, NT>(board, ss, alpha, beta, depth, cutNode);
+      |                    ~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+main.cpp:7245:37:   required from here
+ 7245 |         Value value = ::search<Root>(rule, board, ss, alpha, beta, adjustedDepth, false);
+      |                       ~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+main.cpp:7443:36: warning: missing initializer for member 'Database::DBRecord::text' [-Wmissing-field-initializers]
+ 7443 |                 Database::DBRecord nullRecord {Database::LABEL_NULL, 0, 0};
+      |                                    ^~~~~~~~~~
+main.cpp:7478:20: warning: suggest parentheses around '&&' within '||' [-Wparentheses]
+ 7477 |             || PvNode && ss->ply <= 1 + isLoss
+      |                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 7478 |                    && options.multiPV > 1
+      |                    ^~~~~~~~~~~~~~~~~~~~~~
+main.cpp:7480:20: warning: suggest parentheses around '&&' within '||' [-Wparentheses]
+ 7479 |             || ss->ply <= writePly - isWin
+      |                ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 7480 |                    && (db.hit || depth >= writeDepth + isWin)
+      |                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+main.cpp:7481:23: warning: suggest parentheses around '&&' within '||' [-Wparentheses]
+ 7481 |             || db.hit && (isWin || isLoss)
+      |                ~~~~~~~^~~~~~~~~~~~~~~~~~~~
+main.cpp:7483:20: warning: suggest parentheses around '&&' within '||' [-Wparentheses]
+ 7483 |                    && ss->ply
+main.cpp: In instantiation of 'std::optional<Value> {anonymous}::probeDatabaseAtNode(Board&, Search::AB::SearchStack*, Value&, Value&, Depth, HashKey, DBProbeState&) [with Rule Rule = RENJU; NodeType NT = <unnamed>::Root; Depth = float; HashKey = long long unsigned int]':
+main.cpp:7736:56:   required from 'Value {anonymous}::search(Board&, Search::AB::SearchStack*, Value, Value, Depth, bool) [with Rule Rule = RENJU; NodeType NT = <unnamed>::Root; Depth = float]'
+ 7736 |     if (auto dbCutValue = probeDatabaseAtNode<Rule, NT>(board, ss, alpha, beta, depth, posKey, db))
+      |                           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+main.cpp:7292:57:   required from 'Value {anonymous}::search(Rule, Board&, Search::AB::SearchStack*, Value, Value, Depth, bool) [with NodeType NT = <unnamed>::Root; Depth = float]'
+ 7292 |         case Rule::RENJU: return search<Rule::RENJU, NT>(board, ss, alpha, beta, depth, cutNode);
+      |                                  ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+main.cpp:7245:37:   required from here
+ 7245 |         Value value = ::search<Root>(rule, board, ss, alpha, beta, adjustedDepth, false);
+      |                       ~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+main.cpp:7402:21: warning: suggest parentheses around '&&' within '||' [-Wparentheses]
+ 7402 |         if (!PvNode && dbCut || db.labelBound == BOUND_LOWER && db.value >= beta
+      |             ~~~~~~~~^~~~~~~~
+main.cpp:7403:45: warning: suggest parentheses around '&&' within '||' [-Wparentheses]
+ 7403 |             || db.labelBound == BOUND_UPPER && db.value <= alpha
+      |                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~
+main.cpp: In instantiation of 'Value {anonymous}::search(Board&, Search::AB::SearchStack*, Value, Value, Depth, bool) [with Rule Rule = RENJU; NodeType NT = <unnamed>::NonPV; Depth = float]':
+main.cpp:7769:37:   required from 'Value {anonymous}::search(Board&, Search::AB::SearchStack*, Value, Value, Depth, bool) [with Rule Rule = RENJU; NodeType NT = <unnamed>::Root; Depth = float]'
+ 7769 |         value = -search<Rule, NonPV>(board, ss + 1, -beta, -beta + 1, depth - r, !cutNode);
+      |                  ~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+main.cpp:7292:57:   required from 'Value {anonymous}::search(Rule, Board&, Search::AB::SearchStack*, Value, Value, Depth, bool) [with NodeType NT = <unnamed>::Root; Depth = float]'
+ 7292 |         case Rule::RENJU: return search<Rule::RENJU, NT>(board, ss, alpha, beta, depth, cutNode);
+      |                                  ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+main.cpp:7245:37:   required from here
+ 7245 |         Value value = ::search<Root>(rule, board, ss, alpha, beta, adjustedDepth, false);
+      |                       ~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+main.cpp:7728:36: warning: suggest parentheses around '&&' within '||' [-Wparentheses]
+ 7728 |         ss->ttPv = PvNode || ttHit && ttIsPv;
+      |                              ~~~~~~^~~~~~~~~
+main.cpp:8119:36: warning: missing initializer for member 'Database::DBRecord::text' [-Wmissing-field-initializers]
+ 8119 |                 Database::DBRecord newRecord {Database::LABEL_NULL, 0, 0};
+      |                                    ^~~~~~~~~
+main.cpp:8231:46: warning: suggest parentheses around '&&' within '||' [-Wparentheses]
+ 8231 |                   || db.bound == BOUND_LOWER && db.value >= beta
+      |                      ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~
+main.cpp:8232:46: warning: suggest parentheses around '&&' within '||' [-Wparentheses]
+ 8232 |                   || db.bound == BOUND_UPPER && db.value <= alpha)
+      |                      ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~
+main.cpp: In instantiation of 'Depth {anonymous}::computeLmrReduction(Board&, Search::AB::SearchStack*, const Search::MovePicker&, Pos, Color, Color, Depth, int, int, Value, Value, Value, bool, bool, float, const MoveTraits&) [with Rule Rule = RENJU; NodeType NT = <unnamed>::Root; Depth = float]':
+main.cpp:8040:52:   required from 'Value {anonymous}::search(Board&, Search::AB::SearchStack*, Value, Value, Depth, bool) [with Rule Rule = RENJU; NodeType NT = <unnamed>::Root; Depth = float]'
+ 8040 |             Depth r = computeLmrReduction<Rule, NT>(board,
+      |                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+ 8041 |                                                     ss,
+      |                                                     ~~~
+ 8042 |                                                     mp,
+      |                                                     ~~~
+ 8043 |                                                     move,
+      |                                                     ~~~~~
+ 8044 |                                                     self,
+      |                                                     ~~~~~
+ 8045 |                                                     oppo,
+      |                                                     ~~~~~
+ 8046 |                                                     depth,
+      |                                                     ~~~~~~
+ 8047 |                                                     moveCount,
+      |                                                     ~~~~~~~~~~
+ 8048 |                                                     improvement,
+      |                                                     ~~~~~~~~~~~~
+ 8049 |                                                     alpha,
+      |                                                     ~~~~~~
+ 8050 |                                                     beta,
+      |                                                     ~~~~~
+ 8051 |                                                     bestValue,
+      |                                                     ~~~~~~~~~~
+ 8052 |                                                     cutNode,
+      |                                                     ~~~~~~~~
+ 8053 |                                                     oppo4,
+      |                                                     ~~~~~~
+ 8054 |                                                     complexity,
+      |                                                     ~~~~~~~~~~~
+ 8055 |                                                     mt);
+      |                                                     ~~~
+main.cpp:7292:57:   required from 'Value {anonymous}::search(Rule, Board&, Search::AB::SearchStack*, Value, Value, Depth, bool) [with NodeType NT = <unnamed>::Root; Depth = float]'
+ 7292 |         case Rule::RENJU: return search<Rule::RENJU, NT>(board, ss, alpha, beta, depth, cutNode);
+      |                                  ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+main.cpp:7245:37:   required from here
+ 7245 |         Value value = ::search<Root>(rule, board, ss, alpha, beta, adjustedDepth, false);
+      |                       ~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+main.cpp:7612:61: warning: suggest parentheses around '&&' within '||' [-Wparentheses]
+ 7612 |         && (ss->moveP4[self] >= H_FLEX3 || mt.distSelf <= 4 && ss->moveP4[self] >= J_FLEX2_2X))
+      |                                            ~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+main.cpp: In instantiation of 'Value {anonymous}::search(Board&, Search::AB::SearchStack*, Value, Value, Depth, bool) [with Rule Rule = RENJU; NodeType NT = <unnamed>::PV; Depth = float]':
+main.cpp:8104:38:   required from 'Value {anonymous}::search(Board&, Search::AB::SearchStack*, Value, Value, Depth, bool) [with Rule Rule = RENJU; NodeType NT = <unnamed>::Root; Depth = float]'
+ 8104 |             value = -search<Rule, PV>(board, ss + 1, -beta, -alpha, newDepth, false);
+      |                      ~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+main.cpp:7292:57:   required from 'Value {anonymous}::search(Rule, Board&, Search::AB::SearchStack*, Value, Value, Depth, bool) [with NodeType NT = <unnamed>::Root; Depth = float]'
+ 7292 |         case Rule::RENJU: return search<Rule::RENJU, NT>(board, ss, alpha, beta, depth, cutNode);
+      |                                  ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+main.cpp:7245:37:   required from here
+ 7245 |         Value value = ::search<Root>(rule, board, ss, alpha, beta, adjustedDepth, false);
+      |                       ~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+main.cpp:7728:36: warning: suggest parentheses around '&&' within '||' [-Wparentheses]
+ 7728 |         ss->ttPv = PvNode || ttHit && ttIsPv;
+      |                              ~~~~~~^~~~~~~~~
+main.cpp:8119:36: warning: missing initializer for member 'Database::DBRecord::text' [-Wmissing-field-initializers]
+ 8119 |                 Database::DBRecord newRecord {Database::LABEL_NULL, 0, 0};
+      |                                    ^~~~~~~~~
+main.cpp:8231:46: warning: suggest parentheses around '&&' within '||' [-Wparentheses]
+ 8231 |                   || db.bound == BOUND_LOWER && db.value >= beta
+      |                      ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~
+main.cpp:8232:46: warning: suggest parentheses around '&&' within '||' [-Wparentheses]
+ 8232 |                   || db.bound == BOUND_UPPER && db.value <= alpha)
+      |                      ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~
+main.cpp: In instantiation of 'void {anonymous}::writeDatabaseRecord(Board&, Search::AB::SearchStack*, Depth, Value, Bound, const DBProbeState&) [with Rule Rule = RENJU; NodeType NT = <unnamed>::Root; Depth = float]':
+main.cpp:8223:34:   required from 'Value {anonymous}::search(Board&, Search::AB::SearchStack*, Value, Value, Depth, bool) [with Rule Rule = RENJU; NodeType NT = <unnamed>::Root; Depth = float]'
+ 8223 |     writeDatabaseRecord<Rule, NT>(board, ss, depth, bestValue, bound, db);
+      |     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+main.cpp:7292:57:   required from 'Value {anonymous}::search(Rule, Board&, Search::AB::SearchStack*, Value, Value, Depth, bool) [with NodeType NT = <unnamed>::Root; Depth = float]'
+ 7292 |         case Rule::RENJU: return search<Rule::RENJU, NT>(board, ss, alpha, beta, depth, cutNode);
+      |                                  ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+main.cpp:7245:37:   required from here
+ 7245 |         Value value = ::search<Root>(rule, board, ss, alpha, beta, adjustedDepth, false);
+      |                       ~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+main.cpp:7443:36: warning: missing initializer for member 'Database::DBRecord::text' [-Wmissing-field-initializers]
+ 7443 |                 Database::DBRecord nullRecord {Database::LABEL_NULL, 0, 0};
+      |                                    ^~~~~~~~~~
+main.cpp:7478:20: warning: suggest parentheses around '&&' within '||' [-Wparentheses]
+ 7477 |             || PvNode && ss->ply <= 1 + isLoss
+      |                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 7478 |                    && options.multiPV > 1
+      |                    ^~~~~~~~~~~~~~~~~~~~~~
+main.cpp:7480:20: warning: suggest parentheses around '&&' within '||' [-Wparentheses]
+ 7479 |             || ss->ply <= writePly - isWin
+      |                ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 7480 |                    && (db.hit || depth >= writeDepth + isWin)
+      |                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+main.cpp:7481:23: warning: suggest parentheses around '&&' within '||' [-Wparentheses]
+ 7481 |             || db.hit && (isWin || isLoss)
+      |                ~~~~~~~^~~~~~~~~~~~~~~~~~~~
+main.cpp:7483:20: warning: suggest parentheses around '&&' within '||' [-Wparentheses]
+ 7483 |                    && ss->ply
+main.cpp: In instantiation of 'std::optional<Value> {anonymous}::probeDatabaseAtNode(Board&, Search::AB::SearchStack*, Value&, Value&, Depth, HashKey, DBProbeState&) [with Rule Rule = FREESTYLE; NodeType NT = <unnamed>::NonPV; Depth = float; HashKey = long long unsigned int]':
+main.cpp:7736:56:   required from 'Value {anonymous}::search(Board&, Search::AB::SearchStack*, Value, Value, Depth, bool) [with Rule Rule = FREESTYLE; NodeType NT = <unnamed>::NonPV; Depth = float]'
+ 7736 |     if (auto dbCutValue = probeDatabaseAtNode<Rule, NT>(board, ss, alpha, beta, depth, posKey, db))
+      |                           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+main.cpp:7769:37:   required from 'Value {anonymous}::search(Board&, Search::AB::SearchStack*, Value, Value, Depth, bool) [with Rule Rule = FREESTYLE; NodeType NT = <unnamed>::Root; Depth = float]'
+ 7769 |         value = -search<Rule, NonPV>(board, ss + 1, -beta, -beta + 1, depth - r, !cutNode);
+      |                  ~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+main.cpp:7289:47:   required from 'Value {anonymous}::search(Rule, Board&, Search::AB::SearchStack*, Value, Value, Depth, bool) [with NodeType NT = <unnamed>::Root; Depth = float]'
+ 7289 |             return search<Rule::FREESTYLE, NT>(board, ss, alpha, beta, depth, cutNode);
+      |                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+main.cpp:7245:37:   required from here
+ 7245 |         Value value = ::search<Root>(rule, board, ss, alpha, beta, adjustedDepth, false);
+      |                       ~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+main.cpp:7402:21: warning: suggest parentheses around '&&' within '||' [-Wparentheses]
+ 7402 |         if (!PvNode && dbCut || db.labelBound == BOUND_LOWER && db.value >= beta
+      |             ~~~~~~~~^~~~~~~~
+main.cpp:7403:45: warning: suggest parentheses around '&&' within '||' [-Wparentheses]
+ 7403 |             || db.labelBound == BOUND_UPPER && db.value <= alpha
+      |                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~
+main.cpp: In instantiation of 'Depth {anonymous}::computeLmrReduction(Board&, Search::AB::SearchStack*, const Search::MovePicker&, Pos, Color, Color, Depth, int, int, Value, Value, Value, bool, bool, float, const MoveTraits&) [with Rule Rule = FREESTYLE; NodeType NT = <unnamed>::NonPV; Depth = float]':
+main.cpp:8040:52:   required from 'Value {anonymous}::search(Board&, Search::AB::SearchStack*, Value, Value, Depth, bool) [with Rule Rule = FREESTYLE; NodeType NT = <unnamed>::NonPV; Depth = float]'
+ 8040 |             Depth r = computeLmrReduction<Rule, NT>(board,
+      |                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+ 8041 |                                                     ss,
+      |                                                     ~~~
+ 8042 |                                                     mp,
+      |                                                     ~~~
+ 8043 |                                                     move,
+      |                                                     ~~~~~
+ 8044 |                                                     self,
+      |                                                     ~~~~~
+ 8045 |                                                     oppo,
+      |                                                     ~~~~~
+ 8046 |                                                     depth,
+      |                                                     ~~~~~~
+ 8047 |                                                     moveCount,
+      |                                                     ~~~~~~~~~~
+ 8048 |                                                     improvement,
+      |                                                     ~~~~~~~~~~~~
+ 8049 |                                                     alpha,
+      |                                                     ~~~~~~
+ 8050 |                                                     beta,
+      |                                                     ~~~~~
+ 8051 |                                                     bestValue,
+      |                                                     ~~~~~~~~~~
+ 8052 |                                                     cutNode,
+      |                                                     ~~~~~~~~
+ 8053 |                                                     oppo4,
+      |                                                     ~~~~~~
+ 8054 |                                                     complexity,
+      |                                                     ~~~~~~~~~~~
+ 8055 |                                                     mt);
+      |                                                     ~~~
+main.cpp:7769:37:   required from 'Value {anonymous}::search(Board&, Search::AB::SearchStack*, Value, Value, Depth, bool) [with Rule Rule = FREESTYLE; NodeType NT = <unnamed>::Root; Depth = float]'
+ 7769 |         value = -search<Rule, NonPV>(board, ss + 1, -beta, -beta + 1, depth - r, !cutNode);
+      |                  ~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+main.cpp:7289:47:   required from 'Value {anonymous}::search(Rule, Board&, Search::AB::SearchStack*, Value, Value, Depth, bool) [with NodeType NT = <unnamed>::Root; Depth = float]'
+ 7289 |             return search<Rule::FREESTYLE, NT>(board, ss, alpha, beta, depth, cutNode);
+      |                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+main.cpp:7245:37:   required from here
+ 7245 |         Value value = ::search<Root>(rule, board, ss, alpha, beta, adjustedDepth, false);
+      |                       ~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+main.cpp:7612:61: warning: suggest parentheses around '&&' within '||' [-Wparentheses]
+ 7612 |         && (ss->moveP4[self] >= H_FLEX3 || mt.distSelf <= 4 && ss->moveP4[self] >= J_FLEX2_2X))
+      |                                            ~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+main.cpp: In instantiation of 'void {anonymous}::writeDatabaseRecord(Board&, Search::AB::SearchStack*, Depth, Value, Bound, const DBProbeState&) [with Rule Rule = FREESTYLE; NodeType NT = <unnamed>::NonPV; Depth = float]':
+main.cpp:8223:34:   required from 'Value {anonymous}::search(Board&, Search::AB::SearchStack*, Value, Value, Depth, bool) [with Rule Rule = FREESTYLE; NodeType NT = <unnamed>::NonPV; Depth = float]'
+ 8223 |     writeDatabaseRecord<Rule, NT>(board, ss, depth, bestValue, bound, db);
+      |     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+main.cpp:7769:37:   required from 'Value {anonymous}::search(Board&, Search::AB::SearchStack*, Value, Value, Depth, bool) [with Rule Rule = FREESTYLE; NodeType NT = <unnamed>::Root; Depth = float]'
+ 7769 |         value = -search<Rule, NonPV>(board, ss + 1, -beta, -beta + 1, depth - r, !cutNode);
+      |                  ~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+main.cpp:7289:47:   required from 'Value {anonymous}::search(Rule, Board&, Search::AB::SearchStack*, Value, Value, Depth, bool) [with NodeType NT = <unnamed>::Root; Depth = float]'
+ 7289 |             return search<Rule::FREESTYLE, NT>(board, ss, alpha, beta, depth, cutNode);
+      |                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+main.cpp:7245:37:   required from here
+ 7245 |         Value value = ::search<Root>(rule, board, ss, alpha, beta, adjustedDepth, false);
+      |                       ~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+main.cpp:7443:36: warning: missing initializer for member 'Database::DBRecord::text' [-Wmissing-field-initializers]
+ 7443 |                 Database::DBRecord nullRecord {Database::LABEL_NULL, 0, 0};
+      |                                    ^~~~~~~~~~
+main.cpp:7478:20: warning: suggest parentheses around '&&' within '||' [-Wparentheses]
+ 7477 |             || PvNode && ss->ply <= 1 + isLoss
+      |                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 7478 |                    && options.multiPV > 1
+      |                    ^~~~~~~~~~~~~~~~~~~~~~
+main.cpp:7480:20: warning: suggest parentheses around '&&' within '||' [-Wparentheses]
+ 7479 |             || ss->ply <= writePly - isWin
+      |                ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 7480 |                    && (db.hit || depth >= writeDepth + isWin)
+      |                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+main.cpp:7481:23: warning: suggest parentheses around '&&' within '||' [-Wparentheses]
+ 7481 |             || db.hit && (isWin || isLoss)
+      |                ~~~~~~~^~~~~~~~~~~~~~~~~~~~
+main.cpp:7483:20: warning: suggest parentheses around '&&' within '||' [-Wparentheses]
+ 7483 |                    && ss->ply
+main.cpp: In instantiation of 'std::optional<Value> {anonymous}::probeDatabaseAtNode(Board&, Search::AB::SearchStack*, Value&, Value&, Depth, HashKey, DBProbeState&) [with Rule Rule = FREESTYLE; NodeType NT = <unnamed>::PV; Depth = float; HashKey = long long unsigned int]':
+main.cpp:7736:56:   required from 'Value {anonymous}::search(Board&, Search::AB::SearchStack*, Value, Value, Depth, bool) [with Rule Rule = FREESTYLE; NodeType NT = <unnamed>::PV; Depth = float]'
+ 7736 |     if (auto dbCutValue = probeDatabaseAtNode<Rule, NT>(board, ss, alpha, beta, depth, posKey, db))
+      |                           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+main.cpp:8104:38:   required from 'Value {anonymous}::search(Board&, Search::AB::SearchStack*, Value, Value, Depth, bool) [with Rule Rule = FREESTYLE; NodeType NT = <unnamed>::Root; Depth = float]'
+ 8104 |             value = -search<Rule, PV>(board, ss + 1, -beta, -alpha, newDepth, false);
+      |                      ~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+main.cpp:7289:47:   required from 'Value {anonymous}::search(Rule, Board&, Search::AB::SearchStack*, Value, Value, Depth, bool) [with NodeType NT = <unnamed>::Root; Depth = float]'
+ 7289 |             return search<Rule::FREESTYLE, NT>(board, ss, alpha, beta, depth, cutNode);
+      |                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+main.cpp:7245:37:   required from here
+ 7245 |         Value value = ::search<Root>(rule, board, ss, alpha, beta, adjustedDepth, false);
+      |                       ~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+main.cpp:7402:21: warning: suggest parentheses around '&&' within '||' [-Wparentheses]
+ 7402 |         if (!PvNode && dbCut || db.labelBound == BOUND_LOWER && db.value >= beta
+      |             ~~~~~~~~^~~~~~~~
+main.cpp:7403:45: warning: suggest parentheses around '&&' within '||' [-Wparentheses]
+ 7403 |             || db.labelBound == BOUND_UPPER && db.value <= alpha
+      |                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~
+main.cpp: In instantiation of 'Depth {anonymous}::computeLmrReduction(Board&, Search::AB::SearchStack*, const Search::MovePicker&, Pos, Color, Color, Depth, int, int, Value, Value, Value, bool, bool, float, const MoveTraits&) [with Rule Rule = FREESTYLE; NodeType NT = <unnamed>::PV; Depth = float]':
+main.cpp:8040:52:   required from 'Value {anonymous}::search(Board&, Search::AB::SearchStack*, Value, Value, Depth, bool) [with Rule Rule = FREESTYLE; NodeType NT = <unnamed>::PV; Depth = float]'
+ 8040 |             Depth r = computeLmrReduction<Rule, NT>(board,
+      |                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+ 8041 |                                                     ss,
+      |                                                     ~~~
+ 8042 |                                                     mp,
+      |                                                     ~~~
+ 8043 |                                                     move,
+      |                                                     ~~~~~
+ 8044 |                                                     self,
+      |                                                     ~~~~~
+ 8045 |                                                     oppo,
+      |                                                     ~~~~~
+ 8046 |                                                     depth,
+      |                                                     ~~~~~~
+ 8047 |                                                     moveCount,
+      |                                                     ~~~~~~~~~~
+ 8048 |                                                     improvement,
+      |                                                     ~~~~~~~~~~~~
+ 8049 |                                                     alpha,
+      |                                                     ~~~~~~
+ 8050 |                                                     beta,
+      |                                                     ~~~~~
+ 8051 |                                                     bestValue,
+      |                                                     ~~~~~~~~~~
+ 8052 |                                                     cutNode,
+      |                                                     ~~~~~~~~
+ 8053 |                                                     oppo4,
+      |                                                     ~~~~~~
+ 8054 |                                                     complexity,
+      |                                                     ~~~~~~~~~~~
+ 8055 |                                                     mt);
+      |                                                     ~~~
+main.cpp:8104:38:   required from 'Value {anonymous}::search(Board&, Search::AB::SearchStack*, Value, Value, Depth, bool) [with Rule Rule = FREESTYLE; NodeType NT = <unnamed>::Root; Depth = float]'
+ 8104 |             value = -search<Rule, PV>(board, ss + 1, -beta, -alpha, newDepth, false);
+      |                      ~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+main.cpp:7289:47:   required from 'Value {anonymous}::search(Rule, Board&, Search::AB::SearchStack*, Value, Value, Depth, bool) [with NodeType NT = <unnamed>::Root; Depth = float]'
+ 7289 |             return search<Rule::FREESTYLE, NT>(board, ss, alpha, beta, depth, cutNode);
+      |                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+main.cpp:7245:37:   required from here
+ 7245 |         Value value = ::search<Root>(rule, board, ss, alpha, beta, adjustedDepth, false);
+      |                       ~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+main.cpp:7612:61: warning: suggest parentheses around '&&' within '||' [-Wparentheses]
+ 7612 |         && (ss->moveP4[self] >= H_FLEX3 || mt.distSelf <= 4 && ss->moveP4[self] >= J_FLEX2_2X))
+      |                                            ~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+main.cpp: In instantiation of 'void {anonymous}::writeDatabaseRecord(Board&, Search::AB::SearchStack*, Depth, Value, Bound, const DBProbeState&) [with Rule Rule = FREESTYLE; NodeType NT = <unnamed>::PV; Depth = float]':
+main.cpp:8223:34:   required from 'Value {anonymous}::search(Board&, Search::AB::SearchStack*, Value, Value, Depth, bool) [with Rule Rule = FREESTYLE; NodeType NT = <unnamed>::PV; Depth = float]'
+ 8223 |     writeDatabaseRecord<Rule, NT>(board, ss, depth, bestValue, bound, db);
+      |     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+main.cpp:8104:38:   required from 'Value {anonymous}::search(Board&, Search::AB::SearchStack*, Value, Value, Depth, bool) [with Rule Rule = FREESTYLE; NodeType NT = <unnamed>::Root; Depth = float]'
+ 8104 |             value = -search<Rule, PV>(board, ss + 1, -beta, -alpha, newDepth, false);
+      |                      ~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+main.cpp:7289:47:   required from 'Value {anonymous}::search(Rule, Board&, Search::AB::SearchStack*, Value, Value, Depth, bool) [with NodeType NT = <unnamed>::Root; Depth = float]'
+ 7289 |             return search<Rule::FREESTYLE, NT>(board, ss, alpha, beta, depth, cutNode);
+      |                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+main.cpp:7245:37:   required from here
+ 7245 |         Value value = ::search<Root>(rule, board, ss, alpha, beta, adjustedDepth, false);
+      |                       ~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+main.cpp:7443:36: warning: missing initializer for member 'Database::DBRecord::text' [-Wmissing-field-initializers]
+ 7443 |                 Database::DBRecord nullRecord {Database::LABEL_NULL, 0, 0};
+      |                                    ^~~~~~~~~~
+main.cpp:7478:20: warning: suggest parentheses around '&&' within '||' [-Wparentheses]
+ 7477 |             || PvNode && ss->ply <= 1 + isLoss
+      |                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 7478 |                    && options.multiPV > 1
+      |                    ^~~~~~~~~~~~~~~~~~~~~~
+main.cpp:7480:20: warning: suggest parentheses around '&&' within '||' [-Wparentheses]
+ 7479 |             || ss->ply <= writePly - isWin
+      |                ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 7480 |                    && (db.hit || depth >= writeDepth + isWin)
+      |                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+main.cpp:7481:23: warning: suggest parentheses around '&&' within '||' [-Wparentheses]
+ 7481 |             || db.hit && (isWin || isLoss)
+      |                ~~~~~~~^~~~~~~~~~~~~~~~~~~~
+main.cpp:7483:20: warning: suggest parentheses around '&&' within '||' [-Wparentheses]
+ 7483 |                    && ss->ply
+main.cpp: In instantiation of 'std::optional<Value> {anonymous}::probeDatabaseAtNode(Board&, Search::AB::SearchStack*, Value&, Value&, Depth, HashKey, DBProbeState&) [with Rule Rule = STANDARD; NodeType NT = <unnamed>::NonPV; Depth = float; HashKey = long long unsigned int]':
+main.cpp:7736:56:   required from 'Value {anonymous}::search(Board&, Search::AB::SearchStack*, Value, Value, Depth, bool) [with Rule Rule = STANDARD; NodeType NT = <unnamed>::NonPV; Depth = float]'
+ 7736 |     if (auto dbCutValue = probeDatabaseAtNode<Rule, NT>(board, ss, alpha, beta, depth, posKey, db))
+      |                           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+main.cpp:7769:37:   required from 'Value {anonymous}::search(Board&, Search::AB::SearchStack*, Value, Value, Depth, bool) [with Rule Rule = STANDARD; NodeType NT = <unnamed>::Root; Depth = float]'
+ 7769 |         value = -search<Rule, NonPV>(board, ss + 1, -beta, -beta + 1, depth - r, !cutNode);
+      |                  ~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+main.cpp:7291:46:   required from 'Value {anonymous}::search(Rule, Board&, Search::AB::SearchStack*, Value, Value, Depth, bool) [with NodeType NT = <unnamed>::Root; Depth = float]'
+ 7291 |             return search<Rule::STANDARD, NT>(board, ss, alpha, beta, depth, cutNode);
+      |                    ~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+main.cpp:7245:37:   required from here
+ 7245 |         Value value = ::search<Root>(rule, board, ss, alpha, beta, adjustedDepth, false);
+      |                       ~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+main.cpp:7402:21: warning: suggest parentheses around '&&' within '||' [-Wparentheses]
+ 7402 |         if (!PvNode && dbCut || db.labelBound == BOUND_LOWER && db.value >= beta
+      |             ~~~~~~~~^~~~~~~~
+main.cpp:7403:45: warning: suggest parentheses around '&&' within '||' [-Wparentheses]
+ 7403 |             || db.labelBound == BOUND_UPPER && db.value <= alpha
+      |                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~
+main.cpp: In instantiation of 'Depth {anonymous}::computeLmrReduction(Board&, Search::AB::SearchStack*, const Search::MovePicker&, Pos, Color, Color, Depth, int, int, Value, Value, Value, bool, bool, float, const MoveTraits&) [with Rule Rule = STANDARD; NodeType NT = <unnamed>::NonPV; Depth = float]':
+main.cpp:8040:52:   required from 'Value {anonymous}::search(Board&, Search::AB::SearchStack*, Value, Value, Depth, bool) [with Rule Rule = STANDARD; NodeType NT = <unnamed>::NonPV; Depth = float]'
+ 8040 |             Depth r = computeLmrReduction<Rule, NT>(board,
+      |                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+ 8041 |                                                     ss,
+      |                                                     ~~~
+ 8042 |                                                     mp,
+      |                                                     ~~~
+ 8043 |                                                     move,
+      |                                                     ~~~~~
+ 8044 |                                                     self,
+      |                                                     ~~~~~
+ 8045 |                                                     oppo,
+      |                                                     ~~~~~
+ 8046 |                                                     depth,
+      |                                                     ~~~~~~
+ 8047 |                                                     moveCount,
+      |                                                     ~~~~~~~~~~
+ 8048 |                                                     improvement,
+      |                                                     ~~~~~~~~~~~~
+ 8049 |                                                     alpha,
+      |                                                     ~~~~~~
+ 8050 |                                                     beta,
+      |                                                     ~~~~~
+ 8051 |                                                     bestValue,
+      |                                                     ~~~~~~~~~~
+ 8052 |                                                     cutNode,
+      |                                                     ~~~~~~~~
+ 8053 |                                                     oppo4,
+      |                                                     ~~~~~~
+ 8054 |                                                     complexity,
+      |                                                     ~~~~~~~~~~~
+ 8055 |                                                     mt);
+      |                                                     ~~~
+main.cpp:7769:37:   required from 'Value {anonymous}::search(Board&, Search::AB::SearchStack*, Value, Value, Depth, bool) [with Rule Rule = STANDARD; NodeType NT = <unnamed>::Root; Depth = float]'
+ 7769 |         value = -search<Rule, NonPV>(board, ss + 1, -beta, -beta + 1, depth - r, !cutNode);
+      |                  ~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+main.cpp:7291:46:   required from 'Value {anonymous}::search(Rule, Board&, Search::AB::SearchStack*, Value, Value, Depth, bool) [with NodeType NT = <unnamed>::Root; Depth = float]'
+ 7291 |             return search<Rule::STANDARD, NT>(board, ss, alpha, beta, depth, cutNode);
+      |                    ~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+main.cpp:7245:37:   required from here
+ 7245 |         Value value = ::search<Root>(rule, board, ss, alpha, beta, adjustedDepth, false);
+      |                       ~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+main.cpp:7612:61: warning: suggest parentheses around '&&' within '||' [-Wparentheses]
+ 7612 |         && (ss->moveP4[self] >= H_FLEX3 || mt.distSelf <= 4 && ss->moveP4[self] >= J_FLEX2_2X))
+      |                                            ~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+main.cpp: In instantiation of 'void {anonymous}::writeDatabaseRecord(Board&, Search::AB::SearchStack*, Depth, Value, Bound, const DBProbeState&) [with Rule Rule = STANDARD; NodeType NT = <unnamed>::NonPV; Depth = float]':
+main.cpp:8223:34:   required from 'Value {anonymous}::search(Board&, Search::AB::SearchStack*, Value, Value, Depth, bool) [with Rule Rule = STANDARD; NodeType NT = <unnamed>::NonPV; Depth = float]'
+ 8223 |     writeDatabaseRecord<Rule, NT>(board, ss, depth, bestValue, bound, db);
+      |     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+main.cpp:7769:37:   required from 'Value {anonymous}::search(Board&, Search::AB::SearchStack*, Value, Value, Depth, bool) [with Rule Rule = STANDARD; NodeType NT = <unnamed>::Root; Depth = float]'
+ 7769 |         value = -search<Rule, NonPV>(board, ss + 1, -beta, -beta + 1, depth - r, !cutNode);
+      |                  ~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+main.cpp:7291:46:   required from 'Value {anonymous}::search(Rule, Board&, Search::AB::SearchStack*, Value, Value, Depth, bool) [with NodeType NT = <unnamed>::Root; Depth = float]'
+ 7291 |             return search<Rule::STANDARD, NT>(board, ss, alpha, beta, depth, cutNode);
+      |                    ~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+main.cpp:7245:37:   required from here
+ 7245 |         Value value = ::search<Root>(rule, board, ss, alpha, beta, adjustedDepth, false);
+      |                       ~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+main.cpp:7443:36: warning: missing initializer for member 'Database::DBRecord::text' [-Wmissing-field-initializers]
+ 7443 |                 Database::DBRecord nullRecord {Database::LABEL_NULL, 0, 0};
+      |                                    ^~~~~~~~~~
+main.cpp:7478:20: warning: suggest parentheses around '&&' within '||' [-Wparentheses]
+ 7477 |             || PvNode && ss->ply <= 1 + isLoss
+      |                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 7478 |                    && options.multiPV > 1
+      |                    ^~~~~~~~~~~~~~~~~~~~~~
+main.cpp:7480:20: warning: suggest parentheses around '&&' within '||' [-Wparentheses]
+ 7479 |             || ss->ply <= writePly - isWin
+      |                ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 7480 |                    && (db.hit || depth >= writeDepth + isWin)
+      |                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+main.cpp:7481:23: warning: suggest parentheses around '&&' within '||' [-Wparentheses]
+ 7481 |             || db.hit && (isWin || isLoss)
+      |                ~~~~~~~^~~~~~~~~~~~~~~~~~~~
+main.cpp:7483:20: warning: suggest parentheses around '&&' within '||' [-Wparentheses]
+ 7483 |                    && ss->ply
+main.cpp: In instantiation of 'std::optional<Value> {anonymous}::probeDatabaseAtNode(Board&, Search::AB::SearchStack*, Value&, Value&, Depth, HashKey, DBProbeState&) [with Rule Rule = STANDARD; NodeType NT = <unnamed>::PV; Depth = float; HashKey = long long unsigned int]':
+main.cpp:7736:56:   required from 'Value {anonymous}::search(Board&, Search::AB::SearchStack*, Value, Value, Depth, bool) [with Rule Rule = STANDARD; NodeType NT = <unnamed>::PV; Depth = float]'
+ 7736 |     if (auto dbCutValue = probeDatabaseAtNode<Rule, NT>(board, ss, alpha, beta, depth, posKey, db))
+      |                           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+main.cpp:8104:38:   required from 'Value {anonymous}::search(Board&, Search::AB::SearchStack*, Value, Value, Depth, bool) [with Rule Rule = STANDARD; NodeType NT = <unnamed>::Root; Depth = float]'
+ 8104 |             value = -search<Rule, PV>(board, ss + 1, -beta, -alpha, newDepth, false);
+      |                      ~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+main.cpp:7291:46:   required from 'Value {anonymous}::search(Rule, Board&, Search::AB::SearchStack*, Value, Value, Depth, bool) [with NodeType NT = <unnamed>::Root; Depth = float]'
+ 7291 |             return search<Rule::STANDARD, NT>(board, ss, alpha, beta, depth, cutNode);
+      |                    ~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+main.cpp:7245:37:   required from here
+ 7245 |         Value value = ::search<Root>(rule, board, ss, alpha, beta, adjustedDepth, false);
+      |                       ~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+main.cpp:7402:21: warning: suggest parentheses around '&&' within '||' [-Wparentheses]
+ 7402 |         if (!PvNode && dbCut || db.labelBound == BOUND_LOWER && db.value >= beta
+      |             ~~~~~~~~^~~~~~~~
+main.cpp:7403:45: warning: suggest parentheses around '&&' within '||' [-Wparentheses]
+ 7403 |             || db.labelBound == BOUND_UPPER && db.value <= alpha
+      |                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~
+main.cpp: In instantiation of 'Depth {anonymous}::computeLmrReduction(Board&, Search::AB::SearchStack*, const Search::MovePicker&, Pos, Color, Color, Depth, int, int, Value, Value, Value, bool, bool, float, const MoveTraits&) [with Rule Rule = STANDARD; NodeType NT = <unnamed>::PV; Depth = float]':
+main.cpp:8040:52:   required from 'Value {anonymous}::search(Board&, Search::AB::SearchStack*, Value, Value, Depth, bool) [with Rule Rule = STANDARD; NodeType NT = <unnamed>::PV; Depth = float]'
+ 8040 |             Depth r = computeLmrReduction<Rule, NT>(board,
+      |                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+ 8041 |                                                     ss,
+      |                                                     ~~~
+ 8042 |                                                     mp,
+      |                                                     ~~~
+ 8043 |                                                     move,
+      |                                                     ~~~~~
+ 8044 |                                                     self,
+      |                                                     ~~~~~
+ 8045 |                                                     oppo,
+      |                                                     ~~~~~
+ 8046 |                                                     depth,
+      |                                                     ~~~~~~
+ 8047 |                                                     moveCount,
+      |                                                     ~~~~~~~~~~
+ 8048 |                                                     improvement,
+      |                                                     ~~~~~~~~~~~~
+ 8049 |                                                     alpha,
+      |                                                     ~~~~~~
+ 8050 |                                                     beta,
+      |                                                     ~~~~~
+ 8051 |                                                     bestValue,
+      |                                                     ~~~~~~~~~~
+ 8052 |                                                     cutNode,
+      |                                                     ~~~~~~~~
+ 8053 |                                                     oppo4,
+      |                                                     ~~~~~~
+ 8054 |                                                     complexity,
+      |                                                     ~~~~~~~~~~~
+ 8055 |                                                     mt);
+      |                                                     ~~~
+main.cpp:8104:38:   required from 'Value {anonymous}::search(Board&, Search::AB::SearchStack*, Value, Value, Depth, bool) [with Rule Rule = STANDARD; NodeType NT = <unnamed>::Root; Depth = float]'
+ 8104 |             value = -search<Rule, PV>(board, ss + 1, -beta, -alpha, newDepth, false);
+      |                      ~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+main.cpp:7291:46:   required from 'Value {anonymous}::search(Rule, Board&, Search::AB::SearchStack*, Value, Value, Depth, bool) [with NodeType NT = <unnamed>::Root; Depth = float]'
+ 7291 |             return search<Rule::STANDARD, NT>(board, ss, alpha, beta, depth, cutNode);
+      |                    ~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+main.cpp:7245:37:   required from here
+ 7245 |         Value value = ::search<Root>(rule, board, ss, alpha, beta, adjustedDepth, false);
+      |                       ~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+main.cpp:7612:61: warning: suggest parentheses around '&&' within '||' [-Wparentheses]
+ 7612 |         && (ss->moveP4[self] >= H_FLEX3 || mt.distSelf <= 4 && ss->moveP4[self] >= J_FLEX2_2X))
+      |                                            ~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+main.cpp: In instantiation of 'void {anonymous}::writeDatabaseRecord(Board&, Search::AB::SearchStack*, Depth, Value, Bound, const DBProbeState&) [with Rule Rule = STANDARD; NodeType NT = <unnamed>::PV; Depth = float]':
+main.cpp:8223:34:   required from 'Value {anonymous}::search(Board&, Search::AB::SearchStack*, Value, Value, Depth, bool) [with Rule Rule = STANDARD; NodeType NT = <unnamed>::PV; Depth = float]'
+ 8223 |     writeDatabaseRecord<Rule, NT>(board, ss, depth, bestValue, bound, db);
+      |     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+main.cpp:8104:38:   required from 'Value {anonymous}::search(Board&, Search::AB::SearchStack*, Value, Value, Depth, bool) [with Rule Rule = STANDARD; NodeType NT = <unnamed>::Root; Depth = float]'
+ 8104 |             value = -search<Rule, PV>(board, ss + 1, -beta, -alpha, newDepth, false);
+      |                      ~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+main.cpp:7291:46:   required from 'Value {anonymous}::search(Rule, Board&, Search::AB::SearchStack*, Value, Value, Depth, bool) [with NodeType NT = <unnamed>::Root; Depth = float]'
+ 7291 |             return search<Rule::STANDARD, NT>(board, ss, alpha, beta, depth, cutNode);
+      |                    ~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+main.cpp:7245:37:   required from here
+ 7245 |         Value value = ::search<Root>(rule, board, ss, alpha, beta, adjustedDepth, false);
+      |                       ~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+main.cpp:7443:36: warning: missing initializer for member 'Database::DBRecord::text' [-Wmissing-field-initializers]
+ 7443 |                 Database::DBRecord nullRecord {Database::LABEL_NULL, 0, 0};
+      |                                    ^~~~~~~~~~
+main.cpp:7478:20: warning: suggest parentheses around '&&' within '||' [-Wparentheses]
+ 7477 |             || PvNode && ss->ply <= 1 + isLoss
+      |                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 7478 |                    && options.multiPV > 1
+      |                    ^~~~~~~~~~~~~~~~~~~~~~
+main.cpp:7480:20: warning: suggest parentheses around '&&' within '||' [-Wparentheses]
+ 7479 |             || ss->ply <= writePly - isWin
+      |                ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 7480 |                    && (db.hit || depth >= writeDepth + isWin)
+      |                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+main.cpp:7481:23: warning: suggest parentheses around '&&' within '||' [-Wparentheses]
+ 7481 |             || db.hit && (isWin || isLoss)
+      |                ~~~~~~~^~~~~~~~~~~~~~~~~~~~
+main.cpp:7483:20: warning: suggest parentheses around '&&' within '||' [-Wparentheses]
+ 7483 |                    && ss->ply
+main.cpp: In instantiation of 'std::optional<Value> {anonymous}::probeDatabaseAtNode(Board&, Search::AB::SearchStack*, Value&, Value&, Depth, HashKey, DBProbeState&) [with Rule Rule = RENJU; NodeType NT = <unnamed>::NonPV; Depth = float; HashKey = long long unsigned int]':
+main.cpp:7736:56:   required from 'Value {anonymous}::search(Board&, Search::AB::SearchStack*, Value, Value, Depth, bool) [with Rule Rule = RENJU; NodeType NT = <unnamed>::NonPV; Depth = float]'
+ 7736 |     if (auto dbCutValue = probeDatabaseAtNode<Rule, NT>(board, ss, alpha, beta, depth, posKey, db))
+      |                           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+main.cpp:7769:37:   required from 'Value {anonymous}::search(Board&, Search::AB::SearchStack*, Value, Value, Depth, bool) [with Rule Rule = RENJU; NodeType NT = <unnamed>::Root; Depth = float]'
+ 7769 |         value = -search<Rule, NonPV>(board, ss + 1, -beta, -beta + 1, depth - r, !cutNode);
+      |                  ~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+main.cpp:7292:57:   required from 'Value {anonymous}::search(Rule, Board&, Search::AB::SearchStack*, Value, Value, Depth, bool) [with NodeType NT = <unnamed>::Root; Depth = float]'
+ 7292 |         case Rule::RENJU: return search<Rule::RENJU, NT>(board, ss, alpha, beta, depth, cutNode);
+      |                                  ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+main.cpp:7245:37:   required from here
+ 7245 |         Value value = ::search<Root>(rule, board, ss, alpha, beta, adjustedDepth, false);
+      |                       ~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+main.cpp:7402:21: warning: suggest parentheses around '&&' within '||' [-Wparentheses]
+ 7402 |         if (!PvNode && dbCut || db.labelBound == BOUND_LOWER && db.value >= beta
+      |             ~~~~~~~~^~~~~~~~
+main.cpp:7403:45: warning: suggest parentheses around '&&' within '||' [-Wparentheses]
+ 7403 |             || db.labelBound == BOUND_UPPER && db.value <= alpha
+      |                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~
+main.cpp: In instantiation of 'Depth {anonymous}::computeLmrReduction(Board&, Search::AB::SearchStack*, const Search::MovePicker&, Pos, Color, Color, Depth, int, int, Value, Value, Value, bool, bool, float, const MoveTraits&) [with Rule Rule = RENJU; NodeType NT = <unnamed>::NonPV; Depth = float]':
+main.cpp:8040:52:   required from 'Value {anonymous}::search(Board&, Search::AB::SearchStack*, Value, Value, Depth, bool) [with Rule Rule = RENJU; NodeType NT = <unnamed>::NonPV; Depth = float]'
+ 8040 |             Depth r = computeLmrReduction<Rule, NT>(board,
+      |                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+ 8041 |                                                     ss,
+      |                                                     ~~~
+ 8042 |                                                     mp,
+      |                                                     ~~~
+ 8043 |                                                     move,
+      |                                                     ~~~~~
+ 8044 |                                                     self,
+      |                                                     ~~~~~
+ 8045 |                                                     oppo,
+      |                                                     ~~~~~
+ 8046 |                                                     depth,
+      |                                                     ~~~~~~
+ 8047 |                                                     moveCount,
+      |                                                     ~~~~~~~~~~
+ 8048 |                                                     improvement,
+      |                                                     ~~~~~~~~~~~~
+ 8049 |                                                     alpha,
+      |                                                     ~~~~~~
+ 8050 |                                                     beta,
+      |                                                     ~~~~~
+ 8051 |                                                     bestValue,
+      |                                                     ~~~~~~~~~~
+ 8052 |                                                     cutNode,
+      |                                                     ~~~~~~~~
+ 8053 |                                                     oppo4,
+      |                                                     ~~~~~~
+ 8054 |                                                     complexity,
+      |                                                     ~~~~~~~~~~~
+ 8055 |                                                     mt);
+      |                                                     ~~~
+main.cpp:7769:37:   required from 'Value {anonymous}::search(Board&, Search::AB::SearchStack*, Value, Value, Depth, bool) [with Rule Rule = RENJU; NodeType NT = <unnamed>::Root; Depth = float]'
+ 7769 |         value = -search<Rule, NonPV>(board, ss + 1, -beta, -beta + 1, depth - r, !cutNode);
+      |                  ~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+main.cpp:7292:57:   required from 'Value {anonymous}::search(Rule, Board&, Search::AB::SearchStack*, Value, Value, Depth, bool) [with NodeType NT = <unnamed>::Root; Depth = float]'
+ 7292 |         case Rule::RENJU: return search<Rule::RENJU, NT>(board, ss, alpha, beta, depth, cutNode);
+      |                                  ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+main.cpp:7245:37:   required from here
+ 7245 |         Value value = ::search<Root>(rule, board, ss, alpha, beta, adjustedDepth, false);
+      |                       ~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+main.cpp:7612:61: warning: suggest parentheses around '&&' within '||' [-Wparentheses]
+ 7612 |         && (ss->moveP4[self] >= H_FLEX3 || mt.distSelf <= 4 && ss->moveP4[self] >= J_FLEX2_2X))
+      |                                            ~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+main.cpp: In instantiation of 'void {anonymous}::writeDatabaseRecord(Board&, Search::AB::SearchStack*, Depth, Value, Bound, const DBProbeState&) [with Rule Rule = RENJU; NodeType NT = <unnamed>::NonPV; Depth = float]':
+main.cpp:8223:34:   required from 'Value {anonymous}::search(Board&, Search::AB::SearchStack*, Value, Value, Depth, bool) [with Rule Rule = RENJU; NodeType NT = <unnamed>::NonPV; Depth = float]'
+ 8223 |     writeDatabaseRecord<Rule, NT>(board, ss, depth, bestValue, bound, db);
+      |     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+main.cpp:7769:37:   required from 'Value {anonymous}::search(Board&, Search::AB::SearchStack*, Value, Value, Depth, bool) [with Rule Rule = RENJU; NodeType NT = <unnamed>::Root; Depth = float]'
+ 7769 |         value = -search<Rule, NonPV>(board, ss + 1, -beta, -beta + 1, depth - r, !cutNode);
+      |                  ~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+main.cpp:7292:57:   required from 'Value {anonymous}::search(Rule, Board&, Search::AB::SearchStack*, Value, Value, Depth, bool) [with NodeType NT = <unnamed>::Root; Depth = float]'
+ 7292 |         case Rule::RENJU: return search<Rule::RENJU, NT>(board, ss, alpha, beta, depth, cutNode);
+      |                                  ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+main.cpp:7245:37:   required from here
+ 7245 |         Value value = ::search<Root>(rule, board, ss, alpha, beta, adjustedDepth, false);
+      |                       ~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+main.cpp:7443:36: warning: missing initializer for member 'Database::DBRecord::text' [-Wmissing-field-initializers]
+ 7443 |                 Database::DBRecord nullRecord {Database::LABEL_NULL, 0, 0};
+      |                                    ^~~~~~~~~~
+main.cpp:7478:20: warning: suggest parentheses around '&&' within '||' [-Wparentheses]
+ 7477 |             || PvNode && ss->ply <= 1 + isLoss
+      |                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 7478 |                    && options.multiPV > 1
+      |                    ^~~~~~~~~~~~~~~~~~~~~~
+main.cpp:7480:20: warning: suggest parentheses around '&&' within '||' [-Wparentheses]
+ 7479 |             || ss->ply <= writePly - isWin
+      |                ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 7480 |                    && (db.hit || depth >= writeDepth + isWin)
+      |                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+main.cpp:7481:23: warning: suggest parentheses around '&&' within '||' [-Wparentheses]
+ 7481 |             || db.hit && (isWin || isLoss)
+      |                ~~~~~~~^~~~~~~~~~~~~~~~~~~~
+main.cpp:7483:20: warning: suggest parentheses around '&&' within '||' [-Wparentheses]
+ 7483 |                    && ss->ply
+main.cpp: In instantiation of 'std::optional<Value> {anonymous}::probeDatabaseAtNode(Board&, Search::AB::SearchStack*, Value&, Value&, Depth, HashKey, DBProbeState&) [with Rule Rule = RENJU; NodeType NT = <unnamed>::PV; Depth = float; HashKey = long long unsigned int]':
+main.cpp:7736:56:   required from 'Value {anonymous}::search(Board&, Search::AB::SearchStack*, Value, Value, Depth, bool) [with Rule Rule = RENJU; NodeType NT = <unnamed>::PV; Depth = float]'
+ 7736 |     if (auto dbCutValue = probeDatabaseAtNode<Rule, NT>(board, ss, alpha, beta, depth, posKey, db))
+      |                           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+main.cpp:8104:38:   required from 'Value {anonymous}::search(Board&, Search::AB::SearchStack*, Value, Value, Depth, bool) [with Rule Rule = RENJU; NodeType NT = <unnamed>::Root; Depth = float]'
+ 8104 |             value = -search<Rule, PV>(board, ss + 1, -beta, -alpha, newDepth, false);
+      |                      ~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+main.cpp:7292:57:   required from 'Value {anonymous}::search(Rule, Board&, Search::AB::SearchStack*, Value, Value, Depth, bool) [with NodeType NT = <unnamed>::Root; Depth = float]'
+ 7292 |         case Rule::RENJU: return search<Rule::RENJU, NT>(board, ss, alpha, beta, depth, cutNode);
+      |                                  ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+main.cpp:7245:37:   required from here
+ 7245 |         Value value = ::search<Root>(rule, board, ss, alpha, beta, adjustedDepth, false);
+      |                       ~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+main.cpp:7402:21: warning: suggest parentheses around '&&' within '||' [-Wparentheses]
+ 7402 |         if (!PvNode && dbCut || db.labelBound == BOUND_LOWER && db.value >= beta
+      |             ~~~~~~~~^~~~~~~~
+main.cpp:7403:45: warning: suggest parentheses around '&&' within '||' [-Wparentheses]
+ 7403 |             || db.labelBound == BOUND_UPPER && db.value <= alpha
+      |                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~
+main.cpp: In instantiation of 'Depth {anonymous}::computeLmrReduction(Board&, Search::AB::SearchStack*, const Search::MovePicker&, Pos, Color, Color, Depth, int, int, Value, Value, Value, bool, bool, float, const MoveTraits&) [with Rule Rule = RENJU; NodeType NT = <unnamed>::PV; Depth = float]':
+main.cpp:8040:52:   required from 'Value {anonymous}::search(Board&, Search::AB::SearchStack*, Value, Value, Depth, bool) [with Rule Rule = RENJU; NodeType NT = <unnamed>::PV; Depth = float]'
+ 8040 |             Depth r = computeLmrReduction<Rule, NT>(board,
+      |                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+ 8041 |                                                     ss,
+      |                                                     ~~~
+ 8042 |                                                     mp,
+      |                                                     ~~~
+ 8043 |                                                     move,
+      |                                                     ~~~~~
+ 8044 |                                                     self,
+      |                                                     ~~~~~
+ 8045 |                                                     oppo,
+      |                                                     ~~~~~
+ 8046 |                                                     depth,
+      |                                                     ~~~~~~
+ 8047 |                                                     moveCount,
+      |                                                     ~~~~~~~~~~
+ 8048 |                                                     improvement,
+      |                                                     ~~~~~~~~~~~~
+ 8049 |                                                     alpha,
+      |                                                     ~~~~~~
+ 8050 |                                                     beta,
+      |                                                     ~~~~~
+ 8051 |                                                     bestValue,
+      |                                                     ~~~~~~~~~~
+ 8052 |                                                     cutNode,
+      |                                                     ~~~~~~~~
+ 8053 |                                                     oppo4,
+      |                                                     ~~~~~~
+ 8054 |                                                     complexity,
+      |                                                     ~~~~~~~~~~~
+ 8055 |                                                     mt);
+      |                                                     ~~~
+main.cpp:8104:38:   required from 'Value {anonymous}::search(Board&, Search::AB::SearchStack*, Value, Value, Depth, bool) [with Rule Rule = RENJU; NodeType NT = <unnamed>::Root; Depth = float]'
+ 8104 |             value = -search<Rule, PV>(board, ss + 1, -beta, -alpha, newDepth, false);
+      |                      ~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+main.cpp:7292:57:   required from 'Value {anonymous}::search(Rule, Board&, Search::AB::SearchStack*, Value, Value, Depth, bool) [with NodeType NT = <unnamed>::Root; Depth = float]'
+ 7292 |         case Rule::RENJU: return search<Rule::RENJU, NT>(board, ss, alpha, beta, depth, cutNode);
+      |                                  ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+main.cpp:7245:37:   required from here
+ 7245 |         Value value = ::search<Root>(rule, board, ss, alpha, beta, adjustedDepth, false);
+      |                       ~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+main.cpp:7612:61: warning: suggest parentheses around '&&' within '||' [-Wparentheses]
+ 7612 |         && (ss->moveP4[self] >= H_FLEX3 || mt.distSelf <= 4 && ss->moveP4[self] >= J_FLEX2_2X))
+      |                                            ~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+main.cpp: In instantiation of 'void {anonymous}::writeDatabaseRecord(Board&, Search::AB::SearchStack*, Depth, Value, Bound, const DBProbeState&) [with Rule Rule = RENJU; NodeType NT = <unnamed>::PV; Depth = float]':
+main.cpp:8223:34:   required from 'Value {anonymous}::search(Board&, Search::AB::SearchStack*, Value, Value, Depth, bool) [with Rule Rule = RENJU; NodeType NT = <unnamed>::PV; Depth = float]'
+ 8223 |     writeDatabaseRecord<Rule, NT>(board, ss, depth, bestValue, bound, db);
+      |     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+main.cpp:8104:38:   required from 'Value {anonymous}::search(Board&, Search::AB::SearchStack*, Value, Value, Depth, bool) [with Rule Rule = RENJU; NodeType NT = <unnamed>::Root; Depth = float]'
+ 8104 |             value = -search<Rule, PV>(board, ss + 1, -beta, -alpha, newDepth, false);
+      |                      ~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+main.cpp:7292:57:   required from 'Value {anonymous}::search(Rule, Board&, Search::AB::SearchStack*, Value, Value, Depth, bool) [with NodeType NT = <unnamed>::Root; Depth = float]'
+ 7292 |         case Rule::RENJU: return search<Rule::RENJU, NT>(board, ss, alpha, beta, depth, cutNode);
+      |                                  ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+main.cpp:7245:37:   required from here
+ 7245 |         Value value = ::search<Root>(rule, board, ss, alpha, beta, adjustedDepth, false);
+      |                       ~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+main.cpp:7443:36: warning: missing initializer for member 'Database::DBRecord::text' [-Wmissing-field-initializers]
+ 7443 |                 Database::DBRecord nullRecord {Database::LABEL_NULL, 0, 0};
+      |                                    ^~~~~~~~~~
+main.cpp:7478:20: warning: suggest parentheses around '&&' within '||' [-Wparentheses]
+ 7477 |             || PvNode && ss->ply <= 1 + isLoss
+      |                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 7478 |                    && options.multiPV > 1
+      |                    ^~~~~~~~~~~~~~~~~~~~~~
+main.cpp:7480:20: warning: suggest parentheses around '&&' within '||' [-Wparentheses]
+ 7479 |             || ss->ply <= writePly - isWin
+      |                ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 7480 |                    && (db.hit || depth >= writeDepth + isWin)
+      |                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+main.cpp:7481:23: warning: suggest parentheses around '&&' within '||' [-Wparentheses]
+ 7481 |             || db.hit && (isWin || isLoss)
+      |                ~~~~~~~^~~~~~~~~~~~~~~~~~~~
+main.cpp:7483:20: warning: suggest parentheses around '&&' within '||' [-Wparentheses]
+ 7483 |                    && ss->ply
+main.cpp: At global scope:
+main.cpp:3504:6: warning: 'bool {anonymous}::checkP4(const Board*)' defined but not used [-Wunused-function]
+ 3504 | bool checkP4(const Board *board)
+      |      ^~~~~~~
+In member function 'size_t Evaluation::PolicyBuffer::posToIndex(Pos) const',
+    inlined from 'Evaluation::PolicyBuffer::PolicyType& Evaluation::PolicyBuffer::operator[](Pos)' at main.cpp:2227:63,
+    inlined from 'void Search::MovePicker::scoreAllMoves() [with ScoreType T = Search::MovePicker::CLASSICAL_ONLY]' at main.cpp:5367:26:
+main.cpp:2248:28: warning: '*(const Evaluation::PolicyBuffer*)((char*)&policyBufferStorage + offsetof(std::aligned_storage<2436, 4>::PolicyBufferStorage, std::aligned_storage<2436, 4>::type::__data[0])).Evaluation::PolicyBuffer::boardWidth' may be used uninitialized [-Wmaybe-uninitialized]
+ 2248 |             size_t index = boardWidth * pos.y() + pos.x();
+      |                            ^~~~~~~~~~
+main.cpp: In member function 'void Search::MovePicker::scoreAllMoves() [with ScoreType T = Search::MovePicker::CLASSICAL_ONLY]':
+main.cpp:5303:25: note: 'policyBufferStorage' declared here
+ 5303 |     PolicyBufferStorage policyBufferStorage;
+      |                         ^~~~~~~~~~~~~~~~~~~
+main.cpp: In function 'Value {anonymous}::search(Board&, Search::AB::SearchStack*, Value, Value, Depth, bool) [with Rule Rule = FREESTYLE; NodeType NT = <unnamed>::Root]':
+main.cpp:8097:25: warning: 'value' may be used uninitialized [-Wmaybe-uninitialized]
+ 8096 |                 || (RootNode && options.balanceMode
+      |                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 8097 |                         ? balancedValue(value, options.balanceBias) > alpha
+      |                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 8098 |                         : value > alpha && (RootNode || value < beta)))) {
+      |                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+main.cpp:7689:49: note: 'value' was declared here
+ 7689 |     Value          bestValue = -VALUE_INFINITE, value;
+      |                                                 ^~~~~
+main.cpp: In function 'Value {anonymous}::search(Board&, Search::AB::SearchStack*, Value, Value, Depth, bool) [with Rule Rule = STANDARD; NodeType NT = <unnamed>::Root]':
+main.cpp:8097:25: warning: 'value' may be used uninitialized [-Wmaybe-uninitialized]
+ 8096 |                 || (RootNode && options.balanceMode
+      |                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 8097 |                         ? balancedValue(value, options.balanceBias) > alpha
+      |                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 8098 |                         : value > alpha && (RootNode || value < beta)))) {
+      |                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+main.cpp:7689:49: note: 'value' was declared here
+ 7689 |     Value          bestValue = -VALUE_INFINITE, value;
+      |                                                 ^~~~~
+main.cpp: In function 'Value {anonymous}::search(Board&, Search::AB::SearchStack*, Value, Value, Depth, bool) [with Rule Rule = RENJU; NodeType NT = <unnamed>::Root]':
+main.cpp:8097:25: warning: 'value' may be used uninitialized [-Wmaybe-uninitialized]
+ 8096 |                 || (RootNode && options.balanceMode
+      |                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 8097 |                         ? balancedValue(value, options.balanceBias) > alpha
+      |                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 8098 |                         : value > alpha && (RootNode || value < beta)))) {
+      |                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+main.cpp:7689:49: note: 'value' was declared here
+ 7689 |     Value          bestValue = -VALUE_INFINITE, value;
+      |                                                 ^~~~~

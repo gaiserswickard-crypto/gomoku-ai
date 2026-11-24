@@ -1,0 +1,279 @@
+{
+  "engine_revision": "1387d11312190ec66665d361ff07a7c70221b78a",
+  "networks_revision": "7eeb19b55219a48138756293f92211a1539bab4d",
+  "builtin_validation": {
+    "combinations": 3876,
+    "arrays_match_official_toml": true,
+    "pair_indices_match_independent_enumeration": true,
+    "no_clamping_difference": true
+  },
+  "trained_initializer": {
+    "file": "reference\\rapfi-networks\\classical\\model260809.bin",
+    "sha256": "8d4f518c58f9c7abe017de383a87d2d7506c62936ea5188004b7eb1780b99393",
+    "raw_sha256": "88f92bc96eca6eac9702b697b62c5768c9f921ad4c24278e118462c7c6fdde42",
+    "raw_fnv1a32": "0970ba94",
+    "raw_bytes": 116208,
+    "scale": 116.37149810791016,
+    "readout_knots": [
+      [
+        0.0,
+        0.6655556577647762,
+        1.3147595695713945,
+        2.6539860186512536,
+        4.91760799866031,
+        7.3644430081849706
+      ],
+      [
+        0.0,
+        0.5376945460648732,
+        1.2355266357499173,
+        2.82156114592412,
+        5.68564079623083,
+        7.323674507742356
+      ],
+      [
+        0.0,
+        0.5396545700569862,
+        1.1969488359289335,
+        2.773769303482245,
+        5.6805632983918555,
+        8.580906646954922
+      ],
+      [
+        0.0,
+        0.5407858527740186,
+        1.1381487167274864,
+        2.721783913646255,
+        5.6300009341782165,
+        8.7169953036721
+      ]
+    ],
+    "initializer": "rapfi_port\\assets\\classical_trained.inc",
+    "initializer_bytes": 84785,
+    "initializer_sha256": "dc1958fc0c86711db7f244d05ba4c16ab681a314e403280e24c317c7d6d1dc61",
+    "table_dimensions": {
+      "eval": [
+        4,
+        3876
+      ],
+      "threat": [
+        4,
+        2048
+      ],
+      "score": [
+        4,
+        3876,
+        2
+      ],
+      "policy": [
+        4,
+        5,
+        13,
+        13
+      ]
+    },
+    "cpp_roundtrip_verified_bytes": 116208,
+    "cpp_compiler": "MSVC 19.50, C++17 /O2 /W4",
+    "cpp_roundtrip_sha256": "88f92bc96eca6eac9702b697b62c5768c9f921ad4c24278e118462c7c6fdde42"
+  },
+  "files": [
+    {
+      "file": "reference\\rapfi-networks\\classical\\model210901.bin",
+      "file_bytes": 25896,
+      "raw_bytes": 116208,
+      "sha256": "b3425ab5dbb73b25aad6f1c816e4700438c1fca265bf7a9c42aa3c2c006444af",
+      "raw_sha256": "ee6b2105c7521d4072013a33031285c2d271d42b89b41a9054c7ac2b97642b65",
+      "base85_file_chars": 32370,
+      "zlib9_file_bytes": 21172,
+      "zlib9_raw_bytes": 21261,
+      "lz4_checksums_verified": true,
+      "lzma9_raw_bytes": 17484,
+      "lzma9_file_bytes": 19932
+    },
+    {
+      "file": "reference\\rapfi-networks\\classical\\model220723.bin",
+      "file_bytes": 68821,
+      "raw_bytes": 116208,
+      "sha256": "63e09d76174d510674480e92349487e5ee72e989caa918733083a60e8090a013",
+      "raw_sha256": "dec7b51965c87bffbbc069f2830d569393348a8f7f78a092ad31061023446e32",
+      "base85_file_chars": 86027,
+      "zlib9_file_bytes": 57069,
+      "zlib9_raw_bytes": 54489,
+      "lz4_checksums_verified": true,
+      "lzma9_raw_bytes": 44292,
+      "lzma9_file_bytes": 53564
+    },
+    {
+      "file": "reference\\rapfi-networks\\classical\\model260809.bin",
+      "file_bytes": 57624,
+      "raw_bytes": 116208,
+      "sha256": "8d4f518c58f9c7abe017de383a87d2d7506c62936ea5188004b7eb1780b99393",
+      "raw_sha256": "88f92bc96eca6eac9702b697b62c5768c9f921ad4c24278e118462c7c6fdde42",
+      "base85_file_chars": 72030,
+      "zlib9_file_bytes": 42166,
+      "zlib9_raw_bytes": 39005,
+      "lz4_checksums_verified": true,
+      "lzma9_raw_bytes": 30564,
+      "lzma9_file_bytes": 38884
+    },
+    {
+      "file": "reference\\rapfi-networks\\mix9svq\\mix9svqfreestyle_bsmix.bin.lz4",
+      "file_bytes": 10030398,
+      "raw_bytes": 12409332,
+      "sha256": "6bc0d1b0ff8e1d857f7f412923cd458f38f1a435087c91ae71fec3676c23ef62",
+      "raw_sha256": "275716f1ff8119d1d488177b266b07b0bc12c072070b9e073df1177a9f614fe3",
+      "base85_file_chars": 12537998,
+      "zlib9_file_bytes": 9629987,
+      "zlib9_raw_bytes": 9604228,
+      "lz4_checksums_verified": true,
+      "lzma9_raw_bytes": 7733184,
+      "lzma9_file_bytes": 8320464,
+      "nnue_header": {
+        "arch_hash": "84e275f6",
+        "rule_mask": 1,
+        "board_sizes": [
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22
+        ],
+        "description": "model=mix9svq_basicns_64f32p64v32d65536c; Weight exported by pytorch-nnue-trainer (commit hash 4ff0971) at Sat May 24 11:41:23 2025.",
+        "weight_payload_bytes": 12409180
+      }
+    },
+    {
+      "file": "reference\\rapfi-networks\\mix9svq\\mix9svqrenju_bs15_black.bin.lz4",
+      "file_bytes": 9984172,
+      "raw_bytes": 12409332,
+      "sha256": "7ab8c974c30da07717ce6a504616a62ac8c981500503f0ced0fadefd3f46c5ec",
+      "raw_sha256": "04e5d733a03b0c7f04cb13c91cc918fcb4340fc00ce5a950ff9954c03bbb6a22",
+      "base85_file_chars": 12480215,
+      "zlib9_file_bytes": 9587021,
+      "zlib9_raw_bytes": 9566282,
+      "lz4_checksums_verified": true,
+      "nnue_header": {
+        "arch_hash": "84e275f6",
+        "rule_mask": 4,
+        "board_sizes": [
+          15
+        ],
+        "description": "model=mix9svq_basicns_64f32p64v32d65536c; Weight exported by pytorch-nnue-trainer (commit hash 4ff0971) at Wed May 21 07:03:09 2025.",
+        "weight_payload_bytes": 12409180
+      }
+    },
+    {
+      "file": "reference\\rapfi-networks\\mix9svq\\mix9svqrenju_bs15_white.bin.lz4",
+      "file_bytes": 9844944,
+      "raw_bytes": 12409332,
+      "sha256": "a31f318518d3b5630489054d9eb013fd5353c553999640c2bcfd8d95e6fe4e4e",
+      "raw_sha256": "d9d6f4deb7fa35f72cb7883adcc9021579481b5878c901955fca515234d95fbf",
+      "base85_file_chars": 12306180,
+      "zlib9_file_bytes": 9448193,
+      "zlib9_raw_bytes": 9426855,
+      "lz4_checksums_verified": true,
+      "nnue_header": {
+        "arch_hash": "84e275f6",
+        "rule_mask": 4,
+        "board_sizes": [
+          15
+        ],
+        "description": "model=mix9svq_basicns_64f32p64v32d65536c; Weight exported by pytorch-nnue-trainer (commit hash 4ff0971) at Wed May 21 07:03:40 2025.",
+        "weight_payload_bytes": 12409180
+      }
+    },
+    {
+      "file": "reference\\rapfi-networks\\mix9svq\\mix9svqstandard_bs15.bin.lz4",
+      "file_bytes": 10345775,
+      "raw_bytes": 12409332,
+      "sha256": "84334f5db96f45b3e36ebdde06d2259d878ae1eb347b7cf74574ac908b8d9e7d",
+      "raw_sha256": "d1062c67c086494f629ad5404533ac9e982843b1180d992cc357f35956daf1d7",
+      "base85_file_chars": 12932219,
+      "zlib9_file_bytes": 9894794,
+      "zlib9_raw_bytes": 9862952,
+      "lz4_checksums_verified": true,
+      "nnue_header": {
+        "arch_hash": "84e275f6",
+        "rule_mask": 2,
+        "board_sizes": [
+          15
+        ],
+        "description": "model=mix9svq_basicns_64f32p64v32d65536c; Weight exported by pytorch-nnue-trainer (commit hash 4ff0971) at Wed May 21 07:02:27 2025.",
+        "weight_payload_bytes": 12409180
+      }
+    }
+  ],
+  "architecture_sizes": {
+    "mix9svq": {
+      "shape_count": 442503,
+      "feature_dimension": 64,
+      "codebook_int16_values": 8388608,
+      "codebook_ram_bytes": 16777216,
+      "packed_10bit_codebook_bytes": 10485760,
+      "mapping_uint16_indices": 885006,
+      "mapping_index_bytes": 1770012,
+      "depthwise_conv_bytes": 640,
+      "head_bucket_bytes": 152768,
+      "weight_struct_bytes": 18700672,
+      "accumulator_12x12_allocations_bytes": {
+        "value_sum": 371200,
+        "change_counts": 580,
+        "inner_version_indices": 41760,
+        "outer_version_indices": 57232,
+        "shape_indices": 72656,
+        "map_sum": 581248,
+        "map_convolution": 844352
+      },
+      "one_accumulator_12x12_array_bytes": 1969028,
+      "two_accumulators_12x12_array_bytes": 3938056,
+      "ram_note": "Derived array/struct sizes, excluding allocator overhead, board, search stack, TT, transient decode, and caches. The official model header rejects board size 12."
+    },
+    "mix10": {
+      "mapping_int16_values": 56640384,
+      "mapping_ram_bytes": 113280768,
+      "note": "Architecture only; no mix10 weights are present in the pinned network repository."
+    }
+  },
+  "integration_audit": {
+    "date": "2026-11-08",
+    "candidate": "rapfi_port/rapfi_trained.cpp",
+    "candidate_sha256": "c33e687927f17d18f521a2497e09927c9fec749f67487aca67f5100bd8220953",
+    "cpp_runtime_bytes_match": 116208,
+    "repeated_start_preserves_model": true,
+    "readout_knots_exact_match": true,
+    "policy_active_masks": [
+      31,
+      31,
+      31,
+      31
+    ],
+    "freestyle_readout_sample_inputs": [
+      -1000,
+      -200,
+      -50,
+      0,
+      50,
+      100,
+      200,
+      500,
+      1000
+    ],
+    "freestyle_readout_sample_outputs": [
+      -926,
+      -265,
+      -67,
+      0,
+      67,
+      132,
+      265,
+      593,
+      926
+    ],
+    "search_run": false
+  }
+}

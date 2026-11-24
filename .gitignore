@@ -1,0 +1,17 @@
+# 编译产物
+build/
+tmp/
+*.exe
+*.obj
+*.o
+*.su
+
+# Python
+__pycache__/
+*.pyc
+
+# 二进制权重校验中间产物
+*.bin
+
+# 参考仓库（请从原始仓库获取）
+reference/

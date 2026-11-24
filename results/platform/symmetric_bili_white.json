@@ -1,0 +1,23 @@
+{
+  "engine": "build\\probe_v2.exe",
+  "budget_ms": 1140,
+  "positions": [
+    {
+      "round_id": "6ae86267e905020013cc866b",
+      "ply": 18,
+      "color": 2,
+      "recorded_move": [
+        2,
+        7
+      ],
+      "move": 75,
+      "row": 6,
+      "col": 3,
+      "score": 0,
+      "depth": 0,
+      "nodes": 10432,
+      "ms": 11.1111,
+      "intact": true
+    }
+  ]
+}

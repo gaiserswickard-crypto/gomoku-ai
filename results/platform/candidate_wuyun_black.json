@@ -1,0 +1,108 @@
+{
+  "engine": "build\\probe_v2.exe",
+  "budget_ms": 1140,
+  "positions": [
+    {
+      "round_id": "6ae867f9e905020013cc8876",
+      "ply": 49,
+      "color": 1,
+      "recorded_move": [
+        9,
+        1
+      ],
+      "move": 109,
+      "row": 9,
+      "col": 1,
+      "score": 0,
+      "depth": 0,
+      "nodes": 0,
+      "ms": 0.0012,
+      "intact": true
+    },
+    {
+      "round_id": "6ae867f9e905020013cc8876",
+      "ply": 55,
+      "color": 1,
+      "recorded_move": [
+        2,
+        7
+      ],
+      "move": 31,
+      "row": 2,
+      "col": 7,
+      "score": 0,
+      "depth": 0,
+      "nodes": 0,
+      "ms": 0.0011,
+      "intact": true
+    },
+    {
+      "round_id": "6ae867f9e905020013cc8876",
+      "ply": 57,
+      "color": 1,
+      "recorded_move": [
+        10,
+        9
+      ],
+      "move": 129,
+      "row": 10,
+      "col": 9,
+      "score": 0,
+      "depth": 0,
+      "nodes": 0,
+      "ms": 0.0013,
+      "intact": true
+    },
+    {
+      "round_id": "6ae867f9e905020013cc8876",
+      "ply": 59,
+      "color": 1,
+      "recorded_move": [
+        9,
+        5
+      ],
+      "move": 113,
+      "row": 9,
+      "col": 5,
+      "score": -99999986,
+      "depth": 3,
+      "nodes": 621,
+      "ms": 1.3375,
+      "intact": true
+    },
+    {
+      "round_id": "6ae867f9e905020013cc8876",
+      "ply": 67,
+      "color": 1,
+      "recorded_move": [
+        11,
+        1
+      ],
+      "move": 133,
+      "row": 11,
+      "col": 1,
+      "score": -99999994,
+      "depth": 1,
+      "nodes": 9,
+      "ms": 0.024,
+      "intact": true
+    },
+    {
+      "round_id": "6ae867f9e905020013cc8876",
+      "ply": 69,
+      "color": 1,
+      "recorded_move": [
+        10,
+        7
+      ],
+      "move": 127,
+      "row": 10,
+      "col": 7,
+      "score": -99999996,
+      "depth": 1,
+      "nodes": 75,
+      "ms": 0.0566,
+      "intact": true
+    }
+  ]
+}

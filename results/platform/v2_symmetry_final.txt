@@ -1,0 +1,2 @@
+symmetry.cpp
+PASS symmetry: D4 maps, colored start, empty/asymmetric boards, 64 invariant boards

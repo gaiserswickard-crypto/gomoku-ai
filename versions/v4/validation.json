@@ -1,0 +1,180 @@
+{
+  "client_date": "2026-11-08",
+  "timezone": "Asia/Shanghai",
+  "version": "v4-rapfi-trained-classical",
+  "source": {
+    "file": "main.cpp",
+    "bytes": 425533,
+    "sha256": "c33e687927f17d18f521a2497e09927c9fec749f67487aca67f5100bd8220953"
+  },
+  "source_lines": 9900,
+  "source_limit_bytes": 1048576,
+  "deterministic_regeneration_same_sha256": true,
+  "model": "official model260809, trained classical, fully embedded; not NNUE",
+  "build_manifest": {
+    "file": "rapfi_port/rapfi_trained.manifest.json",
+    "bytes": 6953,
+    "sha256": "392b21710ab22d4e76d71e7f2ddac71df47c41743b4bcf4bea27f4f95353e5db"
+  },
+  "executables": {
+    "submission": {
+      "file": "build/gomoku.exe",
+      "bytes": 3226434,
+      "sha256": "97a84ae52f05b8472afc490950fe8238e864a76061a16ec43e81203caadcc595"
+    },
+    "benchmark": {
+      "file": "rapfi_port/rapfi_trained.exe",
+      "bytes": 3226434,
+      "sha256": "587b75ec87244b8b0d3081c6160323d7965cd2335c7949661df6b5a06cfe66b7"
+    },
+    "msvc": {
+      "file": "rapfi_port/rapfi_trained_msvc.exe",
+      "bytes": 678400,
+      "sha256": "7288e50c763e26faf000f8cca21d812efeaf513560f7989b90ce87d1f6700b0a"
+    }
+  },
+  "builds": [
+    "Windows x64 GCC 16.2.0 C++17 -O2 (8 MiB stack)",
+    "Windows x64 MSVC C++17 /O2 /EHsc /utf-8 /STACK:8388608"
+  ],
+  "checks": {
+    "final_build_log": {
+      "file": "results/rapfi/submission_build.txt",
+      "bytes": 133624,
+      "sha256": "b427e9a12bf7746eb465c8316e3d05569f50c9c98804d891767cbf3d8c9ff78e"
+    },
+    "final_checks_log": {
+      "file": "results/rapfi/submission_checks.txt",
+      "bytes": 1199,
+      "sha256": "7261253ac55511d0a4eb22d6707802381511c252033300e06f7eee983aab3a70"
+    },
+    "assertions_passed": 1588,
+    "searches_checked": 106,
+    "protocol_groups_passed": 9,
+    "debug_native_assertions_enabled": true,
+    "weight_byte_roundtrip_verified": 116208
+  },
+  "matches": [
+    {
+      "file": "results/rapfi/trained_vs_v3.json",
+      "bytes": 18713,
+      "sha256": "571c69c067b5ae5a5366e78813d42a6a862cb9563fdc954e63b323ee577be1b1",
+      "summary": {
+        "games": 2,
+        "wins": {
+          "A": 1,
+          "B": 1
+        },
+        "draws": 0,
+        "forfeits": {
+          "A": 0,
+          "B": 0
+        },
+        "timing": {
+          "A": {
+            "moves": 31,
+            "average_seconds": 0.11914440645160364,
+            "maximum_seconds": 1.11180760000002,
+            "maximum_game_seconds": 2.6395990999999412
+          },
+          "B": {
+            "moves": 31,
+            "average_seconds": 0.07489217741936632,
+            "maximum_seconds": 1.1422976999999719,
+            "maximum_game_seconds": 2.3284782000002906
+          }
+        }
+      },
+      "candidate_games": [
+        {
+          "game": 1,
+          "color": "black",
+          "result": "win",
+          "plies": 19,
+          "own_seconds": 1.2048917999998139
+        },
+        {
+          "game": 2,
+          "color": "white",
+          "result": "loss",
+          "plies": 43,
+          "own_seconds": 2.6395990999999412
+        }
+      ]
+    },
+    {
+      "file": "results/rapfi/trained_vs_reference.json",
+      "bytes": 18849,
+      "sha256": "a4fdcdfce5c14a49f2fbee0f1e047b56d37ce9b13c2068eb37076cd82bcd6fe8",
+      "summary": {
+        "games": 2,
+        "wins": {
+          "A": 2,
+          "B": 0
+        },
+        "draws": 0,
+        "forfeits": {
+          "A": 0,
+          "B": 0
+        },
+        "timing": {
+          "A": {
+            "moves": 32,
+            "average_seconds": 0.3615026999999884,
+            "maximum_seconds": 1.1836582999999337,
+            "maximum_game_seconds": 10.29266629999961
+          },
+          "B": {
+            "moves": 31,
+            "average_seconds": 0.029993400000010648,
+            "maximum_seconds": 0.07241339999995944,
+            "maximum_game_seconds": 0.6305747000003521
+          }
+        }
+      },
+      "candidate_games": [
+        {
+          "game": 1,
+          "color": "black",
+          "result": "win",
+          "plies": 21,
+          "own_seconds": 1.4247064999999566
+        },
+        {
+          "game": 2,
+          "color": "white",
+          "result": "win",
+          "plies": 42,
+          "own_seconds": 10.29266629999961
+        }
+      ]
+    }
+  ],
+  "resources": {
+    "scope": "Four complete Windows matches; OS-maintained peak RSS and commit counters read after responses",
+    "peak_working_set_bytes": 73871360,
+    "peak_commit_bytes": 70266880,
+    "max_turn_seconds": 1.1836582999999337,
+    "max_startup_including_launch_seconds": 0.08139699999992445,
+    "max_own_game_seconds": 10.29266629999961,
+    "affinity_masks": [
+      1
+    ]
+  },
+  "old_v3_source": {
+    "file": "versions/v3/main.cpp",
+    "bytes": 858578,
+    "sha256": "213b471e08a255e3b33bd4df2ac463be5b0f36d8e3aa9474d01c37147b19f5ac"
+  },
+  "runtime_data_files_required": [],
+  "worker_threads": 0,
+  "tt_kib": 65536,
+  "linux_runtime_tested": false,
+  "submitted_to_school": false,
+  "guaranteed_black_win": false,
+  "limitations": [
+    "Four fixed-opening games against two local opponents are not a class-wide win-rate estimate.",
+    "Classic port does not have the complete NNUE evaluator.",
+    "Linux/school runtime still needs validation."
+  ]
+}

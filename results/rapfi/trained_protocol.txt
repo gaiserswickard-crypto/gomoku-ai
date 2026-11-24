@@ -1,0 +1,10 @@
+PASS test_black_start_turn
+PASS test_white_place_turn
+PASS test_multiple_turns_record_own_stones
+PASS test_repeated_start_clears_opponent
+PASS test_repeated_start_clears_own_stone_and_changes_color
+PASS test_unknown_and_invalid_place
+PASS test_end_before_start
+PASS test_eof_before_start
+PASS test_eof_after_start
+Protocol tests: 9/9 passed, 0 failed (6.87 s)

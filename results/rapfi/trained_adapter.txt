@@ -1,0 +1,6 @@
+PASS state, color, coordinate, reset and search-restoration checks
+PASS 80 tactical positions: both colors, 8 symmetries, freestyle six, compulsory defense and double-four attack
+PASS continuous-four sequences, both colors and rotated reflection
+PASS single and edge open-three defense, exhaustive reply oracle
+PASS terminal board handling
+PASS 1588 assertions; 106 non-mutating searches; max search 70.86 ms; elapsed 3.46 s

@@ -1,0 +1,12 @@
+PASS initial position and search rollback
+PASS unique immediate win
+PASS unique forced defense
+PASS winning move before defense
+PASS broken-four gap
+PASS edges and both diagonals
+PASS overline is a win
+PASS full-board draw
+PASS repeated START/reset
+PASS random incremental make/unmake
+PASS short continuous-four sequence
+11/11 tests passed

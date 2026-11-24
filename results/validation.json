@@ -1,0 +1,19 @@
+{
+  "source": "main.cpp",
+  "sha256": "18d49847f2b7f548202d39a651f8032843e054a960150c8fb45000df5d494bec",
+  "source_bytes": 23729,
+  "client_date": "2026-11-02",
+  "compiler": "MSVC 19.51, /O2 /std:c++17 /W4",
+  "checks": {
+    "tactics": "11/11 passed",
+    "protocol": "9/9 passed",
+    "oracle_random_boards": 600,
+    "oracle_searches": 1200,
+    "oracle_terminal_continuations": 1290
+  },
+  "match_reports": [
+    "results/reference_match.json",
+    "results/selfplay_match.json"
+  ],
+  "note": "Reference match was run before removing an unused local and adding an unreachable defensive fallback; no search behavior changed."
+}

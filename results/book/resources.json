@@ -1,0 +1,10 @@
+{
+  "executable": "build/gomoku.exe",
+  "platform": "Windows x64 / MSVC /O2",
+  "startup_seconds_including_process_launch": 0.019351599999936298,
+  "first_turn_seconds_including_book_load": 0.0038982999976724386,
+  "first_move": "4 7",
+  "peak_working_set_bytes": 33173504,
+  "peak_commit_bytes": 29167616,
+  "scope": "Sample through the first book-enabled move, not whole-game peak monitoring."
+}

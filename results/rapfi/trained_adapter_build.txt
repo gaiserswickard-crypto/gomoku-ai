@@ -1,0 +1,7 @@
+In file included from D:\绋嬪簭璁捐�¤寖寮忎綔涓歕gomoku\tests\rapfi_adapter.cpp:8:
+D:/绋嬪簭璁捐�¤寖寮忎綔涓�/gomoku/rapfi_port/rapfi_trained.cpp:1607:13: warning: 'Pattern2x::patBlack' is too small to hold all values of 'enum Pattern'
+ 1607 |     Pattern patBlack : 4;
+      |             ^~~~~~~~
+D:/绋嬪簭璁捐�¤寖寮忎綔涓�/gomoku/rapfi_port/rapfi_trained.cpp:1608:13: warning: 'Pattern2x::patWhite' is too small to hold all values of 'enum Pattern'
+ 1608 |     Pattern patWhite : 4;
+      |             ^~~~~~~~

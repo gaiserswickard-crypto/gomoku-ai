@@ -1,0 +1,9 @@
+{
+  "utc": "2026-11-08T03:04:52.846384+00:00",
+  "source": "D:\\程序设计范式作业\\gomoku\\rapfi_port\\rapfi_trained.cpp",
+  "source_bytes": 425533,
+  "source_sha256": "c33e687927f17d18f521a2497e09927c9fec749f67487aca67f5100bd8220953",
+  "test_sha256": "374aa9ca04e76cdbab8eeca6bf928ce00fd8316cde8497cfcab3f5af76978e25",
+  "executable_sha256": "0d242284da24e057fc7412a170443886cb047a944ecd34ec98fdb730d0759efa",
+  "flags": "-std=c++17 -O2 -DRAPFI_COURSE_DEBUG -DRAPFI_COURSE_SOURCE=\"../rapfi_port/rapfi_trained.cpp\""
+}

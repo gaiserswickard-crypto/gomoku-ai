@@ -1,0 +1,28 @@
+{
+  "client_date": "2026-11-03",
+  "source_url": "https://587.renju.org.tw/program/1/D4-2.rar",
+  "library_sha256": "ebaf48a38e4a18fa32b2dc840c0ebb9a6d3276bca4cf3bf802d1b32923fac2c2",
+  "engine_source": "src/engine.cpp",
+  "engine_sha256": "39e7553b3a1fe172b059bcb041b845f4499125d57077488f4ae3a3d5c9c759a1",
+  "output": "main.cpp",
+  "source_bytes": 858578,
+  "source_limit_bytes": 1048576,
+  "source_sha256": "213b471e08a255e3b33bd4df2ac463be5b0f36d8e3aa9474d01c37147b19f5ac",
+  "raw_sha256": "effe865f6011bffaba31440e0249c89444c8e873b0a5de8ce3cc07e7717a2401",
+  "base85_bytes": 814450,
+  "tree": {
+    "invalid_source_subtrees": 30,
+    "out_of_bounds_subtrees": 2483,
+    "non_move_subtrees": 0,
+    "terminal_black": 0,
+    "terminal_white": 2,
+    "terminal_descendants_cut": 2,
+    "maximum_extra_plies": 48,
+    "source_root_node": 4,
+    "compiled_nodes_including_root": 325779,
+    "root_choices": 2,
+    "raw_bytes": 651558
+  },
+  "complete_winning_strategy_proved": false,
+  "note": "Book annotations contain no win/loss certificates. Missing replies, filtered branches and unmatched boards fall back to the v2 search engine. White uses search."
+}

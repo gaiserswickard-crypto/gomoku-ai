@@ -1,0 +1,9 @@
+{
+  "utc": "2026-11-08T03:06:38.866025+00:00",
+  "source": "D:\\程序设计范式作业\\gomoku\\rapfi_port\\rapfi_trained.cpp",
+  "source_bytes": 425533,
+  "source_sha256": "c33e687927f17d18f521a2497e09927c9fec749f67487aca67f5100bd8220953",
+  "executable": "D:\\程序设计范式作业\\gomoku\\rapfi_port\\rapfi_trained.exe",
+  "executable_sha256": "587b75ec87244b8b0d3081c6160323d7965cd2335c7949661df6b5a06cfe66b7",
+  "command": "python tests/protocol_test.py --engine rapfi_port/rapfi_trained.exe"
+}

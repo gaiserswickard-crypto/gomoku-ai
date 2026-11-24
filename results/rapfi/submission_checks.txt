@@ -1,0 +1,23 @@
+In file included from tests\rapfi_adapter.cpp:8:
+tests\../main.cpp:1607:13: warning: 'Pattern2x::patBlack' is too small to hold all values of 'enum Pattern'
+ 1607 |     Pattern patBlack : 4;
+      |             ^~~~~~~~
+tests\../main.cpp:1608:13: warning: 'Pattern2x::patWhite' is too small to hold all values of 'enum Pattern'
+ 1608 |     Pattern patWhite : 4;
+      |             ^~~~~~~~
+PASS state, color, coordinate, reset and search-restoration checks
+PASS 80 tactical positions: both colors, 8 symmetries, freestyle six, compulsory defense and double-four attack
+PASS continuous-four sequences, both colors and rotated reflection
+PASS single and edge open-three defense, exhaustive reply oracle
+PASS terminal board handling
+PASS 1588 assertions; 106 non-mutating searches; max search 70.59 ms; elapsed 3.41 s
+PASS test_black_start_turn
+PASS test_white_place_turn
+PASS test_multiple_turns_record_own_stones
+PASS test_repeated_start_clears_opponent
+PASS test_repeated_start_clears_own_stone_and_changes_color
+PASS test_unknown_and_invalid_place
+PASS test_end_before_start
+PASS test_eof_before_start
+PASS test_eof_after_start
+Protocol tests: 9/9 passed, 0 failed (6.83 s)

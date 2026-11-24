@@ -1,0 +1,24 @@
+tactics.cpp
+PASS initial position and search rollback
+PASS unique immediate win
+PASS unique forced defense
+PASS winning move before defense
+PASS broken-four gap
+PASS edges and both diagonals
+PASS overline is a win
+PASS full-board draw
+PASS repeated START/reset
+PASS random incremental make/unmake
+PASS short continuous-four sequence
+11/11 tests passed
+oracle.cpp
+PASS 600 random nonterminal boards; 1200 searches
+Immediate wins: 563; unique blocks: 104; other legal moves: 533
+Terminal continuation boards checked: 1290
+defense.cpp
+PASS independent-open-three qsearch, both ends, edge, counter-fours
+PASS 48 random exhaustive defense comparisons (30 defendable, 18 without defense)
+PASS defense suite; elapsed 0.315436 s
+platform.cpp
+PASS platform 866b ply 18: rejects (2,7), chooses (6,3)
+PASS winning counter-four under enemy double-three threats

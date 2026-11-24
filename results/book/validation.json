@@ -1,0 +1,149 @@
+{
+  "client_date": "2026-11-03",
+  "timezone": "Asia/Shanghai",
+  "source": "main.cpp",
+  "source_bytes": 858578,
+  "source_sha256": "213b471e08a255e3b33bd4df2ac463be5b0f36d8e3aa9474d01c37147b19f5ac",
+  "build_report": "results/book/build_report.json",
+  "independent_audit": "results/book/independent_audit.json",
+  "platform": "Windows x64 / MSVC /O2 /std:c++17 /W4 /utf-8",
+  "checks": {
+    "cpp_suites": 7,
+    "cpp_result": "all passed",
+    "cpp_log": "results/book/regressions.txt",
+    "protocol_groups": 9,
+    "protocol_result": "all passed",
+    "protocol_log": "results/book/protocol.txt",
+    "deterministic_regeneration": "same SHA-256 as tested candidate",
+    "exact_lookup": "full colored board and stone count; no hash-only matches"
+  },
+  "executables": {
+    "formal": {
+      "file": "build/gomoku.exe",
+      "sha256": "129eebba0e77a9b2e1465e42c7688d643d3fad0b885488831158d6183f583ecc",
+      "debug": false
+    },
+    "match": {
+      "file": "build/book_candidate.exe",
+      "sha256": "511487088bb39c4682da0aaaa2ba61561ffd918ed20f36587ad321711abd080d",
+      "debug": true,
+      "note": "Same source; GOMOKU_DEBUG writes book/depth/node counters to stderr."
+    }
+  },
+  "matches": [
+    {
+      "file": "results/book/vs_v2.json",
+      "sha256": "ae37f4a4549b9e4d57ec25f43d0bb621bedeac4bf52ef185e6d230e6aef88730",
+      "summary": {
+        "games": 2,
+        "wins": {
+          "A": 1,
+          "B": 1
+        },
+        "draws": 0,
+        "forfeits": {
+          "A": 0,
+          "B": 0
+        },
+        "timing": {
+          "A": {
+            "moves": 27,
+            "average_seconds": 0.25264367407375915,
+            "maximum_seconds": 1.1422310000016296,
+            "maximum_game_seconds": 6.827707600001304
+          },
+          "B": {
+            "moves": 27,
+            "average_seconds": 0.437964181481355,
+            "maximum_seconds": 1.1600828999980877,
+            "maximum_game_seconds": 7.116902400000981
+          }
+        }
+      },
+      "candidate_games": [
+        {
+          "game": 1,
+          "color": "black",
+          "result": "win",
+          "plies": 29,
+          "book_selected_moves": 8,
+          "total_seconds_including_startup": 0.020572599987644935
+        },
+        {
+          "game": 2,
+          "color": "white",
+          "result": "loss",
+          "plies": 25,
+          "book_selected_moves": 0,
+          "total_seconds_including_startup": 6.827707600001304
+        }
+      ]
+    },
+    {
+      "file": "results/book/vs_reference.json",
+      "sha256": "903ae09cceb46228f423409a5bd5f4e3f7b1d60436118f8f1f528c4217b955e0",
+      "summary": {
+        "games": 2,
+        "wins": {
+          "A": 1,
+          "B": 1
+        },
+        "draws": 0,
+        "forfeits": {
+          "A": 0,
+          "B": 0
+        },
+        "timing": {
+          "A": {
+            "moves": 28,
+            "average_seconds": 0.1770388464280716,
+            "maximum_seconds": 1.1422193000034895,
+            "maximum_game_seconds": 4.958499399988796
+          },
+          "B": {
+            "moves": 28,
+            "average_seconds": 0.03159215000050608,
+            "maximum_seconds": 0.06411949999892386,
+            "maximum_game_seconds": 0.46266550002474105
+          }
+        }
+      },
+      "candidate_games": [
+        {
+          "game": 1,
+          "color": "black",
+          "result": "win",
+          "plies": 25,
+          "book_selected_moves": 7,
+          "total_seconds_including_startup": 0.028950399995665066
+        },
+        {
+          "game": 2,
+          "color": "white",
+          "result": "loss",
+          "plies": 31,
+          "book_selected_moves": 0,
+          "total_seconds_including_startup": 4.958499399988796
+        }
+      ]
+    }
+  ],
+  "resource_sample": {
+    "executable": "build/gomoku.exe",
+    "platform": "Windows x64 / MSVC /O2",
+    "startup_seconds_including_process_launch": 0.019351599999936298,
+    "first_turn_seconds_including_book_load": 0.0038982999976724386,
+    "first_move": "4 7",
+    "peak_working_set_bytes": 33173504,
+    "peak_commit_bytes": 29167616,
+    "scope": "Sample through the first book-enabled move, not whole-game peak monitoring."
+  },
+  "full_black_win_proven": false,
+  "submitted_to_school": false,
+  "limitations": [
+    "Book has unlisted legal White replies and unproved leaves.",
+    "Runtime tactical checks override bad book recommendations; a timed-out VCF check is unknown, not proof of safety.",
+    "Black won the two measured games; White lost both. This fixed-opening sample is not a class win-rate estimate.",
+    "Linux/G++ and school opponents have not been retested."
+  ]
+}

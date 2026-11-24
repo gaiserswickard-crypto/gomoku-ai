@@ -1,0 +1,57 @@
+{
+  "engine": "build\\probe_v2.exe",
+  "budget_ms": 1140,
+  "positions": [
+    {
+      "round_id": "6ae867f9e905020013cc8875",
+      "ply": 2,
+      "color": 2,
+      "recorded_move": [
+        7,
+        3
+      ],
+      "move": 56,
+      "row": 4,
+      "col": 8,
+      "score": -146841,
+      "depth": 8,
+      "nodes": 1029889,
+      "ms": 1140.02,
+      "intact": true
+    },
+    {
+      "round_id": "6ae867f9e905020013cc8875",
+      "ply": 4,
+      "color": 2,
+      "recorded_move": [
+        8,
+        3
+      ],
+      "move": 99,
+      "row": 8,
+      "col": 3,
+      "score": -222391,
+      "depth": 10,
+      "nodes": 1142279,
+      "ms": 1140.15,
+      "intact": true
+    },
+    {
+      "round_id": "6ae867f9e905020013cc8875",
+      "ply": 8,
+      "color": 2,
+      "recorded_move": [
+        9,
+        3
+      ],
+      "move": 75,
+      "row": 6,
+      "col": 3,
+      "score": -222755,
+      "depth": 8,
+      "nodes": 1298421,
+      "ms": 1140.03,
+      "intact": true
+    }
+  ]
+}

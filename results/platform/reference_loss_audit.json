@@ -1,0 +1,63 @@
+{
+  "date": "2026-11-03",
+  "match_report": "results/platform/symmetric_v2_vs_reference.json",
+  "game": 2,
+  "candidate_engine": "A",
+  "candidate_color": "white",
+  "result": "loss",
+  "plies": 31,
+  "ply_convention": "Ply 1 is the first move after the four initial stones; coordinates are zero-based row,column.",
+  "methods": [
+    "Reconstructed every position from the recorded initial stones and moves.",
+    "Used tools/analyze_losses.py, which enumerates independent five-cell segments rather than engine pattern tables, to check immediate wins, compulsory blocks and winning forks.",
+    "Before white ply 20, enumerated every legal white move and searched an opponent continuous-four proof with VCF(max_nodes=30000,max_plies=30). Each returned proof was separately replayed through verify_vcf_proof, including checks that White could not win instead of defending."
+  ],
+  "immediate_tactics": {
+    "missed_immediate_win": false,
+    "missed_unique_compulsory_block": false,
+    "missed_immediate_winning_fork": false
+  },
+  "before_white_ply_20": {
+    "recorded_move": [6, 9],
+    "opponent_fork_moves": [[2, 5], [6, 9]],
+    "legal_moves_enumerated": 121,
+    "verified_opponent_vcf_after_move": 121,
+    "unrefuted_moves": [],
+    "node_limited_moves": 0,
+    "conclusion": "Every legal white move at this recorded position loses to a verified continuous-four continuation. The loss was already forced before the recorded white move; this does not identify the first earlier mistake."
+  },
+  "late_defense_checks": [
+    {
+      "ply": 26,
+      "opponent_fork_moves": [[2, 7], [4, 3], [6, 3]],
+      "quiet_moves_removing_all_forks": [],
+      "own_forcing_four_moves": [[9, 9], [10, 9]],
+      "recorded_move": [9, 9]
+    },
+    {
+      "ply": 28,
+      "opponent_fork_moves": [[2, 7], [4, 3], [6, 3]],
+      "quiet_moves_removing_all_forks": [],
+      "own_forcing_four_moves": [],
+      "recorded_move": [6, 3]
+    },
+    {
+      "ply": 30,
+      "opponent_immediate_winning_points": [[3, 2], [4, 4]],
+      "recorded_move": [3, 2]
+    }
+  ],
+  "limited_position_probes": {
+    "engine": "build/probe_v2.exe",
+    "budget_ms": 500,
+    "state_reinitialized_between_queries": true,
+    "positions": [
+      {"ply": 12, "move": [8, 9], "score": -238448, "completed_depth": 6, "state_intact": true},
+      {"ply": 14, "move": [7, 9], "score": -99999984, "completed_depth": 5, "state_intact": true},
+      {"ply": 16, "move": [4, 9], "score": 0, "completed_depth": 0, "state_intact": true},
+      {"ply": 20, "move": [6, 9], "score": -99999990, "completed_depth": 1, "state_intact": true}
+    ],
+    "interpretation": "The ordinary-search score is an engine estimate, not an independent full-game proof. A zero score/depth can mean a tactical early return. Resetting state and using 500 ms differs from the actual match."
+  },
+  "conclusion": "This audit found no evidence that the new late defensive filtering omitted a saving move. The observed loss involves an earlier position/choice and cannot be attributed to a specific first error from this bounded audit. The final version is not established as stronger against every opponent."
+}

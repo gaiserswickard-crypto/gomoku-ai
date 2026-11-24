@@ -1,0 +1,17 @@
+Stack usage measured by MinGW-w64 GCC -std=c++17 -O2 -DNDEBUG -fstack-usage on built-in-model source before PASS-only guard.
+Largest 15 static function frames:
+gomoku/rapfi_port/rapfi_classical.cpp:2886:6:void {anonymous}::fillPattern2xLUT(Pattern2x*) [with Rule R = RENJU]	354512	static
+gomoku/rapfi_port/rapfi_classical.cpp:2886:6:void {anonymous}::fillPattern2xLUT(Pattern2x*) [with Rule R = STANDARD]	354512	static
+gomoku/rapfi_port/rapfi_classical.cpp:2886:6:void {anonymous}::fillPattern2xLUT(Pattern2x*) [with Rule R = FREESTYLE]	39600	static
+gomoku/rapfi_port/rapfi_classical.cpp:2637:6:virtual void Evaluation::Evaluator::syncWithBoard(const Board&)	7280	static
+gomoku/rapfi_port/rapfi_classical.cpp:7661:7:Value {anonymous}::search(Board&, Search::AB::SearchStack*, Value, Value, Depth, bool) [with Rule Rule = FREESTYLE; NodeType NT = <unnamed>::PV]	5072	static
+gomoku/rapfi_port/rapfi_classical.cpp:7661:7:Value {anonymous}::search(Board&, Search::AB::SearchStack*, Value, Value, Depth, bool) [with Rule Rule = STANDARD; NodeType NT = <unnamed>::PV]	5072	static
+gomoku/rapfi_port/rapfi_classical.cpp:7661:7:Value {anonymous}::search(Board&, Search::AB::SearchStack*, Value, Value, Depth, bool) [with Rule Rule = RENJU; NodeType NT = <unnamed>::PV]	5072	static
+gomoku/rapfi_port/rapfi_classical.cpp:7661:7:Value {anonymous}::search(Board&, Search::AB::SearchStack*, Value, Value, Depth, bool) [with Rule Rule = FREESTYLE; NodeType NT = <unnamed>::Root]	5056	static
+gomoku/rapfi_port/rapfi_classical.cpp:7661:7:Value {anonymous}::search(Board&, Search::AB::SearchStack*, Value, Value, Depth, bool) [with Rule Rule = STANDARD; NodeType NT = <unnamed>::Root]	5056	static
+gomoku/rapfi_port/rapfi_classical.cpp:7661:7:Value {anonymous}::search(Board&, Search::AB::SearchStack*, Value, Value, Depth, bool) [with Rule Rule = RENJU; NodeType NT = <unnamed>::Root]	5056	static
+gomoku/rapfi_port/rapfi_classical.cpp:7661:7:Value {anonymous}::search(Board&, Search::AB::SearchStack*, Value, Value, Depth, bool) [with Rule Rule = STANDARD; NodeType NT = <unnamed>::NonPV]	5040	static
+gomoku/rapfi_port/rapfi_classical.cpp:7661:7:Value {anonymous}::search(Board&, Search::AB::SearchStack*, Value, Value, Depth, bool) [with Rule Rule = FREESTYLE; NodeType NT = <unnamed>::NonPV]	5024	static
+gomoku/rapfi_port/rapfi_classical.cpp:7661:7:Value {anonymous}::search(Board&, Search::AB::SearchStack*, Value, Value, Depth, bool) [with Rule Rule = RENJU; NodeType NT = <unnamed>::NonPV]	5024	static
+gomoku/rapfi_port/rapfi_classical.cpp:8585:6:void Search::{anonymous}::generateRootMoves(Search::SearchThread&)	4464	static
+gomoku/rapfi_port/rapfi_classical.cpp:8587:31:Search::{anonymous}::generateRootMoves(Search::SearchThread&)::<lambda(Pos)>	4320	static
